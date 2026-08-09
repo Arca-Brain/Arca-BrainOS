@@ -1,6 +1,6 @@
 ---
 date: 2026-08-09
-title: CONTRIBUTING.md — Guidelines for Contributing to Arca-BrainOS
+title: "CONTRIBUTING.md : Guidelines for Contributing to Arca-BrainOS"
 description: Official contribution guidelines for creating skills, methodological process guides, playbooks, and maintaining test suite compliance in Arca-BrainOS.
 tags:
   - contributing
@@ -23,11 +23,11 @@ Arca-BrainOS is designed as a **Simondonian "Open Technical Object"**: a transpa
 
 You can contribute to Arca-BrainOS in several ways:
 
-1. **🔌 New Agentic Skills (`Skill_arca-*.md`)** — Creating modular skills stored in `_Arca-BrainOS/skills/` to automate specific cognitive, research, or organization workflows.
-2. **📚 Methodological Process Guides (`Process-*.md`)** — Writing human/AI process documentation stored in `_Arca-BrainOS/process/`.
-3. **📘 Operational Playbooks (`Playbook-*.md`)** — Designing step-by-step enablement guides stored in `_Arca-BrainOS/playbooks/`.
-4. **🧪 Test Suite Assertions (`_Arca-BrainOS/tests/`)** — Adding assertions and fixtures to `Skill_arca-test-suite.md` to prevent regressions.
-5. **🐛 Bug Fixes & Documentation Improvements** — Clarifying guides, updating READMEs, or fixing path handling.
+1. **🔌 New Agentic Skills (`Skill_arca-*.md`)** : Creating modular skills stored in `_Arca-BrainOS/skills/` to automate specific cognitive, research, or organization workflows.
+2. **📚 Methodological Process Guides (`Process-*.md`)** : Writing human/AI process documentation stored in `_Arca-BrainOS/process/`.
+3. **📘 Operational Playbooks (`Playbook-*.md`)** : Designing step-by-step enablement guides stored in `_Arca-BrainOS/playbooks/`.
+4. **🧪 Test Suite Assertions (`_Arca-BrainOS/tests/`)** : Adding assertions and fixtures to `Skill_arca-test-suite.md` to prevent regressions.
+5. **🐛 Bug Fixes & Documentation Improvements** : Clarifying guides, updating READMEs, or fixing path handling.
 
 ---
 

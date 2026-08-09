@@ -1,6 +1,6 @@
 ---
 date: 2026-08-09
-title: GETTING_STARTED.md — Detailed Onboarding & Operational Guide for Arca-BrainOS
+title: "GETTING_STARTED.md : Detailed Onboarding & Operational Guide for Arca-BrainOS"
 description: Operational walkthrough for setting up DataviewJS, configuring path variables in AGENTS.md, running Deep Work session management (arca-resume & arca-close-session), and using Playbooks.
 tags:
   - getting-started
@@ -45,7 +45,7 @@ PATH_SYSTEM: "_Arca-BrainOS/"
 
 ## 🪄 2. Installation Protocol
 
-* **Assisted Installation (Recommended — 1 Min):** Prompt your AI terminal runner with the instruction from [`INSTALL.md`](INSTALL.md):
+* **Assisted Installation (Recommended, 1 Min):** Prompt your AI terminal runner with the instruction from [`INSTALL.md`](INSTALL.md):
   ```text
   Read INSTALL.md and install Arca-BrainOS for me.
   ```
@@ -99,8 +99,8 @@ arca-close-session 1-Projects/P-MyProject.md
 
 When you need to perform high-impact structural transformations, refer to the step-by-step guides in `_Arca-BrainOS/playbooks/`:
 
-* **[[Playbook-Retrofit-et-Migration-de-Coffre-Existant]]** — Protocol for auditing, segmenting, and retrofitting legacy vaults (600+ notes) cleanly without losing human writing style.
-* **[[Playbook-Cartographie-et-Processus-de-Vie]]** — Methodology for auditing recurring life tasks and defining human vs. AI automation boundaries.
+* **[[Playbook-Retrofit-et-Migration-de-Coffre-Existant]]** : Protocol for auditing, segmenting, and retrofitting legacy vaults (600+ notes) cleanly without losing human writing style.
+* **[[Playbook-Cartographie-et-Processus-de-Vie]]** : Methodology for auditing recurring life tasks and defining human vs. AI automation boundaries.
 
 ---
 

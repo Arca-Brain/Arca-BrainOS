@@ -1,6 +1,6 @@
 ---
 date: 2026-08-08
-title: "INSTALL.md — Automated Agentic Installation & Vault Bootstrap (Arca-BrainOS)"
+title: "INSTALL.md : Automated Agentic Installation & Vault Bootstrap (Arca-BrainOS)"
 tags:
   - install
   - bootstrap
