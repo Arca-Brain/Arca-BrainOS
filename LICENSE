@@ -1,0 +1,28 @@
+# Dual License Agreement: Arca-BrainOS
+
+Arca-BrainOS is released under a **Dual / Hybrid License** model to guarantee open, sovereign access for individuals and community builders, while protecting the project against unauthorized commercial exploitation by corporate entities.
+
+---
+
+## 1. Engine, Code & Agentic Skills (`_Arca-BrainOS/skills/`, `tests/`, `scripts/`)
+
+The software code, agentic skills, and test scripts of Arca-BrainOS are licensed under the **GNU Affero General Public License v3.0 (GNU AGPLv3)**.
+
+* **Permissions:** You are free to run, study, modify, and distribute the code for personal, educational, or community use.
+* **Copyleft Requirement:** If you modify or integrate this code into any software, service, or cloud product (including network-accessible services), you MUST release the entire source code of your derivative work under the same AGPLv3 license.
+
+---
+
+## 2. Playbooks, Methodologies & Educational Content (`playbooks/`, `process/`, `MANIFESTO.md`)
+
+All methodologies, framework playbooks, and written conceptual content are licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)**.
+
+* **Attribution (BY):** You must give appropriate credit to Arca-BrainOS and Hugues.
+* **NonCommercial (NC):** You may NOT use these playbooks, methodologies, or written materials for commercial purposes, paid consulting, corporate training, or resold templates without prior written authorization.
+* **ShareAlike (SA):** If you remix, transform, or build upon the material, you must distribute your contributions under the same CC BY-NC-SA 4.0 license.
+
+---
+
+## 3. Commercial Licensing & Inquiries
+
+For corporate deployments, B2B commercial licensing, white-label usage, or consulting partnerships, please contact the author directly to request a commercial license grant.
