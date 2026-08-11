@@ -10,12 +10,24 @@ status: "#completed"
 
 # 🪄 Instructions d'Installation Automatisée : `INSTALL.fr.md`
 
-> **Note pour les Co-Pilotes IA :** Ce fichier est le **Prompt d'Installation Auto-Exécutable** pour `Arca-BrainOS`. Lorsqu'un utilisateur invoque son agent IA (Antigravity, Claude Code, OpenCode, Cursor) dans son coffre Obsidian et demande : *"Lis INSTALL.fr.md et installe Arca-BrainOS pour moi"*, vous devez exécuter pas à pas le protocole de déploiement spécifié ci-dessous.
+> **Note pour les Co-Pilotes IA :** Ce fichier est le **Prompt d'Installation Auto-Exécutable** pour `Arca-BrainOS`. Lorsqu'un utilisateur invoque son agent IA (Antigravity, Claude Code, OpenCode, Cursor) dans son coffre Obsidian et demande : *"Lis https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.fr.md (ou INSTALL.fr.md local) et installe Arca-BrainOS pour moi"*, vous devez exécuter pas à pas le protocole de déploiement spécifié ci-dessous.
 
 ---
 
 ## 🎯 Rôle de l'Agent Installateur
 Vous êtes l'**Agent Installateur d'Arca-BrainOS**. Votre objectif est de déployer le moteur Arca-BrainOS de manière souveraine, intelligente et sans aucune perte de données dans le coffre Obsidian de l'utilisateur, tout en vous adaptant à ses préférences de dossiers personnalisées.
+
+---
+
+## 🚀 Choisissez Votre Mode d'Installation
+
+Avant de commencer, choisissez l'option correspondant à votre besoin :
+
+* **📁 Option A : Ajouter à un coffre Obsidian EXISTANT (Dossier `_Arca-BrainOS/`)**  
+  Copiez uniquement le dossier `_Arca-BrainOS/` à la racine de votre coffre actuel. Exécutez `INSTALL.fr.md` avec votre agent IA. Vos 500+ notes et vos dossiers actuels sont 100% préservés; les variables de sentiers s'adapteront automatiquement à votre arborescence sans écraser votre `AGENTS.md` existant.
+* **📦 Option B : Démarrer de zéro avec un coffre prêt-à-l'emploi (Dossier `starter-vault/`)**  
+  Téléchargez/copiez le dossier `starter-vault/` et ouvrez-le directement comme un nouveau coffre dans Obsidian. Tout est pré-configéré "Out of the box" (`AGENTS.md` à la racine, cockpit `Home.md`, et structure de dossiers PARA propre).
+  > 💡 **Conseil Recommandé :** Renommez le dossier `starter-vault/` avec un nom personnalisé qui a du sens pour vous (ex: `ArcaBrain`, `2ndBrain`, `MesNotes`, `MonCoffre`, etc.) avant ou après l'avoir ouvert dans Obsidian !
 
 ---
 

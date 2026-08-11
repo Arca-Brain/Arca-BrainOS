@@ -19,7 +19,7 @@ status: "#completed"
 
 ---
 
-**The AI-Native Cognitive Co-Pilot & Life Operating System for Obsidian**
+**Sovereign agentic workflow & local co-pilot for Obsidian**
 
 🇫🇷 **[Lire la version française (README.fr.md)](README.fr.md)**
 
@@ -29,7 +29,7 @@ status: "#completed"
 [![ROI Speed](https://img.shields.io/badge/ROI-Speed%20x3%20⚡-orange?style=flat-square)](#-proven-field-roi--metrics)
 [![Built with Google Antigravity](https://img.shields.io/badge/Built_with-Google%20Antigravity-4285F4?style=flat-square&logo=google&logoColor=white)](https://github.com/chug/Arca-BrainOS)
 
-**[Quickstart](#-quickstart-1-minute-onboarding)** · **[Manifesto](MANIFESTO.md)** · **[Agentic Skills](#-the-agentic-skills-arsenal)** · **[Architecture](#-architecture--vault-topography-2-part-decoupled-design)** · **[FAQ](#-faq)** · **[Inspiration](#-acknowledgments--inspiration)**
+**[Quickstart](#-quickstart-1-minute-onboarding)** · **[Getting Started](GETTING_STARTED.md)** · **[Manifesto](MANIFESTO.md)** · **[Agentic Skills](#-the-agentic-skills-arsenal)** · **[Architecture](#-architecture--vault-topography-2-part-decoupled-design)** · **[Contributing](CONTRIBUTING.md)** · **[FAQ](#-faq)**
 
 
 ---
@@ -171,7 +171,7 @@ Your-Obsidian-Vault/
 │   ├── templates/                # 📄 Standardized Templates (Project, Theme, Area)
 │   └── tests/                    # 🧪 Automated Test Suite & Fixtures
 │
-├── Home.md                       # Executive Minimalist Cockpit (Focus & Speed Callout)
+├── Home.md                       # Optional Executive Cockpit (Included in starter-vault)
 ├── 0-Inbox/                      # 🧠 PART B: Your 2nd Brain Content (Configurable Paths)
 ├── 1-Projects/                   # Active Projects (P-...)
 ├── 2-Ressources/                 # Knowledge Base
@@ -200,21 +200,19 @@ Your-Obsidian-Vault/
 
 ### 2. Installation (2 Options)
 
-#### 🚀 Option A: Assisted Installation via LLM Agent (Recommended, see [INSTALL.md](INSTALL.md))
-Open your AI CLI runner (Antigravity / Claude Code / OpenCode) inside your vault and prompt your co-pilot with the bootstrap instruction from [`INSTALL.md`](INSTALL.md):
+#### 📁 Option A: Add to an Existing Vault (Dossier `_Arca-BrainOS/`)
+Copy the `_Arca-BrainOS/` engine directory into the root of your existing Obsidian vault. Open your AI CLI runner (Antigravity / Claude Code / OpenCode) inside your vault and prompt your co-pilot with the bootstrap instruction from [`INSTALL.md`](INSTALL.md):
 
 ```text
-Read INSTALL.md and install Arca-BrainOS for me.
+Read https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.md (or local INSTALL.md) and install Arca-BrainOS for me.
 ```
 
-*Your Installer Agent will automatically scan your existing vault arborescence, detect custom folder paths, deploy the core container `_Arca-BrainOS/`, configure path variables in `AGENTS.md`, and execute `arca-test` verification.*
+*Your Installer Agent will automatically scan your existing vault arborescence, detect custom folder paths, deploy `_Arca-BrainOS/`, configure path variables in `AGENTS.md`, and execute `arca-test` verification without overwriting your existing notes.*
 
-#### 🛠️ Option B: Manual Copy
-Copy the `_Arca-BrainOS/` directory into the root of your Obsidian vault:
+#### 📦 Option B: Fresh Start / Ready-to-Use Vault (Dossier `starter-vault/`)
+Copy or clone the pre-configured `starter-vault/` directory and open it directly as a new vault inside Obsidian. Everything is pre-configured out-of-the-box (`AGENTS.md` at root, `Home.md` cockpit, clean PARA folder structure).
 
-```bash
-cp -r starter-kit/_Arca-BrainOS /path/to/your/ObsidianVault/
-```
+> 💡 **Recommended Tip:** Rename the `starter-vault/` directory to a custom name that makes sense for you (e.g. `ArcaBrain`, `2ndBrain`, `MyVault`, `MyNotes`, etc.) before or after opening it in Obsidian!
 
 ### 3. Run Verification Test
 Open your AI terminal inside your Obsidian vault and run:

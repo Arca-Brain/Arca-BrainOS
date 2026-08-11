@@ -19,7 +19,7 @@ status: "#completed"
 
 ---
 
-**Le Co-Pilote Cognitif AI-Native & Système d'Exploitation de Vie pour Obsidian**
+**Workflow agentique souverain & co-pilote local pour Obsidian**
 
 🇬🇧 **[Read the English version (README.md)](README.md)**
 
@@ -29,7 +29,7 @@ status: "#completed"
 [![Vitesse ROI](https://img.shields.io/badge/ROI-Vitesse%20x3%20⚡-orange?style=flat-square)](#-roi-terrain-mesur%C3%A9--m%C3%A9triques)
 [![Développé avec Google Antigravity](https://img.shields.io/badge/D%C3%A9velopp%C3%A9_avec-Google%20Antigravity-4285F4?style=flat-square&logo=google&logoColor=white)](https://github.com/Arca-Brain/Arca-BrainOS)
 
-**[Quickstart](#-quickstart-onboarding-en-1-minute)** · **[Manifeste](MANIFESTO.fr.md)** · **[Compétences Agentiques](#-larsenal-des-comp%C3%A9tences-agentiques)** · **[Architecture](#-architecture--topographie-du-vault-conception-d%C3%A9coupl%C3%A9e)** · **[FAQ](#-faq--gestion-des-risques)** · **[Inspirations](#-remerciements--inspirations)**
+**[Quickstart](#-quickstart-onboarding-en-1-minute)** · **[Guide Onboarding](GETTING_STARTED.fr.md)** · **[Manifeste](MANIFESTO.fr.md)** · **[Compétences Agentiques](#-larsenal-des-comp%C3%A9tences-agentiques)** · **[Architecture](#-architecture--topographie-du-vault-conception-d%C3%A9coupl%C3%A9e)** · **[Contribuer](CONTRIBUTING.fr.md)** · **[FAQ](#-faq--gestion-des-risques)**
 
 
 ---
@@ -171,7 +171,7 @@ Votre-Coffre-Obsidian/
 │   ├── templates/                # 📄 Modèles de Notes (Projet, Theme, Area)
 │   └── tests/                    # 🧪 Banc d'Essai Agentique & Fixtures
 │
-├── Home.md                       # Cockpit Exécutif Minimaliste (Widget Focus & Vitesse)
+├── Home.md                       # Cockpit Exécutif Optionnel (Inclus dans starter-vault)
 ├── 0-Inbox/                      # 🧠 PARTIE B : Vos Contenus 2nd Brain (Sentiers Configurables)
 ├── 1-Projects/                   # Projets Actifs (P-...)
 ├── 2-Ressources/                 # Base de Connaissances
@@ -186,7 +186,7 @@ Votre-Coffre-Obsidian/
 
 ## ⚡ Quickstart (Onboarding en 1 Minute)
 
-> 💡 **Guide Opérationnel Détaillé :** Vous cherchez un guide d'onboarding pas-à-pas complet ? Consultez **[GETTING_STARTED.md](GETTING_STARTED.md)**.
+> 💡 **Guide Opérationnel Détaillé :** Vous cherchez un guide d'onboarding pas-à-pas complet ? Consultez **[GETTING_STARTED.fr.md](GETTING_STARTED.fr.md)**.
 
 ### 1. Prérequis
 * **[Obsidian](https://obsidian.md)** (v1.5+)
@@ -198,15 +198,19 @@ Votre-Coffre-Obsidian/
 
 ### 2. Installation (2 Options)
 
-#### 🚀 Option A : Installation Assistée par Agent IA (Recommandée, voir [INSTALL.fr.md](INSTALL.fr.md))
-Ouvrez votre terminal IA dans votre coffre et lancez l'instruction d'amorçage de [`INSTALL.fr.md`](INSTALL.fr.md) :
+#### 📁 Option A : Ajouter à un coffre Obsidian EXISTANT (Dossier `_Arca-BrainOS/`)
+Copiez le dossier moteur `_Arca-BrainOS/` à la racine de votre coffre actuel. Ouvrez votre terminal IA (Antigravity / Claude Code / OpenCode) dans votre coffre et lancez l'instruction d'amorçage de [`INSTALL.fr.md`](INSTALL.fr.md) :
 
 ```text
-Lis INSTALL.fr.md et installe Arca-BrainOS pour moi.
+Lis https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.fr.md (ou INSTALL.fr.md local) et installe Arca-BrainOS pour moi.
 ```
 
-#### 🛠️ Option B : Copie Manuelle
-Copiez le dossier `_Arca-BrainOS/` à la racine de votre coffre Obsidian.
+*Votre Agent Installateur analysera votre arborescence existante, détectera vos sentiers personnalisés, déploiera `_Arca-BrainOS/`, configurera `AGENTS.md` et exécutera `arca-test` sans détruire ni écraser vos notes actuelles.*
+
+#### 📦 Option B : Démarrer de zéro avec un coffre prêt-à-l'emploi (Dossier `starter-vault/`)
+Téléchargez/copiez le dossier `starter-vault/` pré-configuré et ouvrez-le directement comme un nouveau coffre dans Obsidian. Tout est inclus "Out of the box" (`AGENTS.md` à la racine, cockpit `Home.md`, et structure PARA propre).
+
+> 💡 **Conseil Recommandé :** Renommez le dossier `starter-vault/` avec un nom personnalisé qui a du sens pour vous (ex: `ArcaBrain`, `2ndBrain`, `MesNotes`, `MonCoffre`, etc.) avant ou après l'avoir ouvert dans Obsidian !
 
 ### 3. Test de Vérification
 Dans votre terminal IA, lancez :

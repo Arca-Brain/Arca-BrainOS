@@ -1,7 +1,7 @@
 ---
 date: 2026-08-09
 title: "GETTING_STARTED.md : Detailed Onboarding & Operational Guide for Arca-BrainOS"
-description: Operational walkthrough for setting up DataviewJS, configuring path variables in AGENTS.md, running Deep Work session management (arca-resume & arca-close-session), and using Playbooks.
+description: Operational walkthrough for setting up DataviewJS, understanding the adapted P.A.R.A methodology, configuring path variables in AGENTS.md, running Deep Work session management (arca-resume & arca-close-session), and using Playbooks.
 tags:
   - getting-started
   - onboarding
@@ -13,11 +13,71 @@ status: "#completed"
 
 # 🚀 GETTING STARTED: Detailed Onboarding & Operational Guide
 
-Welcome to **Arca-BrainOS**! This guide complements the high-level **[README.md](README.md)** Quickstart by providing detailed operational instructions for configuring your environment, running Deep Work sessions, and leveraging Playbooks.
+🇫🇷 **[Lire la version française (GETTING_STARTED.fr.md)](GETTING_STARTED.fr.md)**
+
+Welcome to **Arca-BrainOS**! This guide complements the high-level **[README.md](README.md)** Quickstart by providing detailed operational instructions for configuring your environment, understanding the underlying P.A.R.A architecture, running Deep Work sessions, and leveraging Playbooks.
 
 ---
 
-## ⚙️ 1. Detailed Environment & Plugin Configuration
+## 🧠 1. Conceptual Prerequisites & The Adapted P.A.R.A Framework
+
+### A. Conceptual Prerequisite: Building a Second Brain (BASB)
+While understanding the **Building a Second Brain (BASB)** methodology by Tiago Forte is **NOT required for software installation**, it is a **vital conceptual prerequisite** for getting the most out of Arca-BrainOS:
+
+* **Why it matters:** Arca-BrainOS is engineered around Tiago Forte's **P.A.R.A System** (Projects, Areas, Resources, Archives) and the **C.O.D.E Framework** (Capture, Organize, Distill, Execute).
+* **Cognitive Alignment:** Understanding the difference between time-bound active projects and open-ended life responsibilities ensures your AI agents route information accurately and maintain a zero-clutter vault.
+
+---
+
+### B. Detailed P.A.R.A Architecture & Vault Topography
+Arca-BrainOS extends Tiago Forte's P.A.R.A structure into a 5-part decoupled directory hierarchy. Here is the exact structure, purpose, and concrete note examples for each folder:
+
+```text
+Your-Obsidian-Vault/
+├── 0-Inbox/                      # 📥 Buffer & Raw Ingestion Zone
+│   └── Youtube/                  # Raw YouTube transcript imports
+├── 1-Projects/                   # 🚀 Active Projects (P-[Name].md)
+├── 2-Ressources/                 # 📚 Long-Term Knowledge Base
+│   ├── Notes/                    # ✍️ Human-Authored Notes & Journal
+│   ├── IA-generated/             # 🤖 Autonomous AI Write Zone (AI-Distil-...)
+│   └── Themes/                   # 🗺️ Curated Maps of Content / MOCs (T-...)
+├── 3-Domaines-de-vie/            # 🧠 Permanent Life Areas (README.md Index)
+└── 4-Archives/                   # 📦 Completed Work & Inactive Items
+    ├── Projets/                  # Archived Completed Projects
+    └── Areas/                    # Retired Life Areas
+```
+
+#### 📥 `0-Inbox/` (Buffer & Ingestion Zone)
+- **Purpose:** Temporary holding area for unorganized thoughts, web clips, meeting notes, and raw YouTube transcripts before processing.
+- **Rule:** Maintained at "Inbox Zero" using `arca-inbox-process` or `arca-organize-idea`.
+- **Examples:** `0-Inbox/raw-thought-on-ai.md`, `0-Inbox/Youtube/transcript-deepmind.md`.
+
+#### 🚀 `1-Projects/` (Active Endeavors)
+- **Purpose:** Short to medium-term active projects with defined goals, milestones, and completion dates.
+- **Convention:** Notes follow the `P-[Project-Name].md` format and leverage `Template-Projet.md`.
+- **Examples:** `1-Projects/P-Arca-BrainOS.md`, `1-Projects/P-Camino-del-Norte.md`.
+
+#### 📚 `2-Ressources/` (Knowledge Base)
+Divided into 3 distinct layers to maintain total separation between human reflection and AI processing:
+1. **`2-Ressources/Notes/` (Human Writing):** Personal reflections, manual summaries, and long-term reference material authored by you.  
+   *Examples:* `Notes/Principles-of-Zettelkasten.md`, `Notes/Meeting-Notes-2026.md`.
+2. **`2-Ressources/IA-generated/` (Autonomous AI Write Zone):** Isolated write-only container where AI agents store conceptual distillations (`AI-Distil-[Topic].md`) and synthesis guides (`AI-Synthesis-...`).  
+   *Examples:* `IA-generated/AI-Distil-Hermes-Agent.md`, `IA-generated/AI-Synthesis-Workflow.md`.
+3. **`2-Ressources/Themes/` (Maps of Content / MOCs):** Master index cards starting with `T-` that group wikilinks (`[[...]]`) by subject.  
+   *Examples:* `Themes/T-Intelligence-Artificielle.md`, `Themes/T-PKM.md`.
+
+#### 🧠 `3-Domaines-de-vie/` (Life Areas & Long-Term Responsibilities)
+- **Purpose:** Permanent areas of life and ongoing standards of quality without an end date.
+- **Convention:** Indexed via `3-Domaines-de-vie/README.md` and framed by `Template-Area.md`.
+- **Examples:** `3-Domaines-de-vie/Creativite.md`, `3-Domaines-de-vie/Sante.md`, `3-Domaines-de-vie/Travail.md`.
+
+#### 📦 `4-Archives/` (Completed & Retired Content)
+- **Purpose:** Cold storage for finished projects and inactive life areas, preserving historical memory.
+- **Sub-folders:** `4-Archives/Projets/` and `4-Archives/Areas/`.
+
+---
+
+## ⚙️ 2. Detailed Environment & Plugin Configuration
 
 ### A. Dataview Plugin Configuration (Crucial)
 Arca-BrainOS powers its executive cockpit (`Home.md`) and life area focus widgets through **DataviewJS**. Without JS queries enabled, these widgets will not render.
@@ -43,17 +103,20 @@ PATH_SYSTEM: "_Arca-BrainOS/"
 
 ---
 
-## 🪄 2. Installation Protocol
+## 🪄 3. Installation Protocol (2 Options)
 
-* **Assisted Installation (Recommended, 1 Min):** Prompt your AI terminal runner with the instruction from [`INSTALL.md`](INSTALL.md):
+* **📁 Option A: Add to an Existing Vault (Dossier `_Arca-BrainOS/`)**  
+  Copy `_Arca-BrainOS/` into your existing vault root and prompt your AI terminal runner:
   ```text
-  Read INSTALL.md and install Arca-BrainOS for me.
+  Read https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.md (or local INSTALL.md) and install Arca-BrainOS for me.
   ```
-* **Manual Setup:** Copy `_Arca-BrainOS/` into your vault root.
+* **📦 Option B: Fresh Start with Ready-to-Use Vault (Dossier `starter-vault/`)**  
+  Open `starter-vault/` directly in Obsidian.  
+  > 💡 **Tip:** Rename `starter-vault/` to a custom name (`ArcaBrain`, `2ndBrain`, `MyVault`) before or after opening it!
 
 ---
 
-## 🧪 3. Vault Verification (`arca-test`)
+## 🧪 4. Vault Verification (`arca-test`)
 
 Run the automated test suite in your AI terminal to verify path resolution and frontmatter compliance:
 
@@ -63,7 +126,7 @@ arca-test
 
 ---
 
-## 🪵 4. Deep Work Session Management (`arca-resume` & `arca-close-session`)
+## 🪵 5. Deep Work Session Management (`arca-resume` & `arca-close-session`)
 
 Arca-BrainOS introduces a structured, two-step session management protocol for project execution:
 
@@ -95,7 +158,7 @@ arca-close-session 1-Projects/P-MyProject.md
 
 ---
 
-## 📘 5. Leveraging Operational Playbooks
+## 📘 6. Leveraging Operational Playbooks
 
 When you need to perform high-impact structural transformations, refer to the step-by-step guides in `_Arca-BrainOS/playbooks/`:
 

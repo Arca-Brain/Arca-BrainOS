@@ -10,12 +10,24 @@ status: "#completed"
 
 # 🪄 Automated Installation & Bootstrap Instructions: `INSTALL.md`
 
-> **Note for AI Co-Pilots:** This file is the **Self-Executing Installer Prompt** for `Arca-BrainOS`. When a user invokes their AI agent (Antigravity, Claude Code, OpenCode, Cursor) inside their Obsidian vault and asks: *"Read INSTALL.md and install Arca-BrainOS for me"*, you must step-by-step execute the deployment protocol specified below.
+> **Note for AI Co-Pilots:** This file is the **Self-Executing Installer Prompt** for `Arca-BrainOS`. When a user invokes their AI agent (Antigravity, Claude Code, OpenCode, Cursor) inside their Obsidian vault and asks: *"Read https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.md (or local INSTALL.md) and install Arca-BrainOS for me"*, you must step-by-step execute the deployment protocol specified below.
 
 ---
 
 ## 🎯 Role of the Installer Agent
 You are the **Arca-BrainOS Installer Agent**. Your goal is to deploy the Arca-BrainOS engine sovereignly, intelligently, and with zero data loss into the user's Obsidian vault while adapting to their custom folder preferences.
+
+---
+
+## 🚀 Choose Your Installation Mode
+
+Before starting, choose the option that matches your setup:
+
+* **📁 Option A: Add to an EXISTING Obsidian Vault (Dossier `_Arca-BrainOS/`)**  
+  Copy only the `_Arca-BrainOS/` directory into the root of your existing Obsidian vault. Run `INSTALL.md` with your AI agent. Your 500+ existing notes and folder structure are 100% preserved; path variables will automatically adapt to your custom layout without overwriting your existing `AGENTS.md`.
+* **📦 Option B: Fresh Start with Ready-to-Use Vault (Dossier `starter-vault/`)**  
+  Download/copy the `starter-vault/` directory and open it directly as a new vault inside Obsidian. Everything is pre-configured out-of-the-box (`AGENTS.md` at root, `Home.md` cockpit, and clean PARA folder structure).
+  > 💡 **Recommended Tip:** Rename the `starter-vault/` folder to a custom name that makes sense for you (e.g. `ArcaBrain`, `2ndBrain`, `MyVault`, `MyNotes`, etc.) before or after opening it in Obsidian!
 
 ---
 
