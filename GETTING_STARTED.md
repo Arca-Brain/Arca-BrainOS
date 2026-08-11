@@ -1,7 +1,7 @@
 ---
 date: 2026-08-09
 title: "GETTING_STARTED.md : Detailed Onboarding & Operational Guide for Arca-BrainOS"
-description: Operational walkthrough for setting up DataviewJS, understanding the adapted P.A.R.A methodology, configuring path variables in AGENTS.md, running Deep Work session management (arca-resume & arca-close-session), and using Playbooks.
+description: Operational walkthrough for setting up DataviewJS, understanding the adapted P.A.R.A methodology, configuring path variables in AGENTS.md, running Deep Work session management (arca-resume & arca-close-session), and using embedded process guides.
 tags:
   - getting-started
   - onboarding
@@ -15,7 +15,7 @@ status: "#completed"
 
 🇫🇷 **[Lire la version française (GETTING_STARTED.fr.md)](GETTING_STARTED.fr.md)**
 
-Welcome to **Arca-BrainOS**! This guide complements the high-level **[README.md](README.md)** Quickstart by providing detailed operational instructions for configuring your environment, understanding the underlying P.A.R.A architecture, running Deep Work sessions, and leveraging Playbooks.
+Welcome to **Arca-BrainOS**! This guide complements the high-level **[README.md](README.md)** Quickstart by providing detailed operational instructions for configuring your environment, understanding the underlying P.A.R.A architecture, running Deep Work sessions, and leveraging the 7 embedded process guides.
 
 ---
 
@@ -101,6 +101,12 @@ PATH_IA_GENERATED: "2-Ressources/IA-generated/"
 PATH_SYSTEM: "_Arca-BrainOS/"
 ```
 
+### C. Web Ingestion with Official Obsidian Web Clipper Extension
+To capture articles, web pages, and documentation directly from your browser into your vault with zero manual friction:
+1. Install the official **[Obsidian Web Clipper](https://obsidian.md/clipper)** extension (`https://obsidian.md/clipper`) on your browser (Chrome, Firefox, Safari, Brave).
+2. Set the default destination folder to `0-Inbox/`.
+3. Captured web pages are automatically formatted into clean Markdown with frontmatter (`title`, `url`, `date`), ready for qualification by `arca-inbox-process` or distillation by `arca-distill`.
+
 ---
 
 ## 🪄 3. Installation Protocol (2 Options)
@@ -158,12 +164,17 @@ arca-close-session 1-Projects/P-MyProject.md
 
 ---
 
-## 📘 6. Leveraging Operational Playbooks
+## 📚 6. Leveraging Embedded Process Guides (`process/`)
 
-When you need to perform high-impact structural transformations, refer to the step-by-step guides in `_Arca-BrainOS/playbooks/`:
+To understand the core logic of each step and guide your AI co-pilot, refer to the 7 embedded process guides in `_Arca-BrainOS/process/`:
 
-* **[[Playbook-Retrofit-et-Migration-de-Coffre-Existant]]** : Protocol for auditing, segmenting, and retrofitting legacy vaults (600+ notes) cleanly without losing human writing style.
-* **[[Playbook-Cartographie-et-Processus-de-Vie]]** : Methodology for auditing recurring life tasks and defining human vs. AI automation boundaries.
+* **`Process-Inbox-Clean-et-Dispatch.md`**: Inbox qualification, YAML cleaning, and dispatching.
+* **`Process-Ingestion-et-Distillation-de-Medias.md`**: Media transcript synthesis and theme anchoring.
+* **`Process-Exploration-Semantique-et-Recherche.md`**: Semantic RAG search and cognitive bridging.
+* **`Process-Audit-et-Maintenance-du-Vault.md`**: PARA vault health diagnostics and link health audit.
+* **`Process-Pilotage-de-Projets-et-Deep-Work.md`**: Deep Work session framing and logging.
+* **`Process-Capitalisation-et-Synthese-MOC.md`**: Knowledge synthesis and Theme MOC updates.
+* **`Process-Test-et-Evaluation-Agentique.md`**: Test harness suite and automated assertions.
 
 ---
 

@@ -141,6 +141,7 @@ Most knowledge workers remain trapped in Phase 1 or 2:
 ### 1. Prerequisites
 * **[Obsidian](https://obsidian.md)** (v1.5+)
 * **Dataview Plugin** (Enabled with JS queries turned ON in Obsidian settings)
+* **[Obsidian Web Clipper](https://obsidian.md/clipper)** (Official browser extension to capture articles and web pages into `0-Inbox/`)
 * An AI coding assistant (Google Antigravity CLI, Claude Code, OpenCode, Cursor, etc.)
 
 ### 2. Installation (Choose Option A or Option B)

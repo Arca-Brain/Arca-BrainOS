@@ -200,6 +200,8 @@ Votre-Coffre-Obsidian/
 * **Plugin Communautaire Requis :**
   * **[Dataview Plugin](https://github.com/blacksmithgu/obsidian-dataview) :** Alimente le cockpit `Home.md` et les widgets de focus.
     * *Réglages requis :* Activez **"Enable JavaScript Queries"** (`dataviewjs`) et **"Enable Inline JavaScript Queries"** sous `Dataview > Settings`.
+* **Extension de Capture Web Recommandée :**
+  * **[Obsidian Web Clipper](https://obsidian.md/clipper) :** Extension de navigateur officielle (`https://obsidian.md/clipper`) pour capturer directement des articles et pages web dans `0-Inbox/`.
 * **Runner Terminal IA :**
   * Un exécuteur de terminal IA exécuté localement dans votre coffre (ex: **Google Antigravity**, **Claude Code**, **OpenCode**, ou **Cursor**).
 
