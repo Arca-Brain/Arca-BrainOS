@@ -157,23 +157,30 @@ Most knowledge workers remain trapped in Phase 1 or 2:
 
 ---
 
-## 🛠️ The Agentic Skills Arsenal
+## 🔌 The Agentic Skills Arsenal
 
-| Skill Name | Command | Role & Workflow |
-| :--- | :--- | :--- |
-| **`arca-inbox-process`** | `arca-inbox-process` | Cleans YAML frontmatter and dispatches raw notes into `0-Inbox/`. |
-| **`arca-organize-idea`** | `arca-organize-idea` | Formats raw ideas, extracts key takeaways, and maps project tasks. |
-| **`arca-youtube`** | `arca-youtube [URL]` | Extracts YouTube transcripts and generates structured inbox notes. |
-| **`arca-distill`** | `arca-distill` | Master orchestration skill: synthesizes, anchors in Themes (`T-`), and analyzes impact. |
-| **`arca-synthesize`** | `arca-synthesize` | Writes conceptual syntheses (`AI-Distil-...`) in `2-Ressources/IA-generated/`. |
-| **`arca-converge`** | `arca-converge` | Anchors distillations into Theme MOC cards (`T-`) and updates the vault index. |
-| **`arca-impact`** | `arca-impact` | Analyzes impact of new distillations on active projects (`P-`). |
-| **`arca-query`** | `arca-query` | RAG semantic search and cognitive triage across notes. |
-| **`arca-audit`** | `arca-audit` | Vault health diagnostic: orphaned notes, broken links, and PARA metrics. |
-| **`arca-test-suite`** | `arca-test` | Automated test harness evaluating agentic assertions. |
-| **`arca-resume`** | `arca-resume [Note]` | Deep Work session framing: cognitive alignment and session log entry. |
-| **`arca-close-session`**| `arca-close-session` | Closes session, logs completed tasks, and calculates AI ROI metrics. |
-| **`arca-create-note`** | `create-project`, `create-theme`, `create-domaine` | Interactively creates and links Projects (`P-`), Themes (`T-`), or Areas. |
+All agentic capabilities are modular Markdown skills stored in `_Arca-BrainOS/skills/` and executable via your AI coding assistants (**Antigravity**, **Claude Code**, **OpenCode**, **Cursor**):
+
+### 📥 1. Capture & Triage
+* `arca-inbox-process`: Cleans YAML frontmatter, formats raw notes, and dispatches incoming files.
+* `arca-organize-idea`: Formats raw ideas into actionable notes without losing original human text.
+* `arca-youtube`: Extracts transcripts and metadata from YouTube videos to create structured inbox notes.
+
+### 🧪 2. Distillation & Theme Anchoring (*The Killer Feature*)
+* `arca-distill`: Master media ingestion skill (Synthesize $\rightarrow$ Anchor $\rightarrow$ Archive $\rightarrow$ Impact Analysis).
+* `arca-synthesize`: Writes conceptual syntheses (`AI-Distil-...`) into `/2-Ressources/IA-generated/`.
+* `arca-converge`: Anchors distillations into Theme MOC cards (`T-`) via wikilinks.
+* `arca-impact`: Scans active projects (`P-`) to propose concrete tasks stemming from new knowledge.
+
+### 🔍 3. Exploration & Vault Maintenance
+* `arca-query`: Conversational RAG co-pilot creating cognitive bridges across distant ideas.
+* `arca-audit`: Vault health diagnostic, orphan note detection, broken link repair, and ROI tracking.
+* `arca-test-suite`: Automated test harness executing non-regression assertions.
+
+### 🪵 4. Deep Work & Execution
+* `arca-resume`: Cognitive framing for work sessions (progress summary and intent setting).
+* `arca-close-session`: Closes Deep Work sessions, updates project worklog, and calculates AI ROI.
+* `arca-create-note`: Fast instantiation via direct shortcuts (`create-project`, `create-theme`, `create-domaine`).
 
 ---
 
