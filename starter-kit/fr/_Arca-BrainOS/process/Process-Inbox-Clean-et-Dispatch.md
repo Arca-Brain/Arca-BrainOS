@@ -57,7 +57,7 @@ tags:
 | :--- | :--- | :--- | :--- | :--- |
 | **1. Analyse & Normalisation** | **Agent IA** | Commande `arca-inbox-process` (Analyse sémantique & YAML). | **Aucun** : Exécution automatique de la propreté YAML. | 🟢 (Opérationnel) |
 | **2. Triage & Aiguillage** | **Agent IA** | Détection automatique : Source externe vs Note personnelle. | **Validation** : Valider la nature de la note en cas d'ambiguïté. | 🟢 (Opérationnel) |
-| **3. Initialisation Directe** | **Agent IA** | Skill `arca-create-note` (`create-project`, `create-theme`, `create-domaine`). | **Intention** : Spécifier le titre, le domaine et le thème de la nouvelle note. | 🟢 (Opérationnel) |
+| **3. Initialisation & Chaînage** | **Agent IA** | Commande `arca-create-note` (`create-project`, `create-theme`, `create-domaine`). | **Validation Interactive** : Valider la proposition de maillage, l'instanciation en chaîne des nouveaux Thèmes (`themes`) et le scan de justification des Domaines (`areas`). | 🟢 (Opérationnel) |
 | **4. Proposition de maillage** | **Agent IA** | Suggestion de wikilinks vers `T-` et `P-`. | **Arbitrage** : Accepter ou refuser les liens sémantiques. | 🟢 (Opérationnel) |
 | **5. Classement physique** | **Automatisation** | Déplacement du fichier vers son dossier permanent (`1-Projects/`, `2-Ressources/Themes/`, etc.). | **Contrôle** : Validation du dossier cible. | 🟢 (Opérationnel) |
 

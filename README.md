@@ -1,7 +1,7 @@
 ---
 date: 2026-08-08
-title: "Arca-BrainOS : Official GitHub Open-Source Release"
-description: "Official README for the open-source release of Arca-BrainOS on GitHub."
+title: "Arca-BrainOS: Official GitHub Release"
+description: "Official English README for Arca-BrainOS open-source GitHub release."
 tags:
   - readme
   - github
@@ -12,10 +12,10 @@ status: "#completed"
 
 # 🧠 Arca-BrainOS
 
-> *"My ark is not a refuge, it is an engine... Dream conceives, but action alone accomplishes."*  
+> *"My ark is not a refuge, it is an engine... Dreams conceive, but only action accomplishes."*  
 > **Fernando Pessoa**  
 >  
-> *(Inspired by Fernando Pessoa's legendary wooden trunk, "A Arca", holding thousands of unorganized fragments, manuscripts, and heteronyms waiting to become a universe. Arca-BrainOS is that execution engine for your digital mind.)*
+> *(Inspired by Fernando Pessoa's famous wooden trunk, "A Arca", containing thousands of fragments, manuscripts, and heteronyms waiting to become a universe. Arca-BrainOS is that execution engine for your digital mind.)*
 
 ---
 
@@ -26,33 +26,33 @@ status: "#completed"
 [![Obsidian](https://img.shields.io/badge/Obsidian-Vault%20Ready-7C3AED?style=flat-square&logo=obsidian&logoColor=white)](https://obsidian.md)
 [![License: Dual AGPLv3 / CC BY-NC-SA 4.0](https://img.shields.io/badge/License-Dual%20AGPLv3%20%2F%20CC%20BY--NC--SA%204.0-blue?style=flat-square)](LICENSE)
 [![LLM Agnostic](https://img.shields.io/badge/LLM-Agnostic%20%26%20Portable-emerald?style=flat-square)](#-key-design-principles)
-[![ROI Speed](https://img.shields.io/badge/ROI-Speed%20x3%20⚡-orange?style=flat-square)](#-proven-field-roi--metrics)
-[![Built with Google Antigravity](https://img.shields.io/badge/Built_with-Google%20Antigravity-4285F4?style=flat-square&logo=google&logoColor=white)](https://github.com/chug/Arca-BrainOS)
+[![ROI Speed](https://img.shields.io/badge/ROI-Speed%20x3-orange?style=flat-square)](#-proven-field-roi--metrics)
+[![Built with Google Antigravity](https://img.shields.io/badge/Built_with-Google%20Antigravity-4285F4?style=flat-square&logo=google&logoColor=white)](https://github.com/Arca-Brain/Arca-BrainOS)
 
 **[Quickstart](#-quickstart-1-minute-onboarding)** · **[Getting Started](GETTING_STARTED.md)** · **[Manifesto](MANIFESTO.md)** · **[Agentic Skills](#-the-agentic-skills-arsenal)** · **[Architecture](#-architecture--vault-topography-2-part-decoupled-design)** · **[Contributing](CONTRIBUTING.md)** · **[FAQ](#-faq)**
 
 
 ---
 
-> 🎯 **Core Concept:** Move from scattered thoughts and fragmented AI tools to a persistent, AI-native operating system that executes cognitive workflows directly inside your local Obsidian Markdown vault.
+> 🎯 **Core Concept:** Move from scattered thoughts and fragmented AI tools to a sovereign, AI-native operating system executing your cognitive workflows directly inside your local Obsidian vault.
 
 
-### ⭐ If Arca-BrainOS is useful to you, star the repository!
+### ⭐ If you find Arca-BrainOS helpful, star the repository on GitHub!
 
-Stars help more thinkers and builders find the project and keep it moving forward.
+Stars help other thinkers and builders discover the project and move it forward.
 
-[![Star Arca-BrainOS on GitHub](https://img.shields.io/badge/Star%20Arca--BrainOS%20on%20GitHub-⭐-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/chug/Arca-BrainOS)
+[![Star Arca-BrainOS on GitHub](https://img.shields.io/badge/Star%20Arca--BrainOS%20on%20GitHub-⭐-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Arca-Brain/Arca-BrainOS)
 
 
 ---
 
-## 💥 The Problem: Why Most Second Brains Rot
+## 💥 The Problem: Why Most Second Brains Die Out
 
-Building a Second Brain (PKM) often turns into a friction and maintenance trap:
+Building a Second Brain (PKM) often turns into a maintenance nightmare:
 
-* **Fragmented Ecosystems & Walled-Garden SaaS:** Your thoughts, documents, and workflows are scattered across multiple repositories, web tabs, and SaaS platforms which increasingly act as proprietary guardians of your personal data, locking your context in cloud silos.
-* **Heavy Administrative Note Maintenance:** Constant mental fatigue from manual vault housekeeping, sorting inboxes, moving files around, formatting notes, and maintaining link structures.
-* **The Configuration Trap:** Wasting dozens of hours trying to configure an "effective system" inside your vault (tweaking Dataview scripts, CSS snippets, and complex folder structures) rather than executing real-world projects.
+* **Fragmented ecosystems & proprietary SaaS:** Your thoughts, documents, and workflows are scattered across multiple repositories, web tabs, and SaaS platforms that increasingly become proprietary gatekeepers of your personal data, locking your context into cloud silos.
+* **Heavy administrative maintenance overhead:** Constant mental fatigue spent on manual vault housekeeping: sorting the inbox, moving files around, formatting notes, and maintaining links.
+* **The configuration trap:** Spending dozens of hours trying to configure a perfect system in your vault (tweaking Dataview scripts, CSS snippets, and complex folder structures) instead of executing actual projects and getting real outcomes.
 
 ---
 
@@ -60,250 +60,159 @@ Building a Second Brain (PKM) often turns into a friction and maintenance trap:
 
 **Arca-BrainOS** is an open-source, AI-native operating system built for **Obsidian**. It equips your vault with a fleet of **autonomous agentic skills (`Skill_arca-*.md`)** that execute routine cognitive tasks, structure your knowledge, and co-pilot your Deep Work sessions.
 
-> 📜 **Philosophy & Vision:** Want to understand the anthropological mutation, and motivation behind this architecture? Read **[The Sovereign AI Workflow Manifesto (MANIFESTO.md)](MANIFESTO.md)**.
+> 📜 **Philosophy & Vision:** Want to understand the anthropological mutation and motivation behind this architecture? Read **[The Sovereign AI Workflow Manifesto (MANIFESTO.md)](MANIFESTO.md)**.
 
+```text
+     [ Raw Inputs: YouTube Videos, Articles, Transcripts, Notes ]
+                                │
+                                ▼
+ ┌─────────────────────────────────────────────────────────────┐
+ │ 1. Ingestion & Distillation (Capture & AI Syntheses)        │ 🤖 100% Automated
+ └─────────────────────────────────────────────────────────────┘
+                                │
+                                ▼
+ ┌─────────────────────────────────────────────────────────────┐
+ │ 2. Organization & Weaving (Themes T-, Areas & Links)        │ 🤝 AI-Assisted
+ └─────────────────────────────────────────────────────────────┘
+                                │
+                                ▼
+ ┌─────────────────────────────────────────────────────────────┐
+ │ 3. Deep Work & Execution (Projects P- & Production)         │ 🧠 Human Focus
+ └─────────────────────────────────────────────────────────────┘
+                                │
+                                ▼
+ ┌─────────────────────────────────────────────────────────────┐
+ │ 4. Audit & Maintenance (Vault Health & RAG Search)          │ ⚙️ AI Supervision
+ └─────────────────────────────────────────────────────────────┘
+                                │
+                                ▼
+          [ Sustainable Long-Term System & 3x Speed Gain ⚡ ]
 ```
-       [ External Inputs: Videos, Books, Web, Transcripts ]
-                                │
-                                ▼
-        ┌──────────────────────────────────────────────┐
-        │  1. Capture & Triage (0-Inbox/ & Youtube)    │
-        └──────────────────────────────────────────────┘
-                                │
-                                ▼
-        ┌──────────────────────────────────────────────┐
-        │ 2. Distillation & Theme Anchor (T- & Distil) │
-        └──────────────────────────────────────────────┘
-                                │
-                                ▼
-        ┌──────────────────────────────────────────────┐
-        │ 3. Exploration & Vault Health (RAG & Audit)  │
-        └──────────────────────────────────────────────┘
-                                │
-                                ▼
-        ┌──────────────────────────────────────────────┐
-        │ 4. Deep Work & Execution (Projects & ROI)    │
-        └──────────────────────────────────────────────┘
-                                │
-                                ▼
-            [ High-Impact Outcomes & 3x Speed Gain ]
-```
+
+#### 🎯 Why This System Never Rots (The Arca-BrainOS Difference):
+
+- **📥 1. Ingestion & Distillation (Automated):** Raw inputs (videos, articles, podcasts) are automatically captured and distilled into dense, actionable inbox notes.
+- **🗂️ 2. Organization & Weaving (Assisted):** AI handles tedious vault housekeeping. It weaves wikilinks (`[[...]]`), populates Theme cards (`T-`), and updates Life Areas. **Zero organizational fatigue**: your vault stays clean, structured, and sustainable over the long term without manual overhead.
+- **🚀 3. Deep Work & Execution (Human Focus):** Tedious project management is delegated. You focus 100% on high-value creation and decision-making for active projects (`P-`). During Deep Work sessions, you freely choose your level of AI assistance (co-writing, structuring, or 100% human authorship).
+- **🩺 4. Audit & Maintenance (Supervised):** AI monitors vault health (broken links, orphaned notes, semantic RAG search via `arca-query`), subject only to your approval of structural choices.
 
 ---
 
 ## ⚡ Proven Field ROI & Metrics
 
-Arca-BrainOS is built on **empirical field data**, continuously tracked across real engineering, research, and writing projects.
+Arca-BrainOS is grounded in **real empirical data**, continuously tracked across actual engineering, research, and writing projects.
 
-> 💡 **Crucial Context:** These metrics were not measured on a clean, empty starter vault. They were achieved on a **real, pre-existing vault** containing hundreds of legacy notes. Once convinced of the system's power, AI co-pilots executed a progressive retrofit of legacy notes, YAML frontmatter, and Theme cards cleanly.
+> 💡 **Crucial Context:** These metrics were NOT measured on a clean, empty demo vault. They were obtained on an **actual pre-existing vault** containing hundreds of legacy notes. Once convinced of the system's power, the AI co-pilots execute a progressive, clean retrofit of historical notes, YAML, and Theme MOCs.
 
-| Metric                           |       Measured Value        | Field Significance                            |
-| :------------------------------- | :-------------------------: | :-------------------------------------------- |
-| **Vault Baseline**               | **Pre-existing Real Vault** | Tested on real legacy notes, not a blank demo |
-| **Completed Deep Work Sessions** |       **62 sessions**       | Real-world engineering & knowledge work       |
-| **Real Time Invested with AI**   |          **80h40**          | Tracked session time with Arca-BrainOS        |
-| **Estimated Time Without AI**    |         **~258h00**         | Harvard / MIT knowledge work baseline         |
-| **Net Time Saved**               |       **🚀 +177h20**        | Direct cognitive effort liberated             |
-| **Speed Multiplier**             |          **⚡ x3**          | **3x faster project execution**               |
+| Metric                           |       Measured Value        | Field Significance                                 |
+| :------------------------------- | :-------------------------: | :------------------------------------------------- |
+| **Vault Baseline**               |  **Actual Pre-existing Vault** | Tested on real historical notes, not a sandbox    |
+| **Completed Deep Work Sessions** |       **62 sessions**       | Real engineering & intellectual production        |
+| **Real Time Invested with AI**   |          **80h40**          | Actual session time tracked with Arca-BrainOS      |
+| **Estimated Time Without AI**     |         **~258h00**         | Knowledge work benchmark (MIT/Harvard estimates)   |
+| **Net Time Saved**               |       **🚀 +177h20**        | Direct cognitive effort saved                      |
+| **Speed Multiplier**             |          **⚡ x3**          | **3x faster project execution**                    |
 
 ---
 
 ## 🧩 The 3 Phases of AI Adoption
 
-Most knowledge workers get stuck in Phase 1 or 2:
+Most knowledge workers remain trapped in Phase 1 or 2:
 
-1. **Phase 1: Opportunistic Usage (Ad-hoc Prompting):** Asking one-off questions in isolated ChatGPT/Claude web interfaces. High friction, zero memory.
-2. **Phase 2: Fragmented Usage (Custom Gems & Projects):** Creating silos inside proprietary AI platforms (ChatGPT Projects, Claude Projects). Context is locked in third-party clouds.
-3. **Phase 3: Systemic Integration (Arca-BrainOS):** Your AI agents operate directly on your local Markdown vault with full, real-time context. **Zero lock-in, infinite memory.**
+1. **Phase 1: Opportunistic Usage (Ad-hoc Prompting):** Asking isolated questions in ChatGPT/Claude web interfaces. High friction, zero memory.
+2. **Phase 2: Fragmented Usage (Gems & Projects):** Creating silos in proprietary platforms (ChatGPT Projects, Claude Projects). Context is locked into third-party clouds.
+3. **Phase 3: Systemic Integration (Arca-BrainOS):** Your AI agents operate directly on your local Markdown vault with full real-time context. **Zero lock-in, infinite memory.**
 
 ---
 
 ## 💎 Key Design Principles
 
-1. **LLM & Model Agnostic:** Works seamlessly with Claude 3.5 Sonnet, Gemini 1.5 Pro, GPT-4o, or local LLMs.
-2. **Open Markdown Standard:** 100% human-readable Markdown files. No proprietary databases or lock-in.
-3. **Preserve Human Voice:** AI agents never delete or rewrite human-authored text; they enrich metadata and sylvan wikilinks.
-4. **Self-Documenting AI Extension:** When creating a new skill or process, **simply ask your LLM agent to create it**. Your co-pilot will handle the skill logic and automatically perform all systemic updates (`AGENTS.md`, `skills/README.md`, `process/README.md`) while maintaining test suite compliance (`arca-test`).
-
----
-
-## 🔌 The Agentic Skills Arsenal
-
-All agentic capabilities are modular Markdown skills stored inside `_Arca-BrainOS/skills/` and executable via terminal AI runners (**Antigravity**, **Claude Code**, **OpenCode**, **Cursor**):
-
-### 📥 1. Capture & Triage
-* `arca-inbox-process`: Normalizes YAML frontmatter, cleans raw notes, and routes inputs.
-* `arca-organize-idea`: Structures raw thoughts into actionable notes while preserving 100% of human text.
-* `arca-youtube`: Extracts YouTube transcripts and creates structured inbox notes.
-
-### 🧪 2. Distillation & Theme Anchoring (*The Killer Feature*)
-* `arca-distill`: Master orchestrator for media ingestion (Synthesis $\rightarrow$ Anchoring $\rightarrow$ Archive $\rightarrow$ Impact).
-* `arca-synthesize`: Drafts concept-dense summaries (`AI-Distil-...`) in `/2-Ressources/IA-generated/`.
-* `arca-converge`: Anchors AI distillations into human-curated Theme cards (`T-`) via wikilinks.
-* `arca-impact`: Scans active projects (`P-`) to propose concrete, actionable next steps.
-
-### 🔍 3. Exploration & Vault Maintenance
-* `arca-query`: Conversational RAG co-pilot that bridges distant ideas across notes.
-* `arca-audit`: Health diagnostic checking PARA compliance, orphan notes, broken links, and ROI metrics.
-* `arca-test-suite`: Automated agentic test harness running quality assertions for non-regression.
-
-### 🪵 4. Deep Work & Execution
-* `arca-resume`: Cognitively frames Deep Work sessions by scanning recent progress and defining focus.
-* `arca-close-session`: Closes Deep Work sessions, updates project worklogs, and calculates real ROI metrics.
-* `arca-create-note`: Fast direct instantiation via shortcuts (`create-project`, `create-theme`, `create-domaine`).
-
----
-
-## 📂 Architecture & Vault Topography (2-Part Decoupled Design)
-
-Arca-BrainOS leverages a **strictly decoupled 2-part architecture**:
-
-1. **Part A: The OS Engine (`_Arca-BrainOS/`)**: A single, 100% portable core container containing skills, processes, templates, test suite, and `AGENTS.md`.
-2. **Part B: Your 2nd Brain Content (Existing or New Vault)**: Your personal Obsidian notes, projects, and folders. **Arca-BrainOS is 100% folder-agnostic**: if you have a pre-existing vault structure, simply adapt the path variables in `AGENTS.md` (`PATH_INBOX`, `PATH_PROJECTS`, `PATH_THEMES`, `PATH_AREAS`) to connect Arca-BrainOS to your custom folder hierarchy!
-
-```text
-Your-Obsidian-Vault/
-├── _Arca-BrainOS/                # 🧠 PART A: The OS Core Container (100% Portable)
-│   ├── AGENTS.md                 # Universal System Prompt & Path Variables (PATH_PROJECTS, etc.)
-│   ├── log.md                    # Single-line append audit log
-│   ├── skills/                   # 🔌 Modular Agentic Skills (Skill_arca-*.md)
-│   ├── process/                  # 📚 Human/AI Methodological Guides (Process-*.md)
-│   ├── templates/                # 📄 Standardized Templates (Project, Theme, Area)
-│   └── tests/                    # 🧪 Automated Test Suite & Fixtures
-│
-├── Home.md                       # Optional Executive Cockpit (Included in starter-vault)
-├── 0-Inbox/                      # 🧠 PART B: Your 2nd Brain Content (Configurable Paths)
-├── 1-Projects/                   # Active Projects (P-...)
-├── 2-Ressources/                 # Knowledge Base
-│   ├── Notes/                    # Human notes & journal entries
-│   ├── IA-generated/             # AI Write-Only Zone (AI-Distil-...)
-│   └── Themes/                   # Curated Theme Cards (T-...)
-├── 3-Domaines-de-vie/            # Life Areas (README.md canonical index)
-└── 4-Archives/                   # Completed Projects & Inactive Areas
-```
+1. **🔒 Sovereign & Offline-First:** Your knowledge lives in local plain-text Markdown (`.md`). You own your data forever.
+2. **🤖 LLM-Agnostic & Portable:** Works with Google Antigravity, Claude Code, OpenCode, ChatGPT, or local LLMs.
+3. **🤝 Organological Symbiosis:** AI handles administrative friction; humans retain intentional friction and creative vision.
+4. **📦 Decoupled Architecture:** Core engine (`_Arca-BrainOS/`) is isolated from user content (`0-Inbox/`, `1-Projects/`, etc.).
 
 ---
 
 ## ⚡ Quickstart (1-Minute Onboarding)
 
-> 💡 **Step-by-Step Walkthrough:** Looking for an in-depth onboarding guide? Check out **[GETTING_STARTED.md](GETTING_STARTED.md)**.
+> 💡 **Detailed Operational Guide:** Looking for a step-by-step onboarding walkthrough? Read **[GETTING_STARTED.md](GETTING_STARTED.md)**.
 
 ### 1. Prerequisites
 * **[Obsidian](https://obsidian.md)** (v1.5+)
-* **Conceptual Mindset (Recommended):**
-  * Basic familiarity with the **Second Brain (BASB)** philosophy and **P.A.R.A Method** (Projects, Areas, Resources, Archives) by Tiago Forte. Arca-BrainOS supercharges this methodology, so understanding active projects vs. long-term areas helps you get the most out of your AI co-pilot.
-* **Required Obsidian Community Plugins:**
-  * **[Dataview Plugin](https://github.com/blacksmithgu/obsidian-dataview):** Powering the `Home.md` executive cockpit and active areas focus widgets.
-    * *Required Settings:* Toggle ON **"Enable JavaScript Queries"** (`dataviewjs`) and **"Enable Inline JavaScript Queries"** under `Dataview > Settings`.
-* **AI Terminal CLI Runner:**
-  * An AI CLI runner executed locally inside your Obsidian vault directory (e.g. **Google Antigravity**, **Claude Code**, **OpenCode**, or **Cursor**).
+* **Dataview Plugin** (Enabled with JS queries turned ON in Obsidian settings)
+* An AI coding assistant (Google Antigravity CLI, Claude Code, OpenCode, Cursor, etc.)
 
-### 2. Installation (2 Options)
+### 2. Installation (Choose Option A or Option B)
 
-#### 📁 Option A: Add to an Existing Vault (Dossier `_Arca-BrainOS/`)
-Copy the `_Arca-BrainOS/` engine directory into the root of your existing Obsidian vault. Open your AI CLI runner (Antigravity / Claude Code / OpenCode) inside your vault and prompt your co-pilot with the bootstrap instruction from [`INSTALL.md`](INSTALL.md):
+- **📁 Option A: Existing Vault**  
+  Copy `_Arca-BrainOS/` into your existing Obsidian vault. Then tell your AI assistant:
+  ```text
+  Read https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.md and install Arca-BrainOS for me.
+  ```
+
+- **📦 Option B: Fresh Start (Starter Vault)**  
+  Open `starter-vault/` directly in Obsidian as a new vault (feel free to rename `starter-vault` to your preferred vault name like `MyVault` or `2ndBrain`).
+
+---
+
+## 🛠️ The Agentic Skills Arsenal
+
+| Skill Name | Command | Role & Workflow |
+| :--- | :--- | :--- |
+| **`arca-inbox-process`** | `arca-inbox-process` | Cleans YAML frontmatter and dispatches raw notes into `0-Inbox/`. |
+| **`arca-organize-idea`** | `arca-organize-idea` | Formats raw ideas, extracts key takeaways, and maps project tasks. |
+| **`arca-youtube`** | `arca-youtube [URL]` | Extracts YouTube transcripts and generates structured inbox notes. |
+| **`arca-distill`** | `arca-distill` | Master orchestration skill: synthesizes, anchors in Themes (`T-`), and analyzes impact. |
+| **`arca-synthesize`** | `arca-synthesize` | Writes conceptual syntheses (`AI-Distil-...`) in `2-Ressources/IA-generated/`. |
+| **`arca-converge`** | `arca-converge` | Anchors distillations into Theme MOC cards (`T-`) and updates the vault index. |
+| **`arca-impact`** | `arca-impact` | Analyzes impact of new distillations on active projects (`P-`). |
+| **`arca-query`** | `arca-query` | RAG semantic search and cognitive triage across notes. |
+| **`arca-audit`** | `arca-audit` | Vault health diagnostic: orphaned notes, broken links, and PARA metrics. |
+| **`arca-test-suite`** | `arca-test` | Automated test harness evaluating agentic assertions. |
+| **`arca-resume`** | `arca-resume [Note]` | Deep Work session framing: cognitive alignment and session log entry. |
+| **`arca-close-session`**| `arca-close-session` | Closes session, logs completed tasks, and calculates AI ROI metrics. |
+| **`arca-create-note`** | `create-project`, `create-theme`, `create-domaine` | Interactively creates and links Projects (`P-`), Themes (`T-`), or Areas. |
+
+---
+
+## 🏗️ Architecture & Vault Topography
+
+Arca-BrainOS uses a 2-part decoupled architecture:
 
 ```text
-Read https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.md (or local INSTALL.md) and install Arca-BrainOS for me.
+Your-Obsidian-Vault/
+├── AGENTS.md                     # Universal system prompt & vault topography config
+├── Home.md                       # Optional Executive Cockpit (Included in starter-vault)
+├── _Arca-BrainOS/                # 🧠 Core Agentic Engine (100% Portable & Self-Contained)
+│   ├── log.md                    # Single-line audit log
+│   ├── skills/                   # Agentic skills (Skill_arca-*.md)
+│   ├── process/                  # Methodological process guides (Process-*.md)
+│   ├── templates/                # Standardized note templates
+│   └── tests/                    # Test harness fixtures & assertions
+├── 0-Inbox/                      # Ingestion & raw captures
+├── 1-Projects/                   # Active projects (P-*.md)
+├── 2-Ressources/                 # Knowledge base (Notes/, IA-generated/, Themes/)
+├── 3-Domaines-de-vie/            # Permanent life areas (README.md index)
+└── 4-Archives/                   # Completed projects & dormant areas
 ```
 
-*Your Installer Agent will automatically scan your existing vault arborescence, detect custom folder paths, deploy `_Arca-BrainOS/`, configure path variables in `AGENTS.md`, and execute `arca-test` verification without overwriting your existing notes.*
+---
 
-#### 📦 Option B: Fresh Start / Ready-to-Use Vault (Dossier `starter-vault/`)
-Copy or clone the pre-configured `starter-vault/` directory and open it directly as a new vault inside Obsidian. Everything is pre-configured out-of-the-box (`AGENTS.md` at root, `Home.md` cockpit, clean PARA folder structure).
+## 🤝 Contributing
 
-> 💡 **Recommended Tip:** Rename the `starter-vault/` directory to a custom name that makes sense for you (e.g. `ArcaBrain`, `2ndBrain`, `MyVault`, `MyNotes`, etc.) before or after opening it in Obsidian!
-
-### 3. Run Verification Test
-Open your AI terminal inside your Obsidian vault and run:
-
-```bash
-arca-test
-```
-*Your agent will run automated quality assertions to verify full vault health and path configuration.*
+Contributions are welcome! Read **[CONTRIBUTING.md](CONTRIBUTING.md)** to learn how to add skills, process guides, or test assertions.
 
 ---
 
-## 🎬 Your First 2-Minute Workflow (Concrete Example)
+## 📜 License
 
-Here is how Arca-BrainOS turns raw information into active project execution in 4 automated steps:
-
-### 1. Capture (Drop an input into `0-Inbox/`)
-Drop a YouTube video URL or paste an article transcript into `0-Inbox/video-transcript.md`.
-
-### 2. Distill (Run 1 Agent Command)
-Open your AI terminal and type:
-```bash
-arca-distill 0-Inbox/video-transcript.md
-```
-
-### 3. Watch the Magic Happen (30 Seconds)
-Your AI co-pilot executes 4 sequential actions automatically:
-1. 🧪 **Drafts Synthesis:** Creates a concept-dense summary `AI-Distil-Video-Transcript` inside `/2-Ressources/IA-generated/`.
-2. 📜 **Anchors to Themes:** Connects wikilinks into relevant Theme cards (e.g., `[[T-Intelligence-Artificielle]]`).
-3. 📦 **Archives Inbox File:** Moves the raw file out of `0-Inbox/` into archives to maintain Inbox Zero.
-4. 🚀 **Proposes Project Tasks:** Scans your active projects (`P-`) and asks in the chat: *"Would you like me to add these 2 actionable tasks to project `P-MyProject`?"*
-
-### 4. Result
-Zero manual formatting, zero context switching, and immediate project momentum!
-
----
-
-## ❓ FAQ & Risk Management
-
-### How is Arca-BrainOS different from using raw Obsidian or isolated AI chats?
-Raw Obsidian gives you local Markdown files, but requires manual organization. Isolated AI web chats (ChatGPT, Claude) lack real-time context of your past notes. Arca-BrainOS bridges the two: your AI agents operate directly on your local vault files with full context, automating routine tasks while keeping 100% of your data local and human-readable.
-
-### What if an AI agent makes a mistake or I want to roll back changes?
-Arca-BrainOS is engineered for **zero data loss, transparency, and instant recovery**:
-* **In-Session Agentic Rollback:** In the worst-case scenario where an agent misinterprets an instruction during a session, simply tell your AI co-pilot in the chat: *"Rollback the last edit on file X"* or *"Restore the previous version of file Y"*. Your agent will inspect its transcript and revert the file immediately.
-* **Strict 3-File Guardrail:** Agents are prohibited from creating or modifying more than 3 files outside `/2-Ressources/IA-generated/` in a single workflow without explicit confirmation in the chat.
-* **Single-Line Audit Log:** Every action executed by an agent is appended to `_Arca-BrainOS/log.md` (1 line per action with timestamp).
-* **Git Version Control & Backups:** We strongly recommend initializing Git on your vault (`git init`). Rollbacks can be executed instantly via `git checkout` or your local Obsidian sync/backup system.
-* **Interactive AI Help:** You can ask your AI co-pilot at any time: *"What files were modified in the last session?"* or run `arca-audit` to diagnose vault health.
-
-### Will AI agents overwrite or modify my human-written notes?
-**No.** Arca-BrainOS operates under strict safety guardrails defined in `AGENTS.md`:
-* **AI Write-Only Zone:** Autonomous AI writing is isolated inside `/2-Ressources/IA-generated/` (for `AI-Distil-...` notes).
-* **Supervised Zone:** For human notes (`1-Projects/`, `2-Ressources/Notes/`, `3-Domaines-de-vie/`), agents never overwrite human text. They only suggest sylvan wikilinks `[[...]]` or append worklog entries during `arca-close-session`.
-
-### Can I use Arca-BrainOS with my existing folder structure?
-**Yes.** Arca-BrainOS is 100% folder-agnostic. The core engine lives inside `_Arca-BrainOS/`. All folder references are configured via path variables in `AGENTS.md` (`PATH_INBOX`, `PATH_PROJECTS`, `PATH_THEMES`, `PATH_AREAS`). You can map these variables to any custom arborescence.
-
-### Which AI runners are supported?
-Arca-BrainOS is **LLM- and runner-agnostic**. It works seamlessly with **Google Antigravity**, **Claude Code**, **OpenCode**, **Cursor**, or any AI agent that can read Markdown files and execute terminal commands.
-
----
-
-## 🙏 Acknowledgments & Inspiration
-
-Arca-BrainOS stands on the shoulders of giants across Personal Productivity, Knowledge Management (PKM), and AI Agentic Engineering:
-
-* **[David Allen](https://gettingthingsdone.com)**: The grandfather of modern productivity and author of **Getting Things Done (GTD)**, who taught us to clear cognitive load by capturing everything into trusted external systems.
-* **[Sönke Ahrens](https://takesmartnotes.com)**: Author of ***How to Take Smart Notes***, who demystified Niklas Luhmann's Zettelkasten method and turned atomic note-taking into a lifelong compounding asset.
-* **[Tiago Forte](https://fortelabs.com)**: For pioneering the **Building a Second Brain (BASB)** methodology, the C.O.D.E framework, and the P.A.R.A organizational system that provided the structural baseline for modern PKM.
-* **[Ryder Carroll](https://bulletjournal.com)**: Creator of **The Bullet Journal Method**, inspiring rapid logging, daily intentionality, and mindful review routines.
-* **[Daniel Miessler](https://danielmiessler.com)**: For the **Personal AI Infrastructure (PAI)** framework, **LifeOS**, and flat container modularity principles (`_Arca-BrainOS/`).
-* **[Eliott Meunier](https://www.youtube.com/@eliottmeunier)**: French PKM pioneer and educator who popularized Obsidian, digital organization, and modern knowledge management for the French-speaking community.
-* **[Jeff Su](https://www.youtube.com/@JeffSu)**: For insightful productivity tutorials, actionable workflow optimization, and practical digital organization strategies.
-* **[Obsidian.md](https://obsidian.md)**: For creating the gold-standard, open-format, local-first Markdown canvas for human thought.
-* **[Blacksmithgu & Dataview Community](https://github.com/blacksmithgu/obsidian-dataview)**: For the Dataview plugin that makes real-time vault telemetry and JS-powered executive cockpits possible.
-* **Google Antigravity & Claude Code Teams**: For pioneering terminal-first, agentic co-pilot execution directly on local codebases and knowledge vaults.
-
----
-
-## 📜 License & Strategic Protection
-
-Arca-BrainOS is released under a **Dual / Hybrid License** model (see [`LICENSE`](LICENSE) for complete legal terms):
-
-* **Code, Skills & Scripts (`_Arca-BrainOS/skills/`, `tests/`, `scripts/`):** Licensed under **GNU Affero General Public License v3.0 (GNU AGPLv3)**. Free for personal and open-source community use; requires derivative cloud services or software modifications to be open-sourced under AGPLv3.
-* **Playbooks, Methodologies & Manifestos (`playbooks/`, `process/`, `MANIFESTO.md`):** Licensed under **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**. Free for individual learning; commercial reuse, corporate reselling, or paid consulting usage by third-party companies is prohibited without explicit commercial agreement.
-
-> 💡 **Why This Dual License Choice?**  
-> We believe in 100% open, sovereign access for individual thinkers, researchers, and community builders. However, we explicitly choose **NOT** to use a permissive MIT license to prevent large corporations or commercial vendors from silently capturing this open-source work, closing it into proprietary SaaS products, or reselling our methodologies for corporate profit without contributing back.
+Arca-BrainOS uses a Dual Open-Source License:
+- **Code, Skills & Scripts:** [GNU AGPLv3](LICENSE)
+- **Playbooks, Process Guides & Documentation:** [Creative Commons CC BY-NC-SA 4.0](LICENSE)
 
 ---
 
 <p align="center">
-  <i>Built with ❤️ for thinkers, builders, and lifelong learners.</i>
+  <i>Built with passion by Hugues & the Arca-BrainOS Community.</i>
 </p>

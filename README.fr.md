@@ -63,31 +63,38 @@ Construire un Second Cerveau (PKM) se transforme souvent en un piège de frictio
 > 📜 **Philosophie & Vision :** Vous souhaitez comprendre la mutation anthropologique, le *Pharmakon* de Stiegler et la symbiose organologique derrière cette architecture ? Lisez **[Le Manifeste du Workflow Augmenté (MANIFESTO.fr.md)](MANIFESTO.fr.md)**.
 
 ```text
-       [ Flux entrants : Vidéos, Livres, Web, Transcripts ]
+     [ Flux Entrants : Vidéos YouTube, Articles, Transcripts, Notes ]
                                 │
                                 ▼
-        ┌──────────────────────────────────────────────┐
-        │  1. Capture & Tri (0-Inbox/ & Youtube)       │
-        └──────────────────────────────────────────────┘
+ ┌─────────────────────────────────────────────────────────────┐
+ │ 1. Ingestion & Distillation (Capture & Synthèses IA)        │ 🤖 100% Automatisé
+ └─────────────────────────────────────────────────────────────┘
                                 │
                                 ▼
-        ┌──────────────────────────────────────────────┐
-        │ 2. Distillation & Ancrage Thématique (T-)    │
-        └──────────────────────────────────────────────┘
+ ┌─────────────────────────────────────────────────────────────┐
+ │ 2. Organisation & Maillage (Thèmes T-, Domaines & Liens)    │ 🤝 Assisté par l'IA
+ └─────────────────────────────────────────────────────────────┘
                                 │
                                 ▼
-        ┌──────────────────────────────────────────────┐
-        │ 3. Exploration & Santé du Vault (RAG/Audit)  │
-        └──────────────────────────────────────────────┘
+ ┌─────────────────────────────────────────────────────────────┐
+ │ 3. Deep Work & Exécution (Projets P- & Production)          │ 🧠 Libération Humaine
+ └─────────────────────────────────────────────────────────────┘
                                 │
                                 ▼
-        ┌──────────────────────────────────────────────┐
-        │ 4. Deep Work & Exécution (Projets & ROI)     │
-        └──────────────────────────────────────────────┘
+ ┌─────────────────────────────────────────────────────────────┐
+ │ 4. Audit & Maintenance (Santé du Coffre & Recherche RAG)   │ ⚙️ Supervision IA
+ └─────────────────────────────────────────────────────────────┘
                                 │
                                 ▼
-           [ Résultats à haut impact & Vitesse x3 ]
+       [ Système Soutenable à Long Terme & Vitesse x3 ⚡ ]
 ```
+
+#### 🎯 Pourquoi ce système ne s'éteint jamais (La différence Arca-BrainOS) :
+
+- **📥 1. Ingestion & Distillation (Automatisée) :** Vos contenus bruts (vidéos, articles, podcasts) sont automatiquement capturés et synthétisés en notes d'inbox denses et exploitables.
+- **🗂️ 2. Organisation & Maillage (Assistés) :** L'IA gère la maintenance fastidieuse. Elle tisse les liens wikilinks (`[[...]]`), alimente vos cartes Thèmes (`T-`) et vos Domaines de vie. **Zéro fatigue mentale de rangement** : votre coffre reste structuré et soutenable sur le long terme sans aucun effort administratif.
+- **🚀 3. Deep Work & Exécution (Libération Humaine) :** La gestion de projet fastidieuse est déléguée. Vous vous concentrez uniquement sur la création et les décisions à haute valeur sur vos projets (`P-`). Durant vos sessions, vous décidez librement de vous faire assister par l'IA (co-rédaction, structuration) ou de créer 100% par vous-même.
+- **🩺 4. Audit & Maintenance (Supervision) :** L'IA surveille la santé du coffre (liens brisés, notes orphelines, recherche sémantique RAG `arca-query`), sous la seule validation de vos choix structurants.
 
 ---
 
