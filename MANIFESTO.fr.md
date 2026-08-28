@@ -26,7 +26,7 @@ En portugais, le mot ***Arca*** se traduit directement par une malle, un coffre 
 
 Tout au long de sa vie, Fernando Pessoa a déposé des milliers de manuscrits volants, poèmes, fragments philosophiques et écrits de ses célèbres hétéronymes dans une immense malle en bois : son *Arca*. Ce n'était pas un cimetière passif de papiers, mais un vaisseau actif où son monde intérieur pluriel coexistait, mûrissait et s'enrichissait au fil des décennies.
 
-Aujourd'hui, votre coffre Obsidian est votre *Arca* moderne. C'est le vaisseau physique et numérique contenant l'œuvre de votre vie, vos pensées et vos projets. **Arca-BrainOS** a été conçu pour transformer ce coffre passif en un **moteur cognitif augmenté** : un espace souverain où l'intelligence artificielle honore votre voix humaine au lieu de la remplacer.
+Aujourd'hui, votre coffre de notes texte (Obsidian ou tout éditeur Markdown) est votre *Arca* moderne. C'est le vaisseau physique et numérique contenant l'œuvre de votre vie, vos pensées, vos projets intellectuels, mais aussi le sas de préparation de vos réalisations concrètes dans le monde réel (chantiers, voyages, santé, arts) reliés à vos domaines de vie. **Arca-BrainOS** a été conçu pour transformer ce coffre passif en un **moteur cognitif augmenté** : un espace souverain où l'intelligence artificielle honore votre voix humaine au lieu de la remplacer.
 
 ---
 
@@ -108,5 +108,5 @@ Chaque cycle enrichit votre coffre. Vous n'écrivez pas seulement des notes pour
 ---
 
 <p align="center">
-  <i>L'avenir de la pensée n'appartient ni aux humains passifs ni aux clouds autonomes : il appartient aux humains souverains co-pilotés par une intelligence agentique.</i>
+  <i>L'avenir de la pensée n'appartient ni aux humains passifs ni aux clouds autonomes : il appartient aux humains souverains assistés par une intelligence agentique.</i>
 </p>

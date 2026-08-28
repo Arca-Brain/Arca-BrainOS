@@ -26,7 +26,7 @@ In Portuguese, the word ***Arca*** translates directly to a trunk, chest, or cof
 
 Throughout his life, Fernando Pessoa deposited thousands of loose manuscripts, poems, philosophical fragments, and writings from his famous heteronyms into a massive wooden trunk: his *Arca*. It was not a passive graveyard of papers, but an active vessel where his multifaceted inner world coexisted, matured, and compounded over decades.
 
-Today, your Obsidian vault is your modern *Arca*. It is the physical and digital vessel containing your life's work, thoughts, and projects. **Arca-BrainOS** was built to turn this passive chest into an **augmented cognitive engine**: a sovereign space where artificial intelligence honors your human voice rather than replacing it.
+Today, your text note vault (Obsidian or any plain-text Markdown editor) is your modern *Arca*. It is the physical and digital vessel containing your life's work, thoughts, and intellectual projects, as well as the staging ground for real-world endeavors (home renovations, expeditions, health routines, creative crafts) linked to your life areas. **Arca-BrainOS** was built to turn this passive chest into an **augmented cognitive engine**: a sovereign space where artificial intelligence honors your human voice rather than replacing it.
 
 ---
 
@@ -36,7 +36,7 @@ The arrival of Artificial Intelligence is not a mere software update or a produc
 
 * **Printing Press vs. Artificial Intelligence:** Where the printing press decentralized the *distribution* of knowledge by challenging traditional authorities, AI fundamentally alters the *production* of language, thought, and cognitive synthesis.
 * **The Technical Essence of Humanity (Leroi-Gourhan & Stiegler):** Anthropologist André Leroi-Gourhan demonstrated that human evolution is driven by **exteriorization**: the progressive offloading of physical and cognitive functions into external technical artifacts (the "terrestrial / tertiary memory"). Humans are naturally technical beings; we build prostheses to interact with our world.
-* **The Illusion of Techno-Refusal:** Refusing AI is an understandable personal stance, but human history (from the alphabet to printing to personal computing) demonstrates that major technological shifts inevitably generalize and s'imposent à tous. Total techno-refusal is an illusory posture.
+* **The Illusion of Techno-Refusal:** Refusing AI is an understandable personal stance, but human history (from the alphabet to printing to personal computing) demonstrates that major technological shifts inevitably generalize and become universally adopted. Total techno-refusal is an illusory posture.
 * **Mindful Stewardship Over Productivism:** The primary goal of Arca-BrainOS is **NOT raw productivity for productivism's sake** or relentless corporate hustle. The goal is **mindful stewardship (*le souci de l'usage*)**: taking active control of how these tools shape our minds. Since AI will inevitably become pervasive, our responsibility is to design local architectures that **mitigate its harmful side effects** (cognitive decay, loss of focus, passive consumption) while preserving human depth, critical thinking, and cognitive sovereignty.
 
 ---
@@ -108,5 +108,5 @@ Every cycle enriches your vault. You are not just writing notes for your future 
 ---
 
 <p align="center">
-  <i>The future of thought belongs neither to passive humans nor to autonomous clouds: it belongs to sovereign humans co-piloted by agentic intelligence.</i>
+  <i>The future of thought belongs neither to passive humans nor to autonomous clouds: it belongs to sovereign humans assisted by agentic intelligence.</i>
 </p>

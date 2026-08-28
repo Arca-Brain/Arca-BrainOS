@@ -58,7 +58,13 @@ Building a Second Brain (PKM) often turns into a maintenance nightmare:
 
 ## 🛡️ The Solution: Arca-BrainOS
 
-**Arca-BrainOS** is an open-source, AI-native operating system built for **Obsidian**. It equips your vault with a fleet of **autonomous agentic skills (`Skill_arca-*.md`)** that execute routine cognitive tasks, structure your knowledge, and co-pilot your Deep Work sessions.
+**Arca-BrainOS** is an open-source, AI-native operating system designed for **Obsidian** (and fully compatible with any plain-text Markdown note editor). It equips your vault with a fleet of **autonomous agentic skills (`Skill_arca-*.md`)** that execute routine cognitive tasks, structure your knowledge, and co-pilot your Deep Work sessions.
+
+The system is designed to seamlessly articulate two complementary dimensions of your projects:
+- **Intellectual & digital projects:** Software engineering, systems architecture, research, writing, and business strategy.
+- **Real-world planning & life projects:** Preparing home renovation work, organizing a trek or travel expedition, tracking health and rehabilitation routines, or mastering a craft (watercolor, poetry...).
+
+By dynamically linking every active project to your **Life Areas (`3-Domaines-de-vie/`)**, Arca-BrainOS delivers a truly holistic overview of your life: it powers seasonal and annual reviews, balances your energy across domains, and turns accumulated knowledge into real-world action.
 
 > 📜 **Philosophy & Vision:** Want to understand the anthropological mutation and motivation behind this architecture? Read **[The Sovereign AI Workflow Manifesto (MANIFESTO.md)](MANIFESTO.md)**.
 
@@ -132,6 +138,16 @@ Most knowledge workers remain trapped in Phase 1 or 2:
 3. **🤝 Organological Symbiosis:** AI handles administrative friction; humans retain intentional friction and creative vision.
 4. **📦 Decoupled Architecture:** Core engine (`_Arca-BrainOS/`) is isolated from user content (`0-Inbox/`, `1-Projects/`, etc.).
 
+### 🎨 Template Adaptability & Custom Skills Extension
+
+Arca-BrainOS is not a rigid framework: you are completely free to adapt note templates (`Template-Projet.md`, `Template-Area.md`, `Template-Theme.md`) or create custom agentic skills (`Skill_arca-*.md`) to match your actual workflows.
+
+* **Preserving YAML Compatibility:** Simply make sure to preserve the minimal required frontmatter keys used by Dataview queries and system scripts (`target`, `tags`, `areas`, `themes`, `date_created`).
+* **💡 Golden Recommendation (Leverage Your AI Agent):** Avoid editing templates and skills manually. Instead, ask your AI coding assistant (Antigravity, Claude Code, OpenCode):
+  > *"Update my Project template to add section X, while preserving compatibility with YAML metadata and existing agentic skills."*
+  
+  Your AI assistant will format the structure cleanly, update parent index files (`skills/README.md`, `AGENTS.md`), and verify compliance with `arca-test`.
+
 ---
 
 ## ⚡ Quickstart (1-Minute Onboarding)
@@ -204,6 +220,22 @@ Your-Obsidian-Vault/
 ├── 3-Domaines-de-vie/            # Permanent life areas (README.md index)
 └── 4-Archives/                   # Completed projects & dormant areas
 ```
+
+### 🌐 Deployment Principles & Possibilities: A System That Grows With You
+
+Arca-BrainOS imposes no rigid boundaries: it adapts naturally to your lifestyle and priorities. Three flexible possibilities are available to support how you think and work:
+
+1. **Immediate Simplicity (The Desktop Workspace)**  
+   *Who is it for?* To get started right away with zero setup friction.  
+   *The principle:* You run the system directly on your computer with your preferred AI models. In under a minute, you have an intelligent assistant inside your notes to organize ideas, frame projects, and power your Deep Work sessions.
+
+2. **Mobile Freedom (Capturing Thought on the Move)**  
+   *Who is it for?* For thinkers who get their best insights while walking, travelling, or away from their desk.  
+   *The principle:* Unshackle thought capture from your computer screen. Dictate a voice note or share a link from your smartphone (via a messaging app like Telegram): AI receives your thoughts, formats them, and places them in the right spot in your vault so everything is waiting for you when you return to your desk.
+
+3. **Total Sovereignty & Privacy (Your 100% Private Mindspace)**  
+   *Who is it for?* For those who require absolute ownership over their sensitive thoughts and intellectual property.  
+   *The principle:* You decide your level of cognitive sovereignty. The system can operate either through privacy-first providers guaranteeing Zero Data Retention (ZDR), or run 100% offline on your own hardware without ever sending data to external clouds.
 
 ---
 

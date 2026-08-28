@@ -60,6 +60,12 @@ Tout ajout, création ou renommage d'une compétence (`Skill_arca-*.md`), fiche 
 ### D. Règle de Ponctuation (Règle 5)
 N'utilisez jamais de tiret cadratin (`—`) dans les notes ou documentations rédigées. Remplacez systématiquement cette ponctuation par des deux-points (`:`), des virgules (`,`), des points (`.`) ou des parenthèses `()`.
 
+### E. Création & Intégration de Compétences ou Processus Tiers
+Si vous souhaitez concevoir une compétence personnalisée ou contribuer un module tiers (ex: capture de notes vocales, intégration d'un outil externe, nouveau workflow d'analyse) :
+1. **Créer le fichier :** Déposez votre compétence dans `_Arca-BrainOS/skills/Skill_arca-[nom].md` (ou `process/Process-[nom].md`) en respectant les sentiers relatifs canoniques (`PATH_*`).
+2. **Conception assistée par l'IA :** Demandez à votre agent IA de concevoir le skill : il rédigera la logique d'exécution, ajoutera les alias et mettra à jour automatiquement `AGENTS.md` ainsi que le `README.md` du dossier parent.
+3. **Validation & Non-régression :** Ajoutez une assertion de test dans `Skill_arca-test-suite.md` et exécutez `arca-test` avant de soumettre votre Pull Request.
+
 ---
 
 ## 🧪 3. Tests & Validation (`arca-test`)

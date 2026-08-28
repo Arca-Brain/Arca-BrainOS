@@ -56,7 +56,8 @@ Before creating any files, inspect the current Obsidian vault directory structur
 
 1. **Create Engine Core Directory:**
    - Create the single, portable core container `_Arca-BrainOS/` at the root of the vault.
-2. **Initialize System Logs & Registries:**
+2. **Initialize System Logs & Core Constitution:**
+   - **`_Arca-BrainOS/AGENTS.md`**: Deploy the master system constitution, governance rules, and skills catalog.
    - **`_Arca-BrainOS/log.md`**: Create single-line audit log with header:
      `YYYY-MM-DD | Successful initialization and deployment of Arca-BrainOS by Installer Agent.`
 3. **Deploy Sub-Directories:**
@@ -93,13 +94,29 @@ Ask 3 simple questions in the chat to personalize the system prompt:
 
 ---
 
-### ⚙️ Step 5: Hydration & Generation of `AGENTS.md`
+### ⚙️ Step 5: Engine Hydration & AI Runner Bridge (Universal Bridge)
 
-Based on paths detected in Step 1 and user answers in Step 4, generate the **`AGENTS.md`** file at the root of the vault containing:
-- Personalized user profile and identity.
-- Exact vault topography path variables (`PATH_INBOX`, `PATH_PROJECTS`, `PATH_THEMES`, `PATH_AREAS`, `PATH_IA_GENERATED`, `PATH_SYSTEM`).
-- Safety guardrails (Autonomous write zone in `IA-generated/`, 3-file modification limit, strict human text preservation).
-- Full catalog of active agentic skills (`arca-*`).
+1. **Hydration of Core Constitution (`_Arca-BrainOS/AGENTS.md`):**
+   Based on paths discovered in Step 1 and answers from Step 4, directly hydrate `_Arca-BrainOS/AGENTS.md` (the Single Source of Truth) with:
+   - Personalized user identity and profile.
+   - Exact vault topography path variables (`PATH_INBOX`, `PATH_PROJECTS`, `PATH_THEMES`, `PATH_AREAS`, `PATH_IA_GENERATED`, `PATH_SYSTEM`).
+   - Governance rules and full catalog of active agentic skills (`arca-*`).
+
+2. **Non-Destructive AI Runner Bridging (Bridge Files):**
+   Depending on the AI runner used (detected in Step 4):
+   - **For Google Antigravity / Gemini CLI / OpenCode:**
+     - If a root `AGENTS.md` already exists, simply append the include directive at the end without overwriting user content:
+       ```markdown
+       # 🧠 Arca-BrainOS Cognitive Engine
+       For Second Brain notes, workflows, and agentic skills, follow the instructions in:
+       @_Arca-BrainOS/AGENTS.md
+       ```
+     - If no root file exists, create a minimal root `AGENTS.md` pointing to `@_Arca-BrainOS/AGENTS.md`.
+   - **For Claude Code:**
+     - If a root `CLAUDE.md` already exists, append `@_Arca-BrainOS/AGENTS.md` at the end.
+     - If no file exists, create a minimal root `CLAUDE.md` pointing to `@_Arca-BrainOS/AGENTS.md`.
+   - **For Cursor / Windsurf:**
+     - Create or complete `.cursorrules` at root to load `_Arca-BrainOS/AGENTS.md`.
 
 ---
 
@@ -109,8 +126,8 @@ Based on paths detected in Step 1 and user answers in Step 4, generate the **`AG
    - Automatically run `arca-test` (executing 13 quality assertions).
 2. **Display Success Report:**
    > 🎉 **Arca-BrainOS Deployment & Verification Successful!**
-   > - 🧠 Engine Core deployed in `_Arca-BrainOS/`
-   > - 🛡️ Governance & Path rules hydrated in `AGENTS.md`
+   > - 🧠 Engine Core & Constitution deployed in `_Arca-BrainOS/`
+   > - 🔗 AI Runner Bridge configured without overwriting existing root files
    > - 🧪 Test Suite: **13 / 13 Assertions PASSED (100% Coverage)**
    > 
    > 💡 *To start immediately, place a raw note or link into `0-Inbox/` and run `arca-inbox-process`!*

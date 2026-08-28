@@ -56,7 +56,8 @@ Avant de créer le moindre fichier, inspectez la structure du dossier du coffre 
 
 1. **Créer le Dossier Racine du Moteur :**
    - Créez le conteneur portable unique `_Arca-BrainOS/` à la racine du coffre.
-2. **Initialiser les Journaux & Registres du Système :**
+2. **Initialiser les Journaux & Fichiers Système :**
+   - **`_Arca-BrainOS/AGENTS.md`** : Déployez la Constitution maîtresse, la gouvernance et le catalogue des compétences agentiques.
    - **`_Arca-BrainOS/log.md`** : Créez le journal d'audit avec la première ligne :
      `AAAA-MM-JJ | Initialisation et déploiement réussis d'Arca-BrainOS par l'Agent Installateur.`
 3. **Déployer les Sous-Dossiers :**
@@ -93,13 +94,29 @@ Posez 3 questions simples dans le chat pour personnaliser le prompt système :
 
 ---
 
-### ⚙️ Étape 5 : Hydratation & Génération du Fichier `AGENTS.md`
+### ⚙️ Étape 5 : Hydratation du Moteur & Branchement du Runner IA (Pont Universel)
 
-Sur la base des sentiers détectés à l'Étape 1 et des réponses de l'Étape 4, générez le fichier **`AGENTS.md`** à la racine du coffre contenant :
-- Le profil utilisateur et son identité.
-- Les variables de sentiers exactes du coffre (`PATH_INBOX`, `PATH_PROJECTS`, `PATH_THEMES`, `PATH_AREAS`, `PATH_IA_GENERATED`, `PATH_SYSTEM`).
-- Les garde-fous de sécurité (Zone d'écriture autonome dans `IA-generated/`, limite de modification de 3 fichiers, préservation absolue du texte humain).
-- Le catalogue complet des compétences agentiques actives (`arca-*`).
+1. **Hydratation de la Constitution (`_Arca-BrainOS/AGENTS.md`) :**
+   Sur la base des sentiers détectés à l'Étape 1 et des réponses de l'Étape 4, mettez à jour directement `_Arca-BrainOS/AGENTS.md` (la Source Unique de Vérité) avec :
+   - Le profil et l'identité personnalisée de l'utilisateur.
+   - Les variables de sentiers exactes du coffre (`PATH_INBOX`, `PATH_PROJECTS`, `PATH_THEMES`, `PATH_AREAS`, `PATH_IA_GENERATED`, `PATH_SYSTEM`).
+   - Les règles de gouvernance et le catalogue complet des compétences agentiques actives (`arca-*`).
+
+2. **Branchement Non-Destructif du Runner IA (Fichiers Ponts) :**
+   Selon le runner IA utilisé par l'utilisateur (détecté à l'Étape 4) :
+   - **Pour Google Antigravity / Gemini CLI / OpenCode :**
+     - Si un fichier `AGENTS.md` existe déjà à la racine du coffre, ajoutez simplement à la fin le bloc de redirection sans rien écraser :
+       ```markdown
+       # 🧠 Arca-BrainOS Cognitive Engine
+       Pour les workflows, notes et compétences du Second Cerveau, applique les règles de :
+       @_Arca-BrainOS/AGENTS.md
+       ```
+     - Si aucun fichier n'existe, créez le mini-fichier `AGENTS.md` racine pointant vers `@_Arca-BrainOS/AGENTS.md`.
+   - **Pour Claude Code :**
+     - Si un fichier `CLAUDE.md` existe déjà à la racine, ajoutez la directive `@_Arca-BrainOS/AGENTS.md` à la fin.
+     - Si aucun fichier n'existe, créez le mini-fichier `CLAUDE.md` racine pointant vers `@_Arca-BrainOS/AGENTS.md`.
+   - **Pour Cursor / Windsurf :**
+     - Créez ou complétez `.cursorrules` à la racine pour charger `_Arca-BrainOS/AGENTS.md`.
 
 ---
 
@@ -109,8 +126,8 @@ Sur la base des sentiers détectés à l'Étape 1 et des réponses de l'Étape 4
    - Lancez automatiquement `arca-test` pour vérifier les assertions de qualité.
 2. **Afficher le Rapport de Succès :**
    > 🎉 **Déploiement & Vérification d'Arca-BrainOS Réussis !**
-   > - 🧠 Moteur OS déployé dans `_Arca-BrainOS/`
-   > - 🛡️ Gouvernance & Sentiers configurés dans `AGENTS.md`
+   > - 🧠 Moteur OS & Constitution déployés dans `_Arca-BrainOS/`
+   > - 🔗 Pont du runner IA configuré sans écraser votre existant
    > - 🧪 Suite de Tests : **Toutes les assertions sont PASSED (100% de Couverture)**
    > 
    > 💡 *Pour démarrer immédiatement, déposez une note brute ou un lien dans `0-Inbox/` et lancez `arca-inbox-process` !*

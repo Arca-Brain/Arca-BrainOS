@@ -26,7 +26,7 @@ tags:
 ---
 
 ## ✍️ Notes & Réflexions Humaines
-- [[Analyse-Philosophique-Arca-BrainOS-Simondon-Stiegler]] : Étude d'ancrage philosophique (Pharmakon, Mémoire tertiaire et Objets techniques ouverts).
+- [[2-Ressources/Notes/Analyse-Philosophique-Arca-BrainOS-Simondon-Stiegler]] : Étude d'ancrage philosophique (Pharmakon, Mémoire tertiaire et Objets techniques ouverts).
 - [[Note-Contexte-IA-et-Friction-Intentionnelle]] : Distinguer friction administrative et friction intentionnelle.
 
 ---

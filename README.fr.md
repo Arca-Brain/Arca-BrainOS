@@ -58,7 +58,13 @@ Construire un Second Cerveau (PKM) se transforme souvent en un piège de frictio
 
 ## 🛡️ La Solution : Arca-BrainOS
 
-**Arca-BrainOS** est un système d'exploitation open-source et AI-native conçu pour **Obsidian**. Il équipe votre coffre d'une flotte de **compétences agentiques autonomes (`Skill_arca-*.md`)** qui exécutent les tâches cognitives récurrentes, structurent vos connaissances et co-pilotent vos sessions de Deep Work.
+**Arca-BrainOS** est un système d'exploitation open-source et AI-native conçu pour **Obsidian** (et pleinement compatible avec tout éditeur de notes en fichiers texte Markdown bruts). Il équipe votre coffre d'une flotte de **compétences agentiques autonomes (`Skill_arca-*.md`)** qui exécutent les tâches cognitives récurrentes, structurent vos connaissances et co-pilotent vos sessions de Deep Work.
+
+Ce système est pensé pour articuler deux dimensions complémentaires de vos projets :
+- **Les projets intellectuels & numériques :** Ingénierie logicielle, écriture, recherche sur des sujets, etc.
+- **La préparation & le cadrage de projets concrets dans le monde réel :** Préparation d'un chantier de rénovation, organisation d'un voyage ou d'un trek, suivi de santé/rééducation, apprentissage d'une pratique manuelle ou artistique (aquarelle,...), etc.
+
+En reliant dynamiquement chaque projet à vos **Domaines de vie (`3-Domaines-de-vie/`)**, Arca-BrainOS offre une véritable vision d'ensemble sur votre vie : il nourrit vos bilans et rétrospectives saisonnières ou annuelles, équilibre votre énergie et transforme la connaissance accumulée en actions concrètes.
 
 > 📜 **Philosophie & Vision :** Vous souhaitez comprendre la mutation anthropologique, le *Pharmakon* de Stiegler et la symbiose organologique derrière cette architecture ? Lisez **[Le Manifeste du Workflow Augmenté (MANIFESTO.fr.md)](MANIFESTO.fr.md)**.
 
@@ -132,6 +138,16 @@ La plupart des travailleurs de la connaissance restent bloqués en Phase 1 ou 2 
 3. **Préservation du Style Humain :** Les agents IA ne suppriment ni ne réécrivent jamais le texte rédigé par l'humain ; ils enrichissent les métadonnées et suggèrent des liens wikilinks.
 4. **Extension Auto-Documentée :** Pour créer un nouveau skill ou process, **demandez simplement à votre agent LLM de le concevoir**. Votre co-pilote rédigera la logique et effectuera automatiquement toutes les mises à jour d'indexation (`AGENTS.md`, `skills/README.md`, `process/README.md`) tout en maintenant la conformité aux tests (`arca-test`).
 
+### 🎨 Adaptabilité des Templates & Extension des Compétences
+
+Arca-BrainOS n'est pas un cadre rigide : vous êtes totalement libre d'adapter la structure des modèles (`Template-Projet.md`, `Template-Area.md`, `Template-Theme.md`) ou d'ajouter de nouvelles compétences (`Skill_arca-*.md`) selon vos besoins réels.
+
+* **Préservation de la compatibilité YAML :** Veillez simplement à conserver les métadonnées minimales nécessaires au bon fonctionnement des requêtes Dataview et des scripts (`target`, `tags`, `areas`, `themes`, `date_created`).
+* **💡 Recommandation d'Or (Utilisez votre Agent IA) :** Ne modifiez pas les templates ou les compétences à la main. Demandez directement à votre agent IA (Antigravity, Claude Code, OpenCode) :
+  > *"Adapte mon Template-Projet pour ajouter une section X, tout en garantissant la compatibilité avec les métadonnées YAML et les compétences existantes."*
+  
+  L'agent ajustera la structure proprement, mettra à jour les index parents (`skills/README.md`, `AGENTS.md`) et s'assurera de la conformité via `arca-test`.
+
 ---
 
 ## 🔌 L'Arsenal des Compétences Agentiques
@@ -188,6 +204,22 @@ Votre-Coffre-Obsidian/
 ├── 3-Domaines-de-vie/            # Domaines de responsabilité (Index canonique README.md)
 └── 4-Archives/                   # Projets Terminés & Domaines Inactifs
 ```
+
+### 🌐 Principes & Possibilités de Déploiement : Un Système Qui Évolue Avec Vous
+
+Arca-BrainOS n'impose aucun cadre rigide : il s'adapte naturellement à vos habitudes et à vos besoins du moment. Selon ce qui compte le plus pour vous, trois grandes possibilités d'usage s'offrent à vous :
+
+1. **La Simplicité Immédiate (Le Bureau de Travail)**  
+   *Pour qui ?* Pour démarrer tout de suite, sans aucune configuration compliquée.  
+   *Le principe :* Vous utilisez le système directement sur votre ordinateur avec les modèles d'IA de votre choix. En une minute, vous disposez d'un assistant au cœur de vos notes pour structurer vos idées, cadrer vos projets et mener vos sessions de réflexion en profondeur.
+
+2. **La Liberté en Mobilité (Capturer la Pensée en Mouvement)**  
+   *Pour qui ?* Pour ceux qui ont leurs meilleures intuitions en marchant, en voyage ou loin de leur bureau.  
+   *Le principe :* Vous libérez la capture de l'écran d'ordinateur. Dictez une note vocale ou partagez un lien depuis votre smartphone (via une simple messagerie comme Telegram) : l'IA accueille votre pensée, la met en forme et la range au bon endroit dans votre coffre pour que tout soit prêt lors de votre retour au calme.
+
+3. **L'Autonomie & la Confidentialité Totale (Votre Espace 100% Privé)**  
+   *Pour qui ?* Pour ceux qui souhaitent garder la maîtrise absolue de leur patrimoine intellectuel et de leurs données sensibles.  
+   *Le principe :* Vous choisissez le niveau de souveraineté de votre esprit numérique. Le système peut fonctionner soit avec des services éthiques garantissant la non-conservation de vos données (Zero Data Retention), soit de manière 100% autonome et hors-ligne sur votre propre matériel, sans jamais dépendre d'un cloud externe.
 
 ---
 

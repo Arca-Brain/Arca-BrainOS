@@ -28,7 +28,7 @@ total_time_saved: 1h45
 ## 🗺️ Working Documents
 
 - **Réflexion, Écrits & Philosophie**
-  - [[Analyse-Philosophique-Arca-BrainOS-Simondon-Stiegler|Analyse Philosophique : Simondon, Stiegler & Pharmakon]]
+  - [[2-Ressources/Notes/Analyse-Philosophique-Arca-BrainOS-Simondon-Stiegler|Analyse Philosophique : Simondon, Stiegler & Pharmakon]]
   - `MANIFESTO.md` *(Manifeste : The Sovereign AI Workflow)*
 - **Système 2ndBrainOS / Arca-BrainOS**
   - [[Standard-Metadonnees-et-Templates-2ndBrain]]

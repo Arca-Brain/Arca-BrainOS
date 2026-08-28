@@ -61,6 +61,12 @@ You can ask your AI terminal agent to build skills for you! A well-written skill
 - An **Objective** (`## Objectif`).
 - A **Sequential Execution Workflow** (`## Workflow d'Exécution Séquentiel`).
 
+### E. Creating & Contributing Custom Skills or Process Guides
+If you want to create a custom skill or contribute a third-party module (e.g., voice note capture, external tool integration, custom audit workflow):
+1. **Create the file:** Place your skill in `_Arca-BrainOS/skills/Skill_arca-[name].md` (or `process/Process-[name].md`) using canonical relative path variables (`PATH_*`).
+2. **AI-Assisted Design:** Ask your AI assistant to generate the skill: it will write the execution logic, add command aliases, and automatically update `AGENTS.md` and the parent folder `README.md`.
+3. **Validation & Non-Regression:** Add a test assertion to `Skill_arca-test-suite.md` and run `arca-test` before opening your Pull Request.
+
 ---
 
 ## 🧪 3. Testing & Recette (`arca-test`)
