@@ -4,9 +4,7 @@ title: ""
 description: ""
 category: idea # Options: idea | action | project-seed | source
 target: "" # Optionnel: [[P-Projet]] ou [[T-Theme]] alimenté
-tags:
-  - inbox
-  - statut/inbox
+tags: []
 ---
 
 # 💡 {{title}}

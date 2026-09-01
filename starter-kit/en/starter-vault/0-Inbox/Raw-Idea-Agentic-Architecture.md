@@ -2,7 +2,6 @@
 date_created: 2026-08-11
 category: idea
 tags:
-  - inbox
   - ai
   - pkm
 status: #draft

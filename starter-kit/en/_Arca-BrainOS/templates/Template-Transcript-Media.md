@@ -5,7 +5,6 @@ description: ""
 category: "media" # Options: media | youtube | podcast | audio | video
 url: ""
 tags:
-  - inbox
   - media
 ---
 # 🎥 {{title}}
