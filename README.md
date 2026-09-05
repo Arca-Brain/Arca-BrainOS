@@ -12,6 +12,10 @@ status: "#completed"
 
 # 🧠 Arca-BrainOS
 
+<p align="center">
+  <img src="assets/arcabrain_banner.jpg" alt="Arca-BrainOS Panoramic Banner" width="100%">
+</p>
+
 > *"My ark is not a refuge, it is an engine... Dreams conceive, but only action accomplishes."*  
 > **Fernando Pessoa**  
 >  

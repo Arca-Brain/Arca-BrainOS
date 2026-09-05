@@ -13,6 +13,10 @@ status: "#completed"
 
 # 📜 MANIFESTO: The Sovereign AI Workflow
 
+<p align="center">
+  <img src="assets/arcabrain_banner.jpg" alt="Arca-BrainOS Manifesto Banner" width="100%">
+</p>
+
 > *"My ark is not a refuge, it is an engine... Dream conceives, but action alone accomplishes."*  
 > (**Fernando Pessoa**)
 

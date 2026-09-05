@@ -12,6 +12,10 @@ status: "#completed"
 
 # 🧠 Arca-BrainOS
 
+<p align="center">
+  <img src="assets/arcabrain_banner.jpg" alt="Bandeau Panoramique Arca-BrainOS" width="100%">
+</p>
+
 > *"Mon arche n'est pas un refuge, c'est un moteur... Le rêve conçoit, mais seule l'action accomplit."*  
 > **Fernando Pessoa**  
 >  
