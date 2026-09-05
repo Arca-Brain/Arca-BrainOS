@@ -1,5 +1,10 @@
-
 # Home page
+
+<div align="center">
+
+![[2-Ressources/Images/arcabrain_banner.jpg|650]]
+
+</div>
 ```dataviewjs
 // Détection dynamique du dossier parent (fonctionne à la racine OU dans un sous-dossier)
 const currentFolder = dv.current().file.folder;

@@ -1,5 +1,10 @@
-
 # Home page
+
+<div align="center">
+
+![[2-Ressources/Images/arcabrain_banner.jpg|650]]
+
+</div>
 ```dataviewjs
 // Dynamic folder detection (works at vault root OR inside sub-folders)
 const currentFolder = dv.current().file.folder;
