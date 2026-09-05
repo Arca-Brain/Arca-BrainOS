@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-resume (Deep Work Session Framing)
 
+- **Reference Process:** [[Process-Project-Management-and-Deep-Work]]
+
 ## Trigger
 Execute when user enters `arca-resume` followed by target project note.
 

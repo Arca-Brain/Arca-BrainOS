@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-query (Cognitive Bridge & Knowledge Query)
 
+- **Reference Process:** [[Process-Semantic-Exploration-and-Research]]
+
 ## Trigger
 Execute when user enters `arca-query` followed by a question or topic.
 

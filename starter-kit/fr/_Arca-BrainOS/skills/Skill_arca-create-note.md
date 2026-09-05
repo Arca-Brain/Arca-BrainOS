@@ -5,6 +5,8 @@ description: Instancier et mailler de manière interactive et assistée une note
 
 # 🛠️ Skill : arca-create-note (Création, Chaînage & Validation Interactive)
 
+- **Processus de Référence :** [[Process-Inbox-Clean-et-Dispatch]] & [[Process-Capitalisation-et-Synthese-MOC]]
+
 ## Déclencheurs & Alias Spécifiques
 
 Ce skill est déclenché par l'une des commandes ou alias suivants :
@@ -35,24 +37,34 @@ Avant toute modification ou création de fichier sur le disque, l'IA doit impér
 
 1. **Analyse Contextuelle & Scan des Connexions :**
    - Analyse le titre, le contexte ou la note brute source du projet.
+   - Détermine la nature du projet :
+     - **Projet intellectuel / recherche :** Vocation à s'adosser à des fiches de connaissances thématiques (`themes`).
+     - **Projet pratique / vie réelle :** Vocation opérationnelle pure, ne requérant aucun Thème MOC (`themes: []`).
    - Scanne le Vault (`PATH_AREAS` et `PATH_THEMES`) pour identifier :
-     - Le ou les **Domaines de Vie** rattachés (`areas`).
+     - Le ou les **Domaines de Vie existants** rattachables (`areas`).
+     - Les **Nouveaux Domaines de Vie suggérés** si aucun domaine existant ne correspond à ce pan de vie.
      - Le ou les **Thèmes (MOCs) existants** rattachés (`themes`).
-     - Les **Nouveaux Thèmes suggérés** qui n'existent pas encore dans `PATH_THEMES`.
+     - Les **Nouveaux Thèmes suggérés** (si pertinent pour un projet intellectuel).
 
 2. **Proposition Interactive à l'Humain :**
    Présenter clairement le diagnostic dans le chat :
    - 📌 **Nom du projet proposé :** `P-[Nom-Projet]`
-   - 🧠 **Domaine(s) de Vie rattaché(s) suggéré(s) :** `[[Domaine-1]]`, `[[Domaine-2]]`
-   - 📜 **Thème(s) MOC existant(s) rattaché(s) :** `[[T-Theme-Existant]]`
-   - 🆕 **Nouveau(x) Thème(s) suggéré(s) à créer :** `[[T-Nouveau-Theme]]` *(Non détecté dans `PATH_THEMES`)*
-   - ❓ **Demande de validation :** *"Valides-tu ce maillage ? Souhaites-tu instancier dans la foulée le(s) nouveau(x) thème(s) `[[T-Nouveau-Theme]]` ?"*
+   - 🧠 **Domaine(s) de Vie :**
+     - Si domaine existant : `[[Domaine-Existant]]`
+     - Si nouveau domaine requis : `[[Nouveau-Domaine]]` *(Non présent dans `PATH_AREAS` : création proposée)*
+   - 📜 **Thème(s) MOC :**
+     - Si projet intellectuel : `[[T-Theme-Existant]]` ou `[[T-Nouveau-Theme]]` *(création proposée)*
+     - Si projet pratique : *Aucun thème nécessaire (projet d'action concrète)* $\rightarrow$ `themes: []`
+   - ⚠️ **Garde-fou en cas d'absence de Domaine :** Si l'utilisateur demande à ne spécifier aucun domaine, l'alerter :
+     > *"Attention : sans Domaine de Vie rattaché, le projet n'apparaîtra pas dans la matrice de focalisation de `Home.md`. Nous te recommandons d'y associer au moins un domaine de responsabilité."*
+   - ❓ **Demande de validation :** *"Valides-tu ce maillage ? Souhaites-tu instancier dans la foulée le(s) nouveau(x) domaine(s) ou thème(s) ?"*
 
 3. **Exécution & Chaînage (Après validation explicite) :**
-   - Instancier `P-[Nom-Projet].md` dans `PATH_PROJECTS` avec [`Template-Projet.md`](file:///home/chug/2ndBrain/_Arca-BrainOS/templates/Template-Projet.md).
-   - Si validé par l'utilisateur, **enchaîner immédiatement la création** du nouveau thème `T-Nouveau-Theme.md` dans `PATH_THEMES` avec [`Template-Theme.md`](file:///home/chug/2ndBrain/_Arca-BrainOS/templates/Template-Theme.md).
+   - Instancier `P-[Nom-Projet].md` dans `PATH_PROJECTS` avec `PATH_SYSTEM/templates/Template-Projet.md`.
+   - **Chaînage Domaine de Vie :** Si un nouveau domaine a été validé, instancier immédiatement `[Nouveau-Domaine].md` dans `PATH_AREAS` avec `PATH_SYSTEM/templates/Template-Area.md`, et inscrire l'entrée dans `PATH_AREAS/README.md`.
+   - **Chaînage Thème MOC :** Si un nouveau thème a été validé, instancier immédiatement `T-Nouveau-Theme.md` dans `PATH_THEMES` avec `PATH_SYSTEM/templates/Template-Theme.md`.
    - **Raccordement bidirectionnel :** Renseigner la note de projet dans la section `### 🏁 Projets & chantiers de l'année` des fiches de Domaines de Vie rattachées (`PATH_AREAS`).
-   - Journaliser l'instanciation et le maillage dans `PATH_SYSTEM/log.md`.
+   - Journaliser l'instanciation et les créations en chaîne dans `PATH_SYSTEM/log.md`.
 
 ---
 
@@ -93,7 +105,7 @@ Avant toute modification ou création de fichier sur le disque, l'IA doit impér
    - ❓ **Demande de validation :** *"Confirmes-tu la création de ce Domaine de Vie et le rattachement de ces projets et thèmes ?"*
 
 3. **Exécution (Après validation explicite) :**
-   - Instancier `[Nom-Domaine].md` dans `PATH_AREAS` avec [`Template-Area.md`](file:///home/chug/2ndBrain/_Arca-BrainOS/templates/Template-Area.md).
+   - Instancier `[Nom-Domaine].md` dans `PATH_AREAS` avec `PATH_SYSTEM/templates/Template-Area.md`.
    - Inscrire l'entrée dans `PATH_AREAS/README.md`.
    - Mettre à jour les métadonnées `areas` des projets et thèmes rattachés.
    - Journaliser l'action dans `PATH_SYSTEM/log.md`.

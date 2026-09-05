@@ -1,7 +1,7 @@
 ---
-id: "202607172328"
+Id: "202607172328"
 category: Process
-date_created: "2026-07-17"
+date-created: "2026-07-17"
 tags:
   - process
   - audit
@@ -13,6 +13,7 @@ tags:
 
 - **Fréquence** : Monthly / Saisonnière (Pratiqué lors des revues mensuelles ou en fin de trimestre).
 - **Déclencheur** : Calendrier de maintenance mensuel ou constat de frictions dans le maillage du Second Cerveau.
+- **Temps actuel** : ~1h / mois (vérification manuelle fastidieuse des liens cassés, recherche des orphelines).
 
 ---
 ## Input
@@ -50,8 +51,31 @@ tags:
 * Liens brisés réparés et notes orphelines maillées.
 * Index central `index.md` à jour.
 
-## Exemples
-* Session d'audit mensuel du Vault résolvant les orphelines, réparant les liens cassés et consolidant le bilan de productivité globale.
+## 💡 Exemples Concrets d'Exécution & Prompts Types
+
+### Cas 1 : Revue Mensuelle d'Hygiène & Diagnostic de Santé
+- **Le Déclencheur Humain (Prompt Utilisateur) :**
+  > Tapez dans votre terminal IA : `arca-audit` (ou dans le chat : *"Audite la santé globale de mon coffre"*).
+- **État Initial :**
+  Plusieurs dizaines de notes ont été créées au fil du mois, certaines sont orphelines, d'autres contiennent des liens brisés.
+- **Orchestration Agentique (Compétence [[Skill_arca-audit]]) :**
+  1. L'agent calcule l'indice de santé PARA (ratio notes distillées vs projets actifs).
+  2. Il consolide les métriques de productivité et de temps économisé à travers tous les projets actifs et archivés.
+  3. Il dresse la liste des notes isolées (sans lien entrant ni sortant) et des liens fantômes (`ghost links`).
+  4. Il consigne le diagnostic dans `_Arca-BrainOS/audit-log.md` et ajoute une ligne unique dans `_Arca-BrainOS/log.md`.
+- **État Final (Output) :**
+  Un tableau de bord complet s'affiche dans le chat avec les actions de remédiation recommandées.
+
+### Cas 2 : Réparation Ciblée des Liens Brisés
+- **Le Déclencheur Humain (Prompt Utilisateur) :**
+  > Dans le chat : *"Répare les 2 liens fantômes détectés dans mon MOC T-PKM"*
+- **Orchestration Agentique (Compétences [[Skill_arca-converge]] / `link-audit`) :**
+  Proposition de réconciliation sémantique, confirmation humaine dans le chat, puis mise à jour sécurisée du fichier MOC.
+
+### 🔗 Compétences Agentiques Associées
+- [[Skill_arca-audit]] : Diagnostic de santé, détection des orphelines, ghost links et bilan ROI global.
+- [[Skill_arca-converge]] : Ré-ancrage structurel des notes dans les Thèmes MOC (`T-`).
+- [[Skill_arca-test-suite]] : Banc d'essai automatisé validant la conformité des règles système.
 
 ## Douleurs principales
 * Dégradation progressive de la propreté du Second Cerveau ("entropie numérique").
@@ -72,4 +96,4 @@ tags:
 * **Décision de suppression ou de conservation** : Seul l'humain décide si une note désuète doit être supprimée, archivée ou fusionnée.
 * **Validation des grosses modifications** : Respect de la règle de sécurité (l'IA demande une confirmation explicite si > 3 fichiers modifiés hors `IA-generated/`).
 
-**Pipeline complet** : `arca-audit` (Diagnostic Agent) ➔ Rapport de santé ➔ Validation du plan (Humain) ➔ `link-audit` & Ré-indexation (Agent/Auto).
+**Pipeline complet** : `arca-audit` (Diagnostic Agent) $\rightarrow$ Rapport de santé $\rightarrow$ Validation du plan (Humain) $\rightarrow$ `link-audit` & Ré-indexation (Agent/Auto).

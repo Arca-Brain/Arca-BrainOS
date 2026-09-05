@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-close-session (Session Closure & Memory)
 
+- **Reference Process:** [[Process-Project-Management-and-Deep-Work]] & [[Process-Cross-Project-Capitalization-and-MOC]]
+
 ## Trigger
 Execute when the user enters `arca-close-session` (or `close-session` / `brain-close-session`) followed by the target project note link.
 

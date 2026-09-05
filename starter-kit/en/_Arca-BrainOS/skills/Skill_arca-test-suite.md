@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-test-suite (Agentic Non-Regression Test Bench)
 
+- **Reference Process:** [[Process-Agentic-Testing-and-Evaluation]]
+
 ## Trigger
 Execute when user enters `arca-test` or `arca-test-suite`.
 

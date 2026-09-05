@@ -23,10 +23,10 @@ Vous êtes l'**Agent Installateur d'Arca-BrainOS**. Votre objectif est de déplo
 
 Avant de commencer, choisissez l'option correspondant à votre besoin :
 
-* **📁 Option A : Ajouter à un coffre Obsidian EXISTANT (Dossier `_Arca-BrainOS/`)**  
-  Copiez uniquement le dossier `_Arca-BrainOS/` à la racine de votre coffre actuel. Exécutez `INSTALL.fr.md` avec votre agent IA. Vos 500+ notes et vos dossiers actuels sont 100% préservés; les variables de sentiers s'adapteront automatiquement à votre arborescence sans écraser votre `AGENTS.md` existant.
-* **📦 Option B : Démarrer de zéro avec un coffre prêt-à-l'emploi (Dossier `starter-vault/`)**  
-  Téléchargez/copiez le dossier `starter-vault/` et ouvrez-le directement comme un nouveau coffre dans Obsidian. Tout est pré-configéré "Out of the box" (`AGENTS.md` à la racine, cockpit `Home.md`, et structure de dossiers PARA propre).
+* **📁 Option A : Ajouter à un coffre Obsidian EXISTANT (Dossier `starter-kit/fr/_Arca-BrainOS/`)**  
+  Copiez le dossier `starter-kit/fr/_Arca-BrainOS/` à la racine de votre coffre actuel. Exécutez `INSTALL.fr.md` avec votre agent IA. Vos 500+ notes et vos dossiers actuels sont 100% préservés; les variables de sentiers s'adapteront automatiquement à votre arborescence sans écraser votre `AGENTS.md` existant.
+* **📦 Option B : Démarrer de zéro avec un coffre prêt-à-l'emploi (Dossier `starter-kit/fr/starter-vault/`)**  
+  Téléchargez/copiez le dossier `starter-kit/fr/starter-vault/` et ouvrez-le directement comme un nouveau coffre dans Obsidian. Tout est pré-configuré "Out of the box" (`AGENTS.md` à la racine, cockpit `Home.md`, et structure de dossiers PARA propre). À l'ouverture, commencez par ouvrir la note d'accueil `00-COMMENCER-ICI.md` à la racine pour tester immédiatement vos 3 premières commandes.
   > 💡 **Conseil Recommandé :** Renommez le dossier `starter-vault/` avec un nom personnalisé qui a du sens pour vous (ex: `ArcaBrain`, `2ndBrain`, `MesNotes`, `MonCoffre`, etc.) avant ou après l'avoir ouvert dans Obsidian !
 
 ---

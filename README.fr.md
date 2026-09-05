@@ -237,10 +237,23 @@ Arca-BrainOS n'impose aucun cadre rigide : il s'adapte naturellement à vos habi
 * **Runner Terminal IA :**
   * Un exécuteur de terminal IA exécuté localement dans votre coffre (ex: **Google Antigravity**, **Claude Code**, **OpenCode**, ou **Cursor**).
 
-### 2. Installation (2 Options)
+### 2. Quel Runner IA Choisir pour Débuter ?
 
-#### 📁 Option A : Ajouter à un coffre Obsidian EXISTANT (Dossier `_Arca-BrainOS/`)
-Copiez le dossier moteur `_Arca-BrainOS/` à la racine de votre coffre actuel. Ouvrez votre terminal IA (Antigravity / Claude Code / OpenCode) dans votre coffre et lancez l'instruction d'amorçage de [`INSTALL.fr.md`](INSTALL.fr.md) :
+Arca-BrainOS fonctionne avec n'importe quel terminal ou assistant agentique. Voici un comparatif rapide pour vous orienter selon vos priorités :
+
+| Runner IA | Points Forts | Recommandé pour | Modèles Recommandés |
+| :--- | :--- | :--- | :--- |
+| **Google Antigravity** | **Gratuit au démarrage**, quotas généreux, immense fenêtre de contexte (1M+ tokens), interface agentique dédiée | Démarrage immédiat sans frais ni friction | Gemini 1.5 Pro / Flash |
+| **Claude Code** | Raisonnement de pointe, grande finesse d'édition de notes Markdown et rigueur de synthèse | Utilisateurs disposant d'un compte API Anthropic | Claude 3.5 Sonnet |
+| **OpenCode** | 100% open-source, CLI rapide, compatible avec les serveurs d'inférence locaux | Souveraineté totale et utilisation hors-ligne | Modèles locaux (Ollama) ou API |
+| **Cursor / Windsurf** | Éditeur complet intégrant chat, terminal et visualisation directe des fichiers | Adeptes d'interfaces graphiques unifiées | Claude 3.5 Sonnet, GPT-4o |
+
+---
+
+### 3. Installation (2 Options)
+
+#### 📁 Option A : Ajouter à un coffre Obsidian EXISTANT (Dossier `starter-kit/fr/_Arca-BrainOS/`)
+Copiez le dossier moteur `starter-kit/fr/_Arca-BrainOS/` à la racine de votre coffre actuel. Ouvrez votre terminal IA (Antigravity / Claude Code / OpenCode) dans votre coffre et lancez l'instruction d'amorçage de [`INSTALL.fr.md`](INSTALL.fr.md) :
 
 ```text
 Lis https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.fr.md (ou INSTALL.fr.md local) et installe Arca-BrainOS pour moi.
@@ -248,12 +261,14 @@ Lis https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.fr.md (ou INSTA
 
 *Votre Agent Installateur analysera votre arborescence existante, détectera vos sentiers personnalisés, déploiera `_Arca-BrainOS/`, configurera `AGENTS.md` et exécutera `arca-test` sans détruire ni écraser vos notes actuelles.*
 
-#### 📦 Option B : Démarrer de zéro avec un coffre prêt-à-l'emploi (Dossier `starter-vault/`)
-Téléchargez/copiez le dossier `starter-vault/` pré-configuré et ouvrez-le directement comme un nouveau coffre dans Obsidian. Tout est inclus "Out of the box" (`AGENTS.md` à la racine, cockpit `Home.md`, et structure PARA propre).
+#### 📦 Option B : Démarrer de zéro avec un coffre prêt-à-l'emploi (Dossier `starter-kit/fr/starter-vault/`)
+Téléchargez ou copiez le dossier `starter-kit/fr/starter-vault/` et ouvrez-le directement comme un nouveau coffre dans Obsidian. Tout est inclus "Out of the box" (`AGENTS.md` à la racine, cockpit `Home.md`, et structure PARA propre).
 
-> 💡 **Conseil Recommandé :** Renommez le dossier `starter-vault/` avec un nom personnalisé qui a du sens pour vous (ex: `ArcaBrain`, `2ndBrain`, `MesNotes`, `MonCoffre`, etc.) avant ou après l'avoir ouvert dans Obsidian !
+> 💡 **Première étape recommandée :** À l'ouverture du coffre, ouvrez la note d'accueil **`00-COMMENCER-ICI.md`** située à la racine. Elle vous guide pas à pas pour réaliser vos 3 premières expérimentations concrètes en moins de 5 minutes !
+> 
+> *(Conseil : vous pouvez renommer le dossier `starter-vault/` avec un nom personnalisé tel que `ArcaBrain`, `2ndBrain`, ou `MesNotes`)*.
 
-### 3. Test de Vérification
+### 4. Test de Vérification
 Dans votre terminal IA, lancez :
 ```bash
 arca-test

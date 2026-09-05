@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-synthesize (Synthesis & Distillation)
 
+- **Reference Process:** [[Process-Media-Ingestion-and-Distillation]]
+
 ## Trigger
 Invoked by user (`arca-synthesize [file]`) or automatically by `arca-distill`.
 

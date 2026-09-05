@@ -111,13 +111,13 @@ To capture articles, web pages, and documentation directly from your browser int
 
 ## 🪄 3. Installation Protocol (2 Options)
 
-* **📁 Option A: Add to an Existing Vault (Dossier `_Arca-BrainOS/`)**  
-  Copy `_Arca-BrainOS/` into your existing vault root and prompt your AI terminal runner:
+* **📁 Option A: Add to an Existing Vault (Directory `starter-kit/en/_Arca-BrainOS/`)**  
+  Copy `starter-kit/en/_Arca-BrainOS/` into your existing vault root and prompt your AI terminal runner:
   ```text
   Read https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.md (or local INSTALL.md) and install Arca-BrainOS for me.
   ```
-* **📦 Option B: Fresh Start with Ready-to-Use Vault (Dossier `starter-vault/`)**  
-  Open `starter-vault/` directly in Obsidian.  
+* **📦 Option B: Fresh Start with Ready-to-Use Vault (Directory `starter-kit/en/starter-vault/`)**  
+  Open `starter-kit/en/starter-vault/` directly in Obsidian. Upon opening, read the welcome note **`00-START-HERE.md`** at the root to test your first 3 agentic commands in under 5 minutes.  
   > 💡 **Tip:** Rename `starter-vault/` to a custom name (`ArcaBrain`, `2ndBrain`, `MyVault`) before or after opening it!
 
 ---

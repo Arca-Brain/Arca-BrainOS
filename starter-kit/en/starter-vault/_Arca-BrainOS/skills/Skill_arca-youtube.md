@@ -1,5 +1,7 @@
 # 🛠️ Skill: arca-youtube
 
+- **Reference Process:** [[Process-Media-Ingestion-and-Distillation]] & [[Process-Inbox-Clean-and-Dispatch]]
+
 ## Trigger
 Execute this workflow when the user types `arca-youtube` (or `brain-youtube`) followed by a YouTube URL.
 

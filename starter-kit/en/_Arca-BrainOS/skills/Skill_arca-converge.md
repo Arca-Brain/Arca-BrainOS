@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-converge (MOC Integration & Convergence)
 
+- **Reference Process:** [[Process-Media-Ingestion-and-Distillation]] & [[Process-Cross-Project-Capitalization-and-MOC]]
+
 ## Trigger
 Execute when the user enters `arca-converge` (or `brain-converge`), typically followed by a distilled note or list of notes.
 

@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-distill (Master Orchestration Skill)
 
+- **Reference Process:** [[Process-Media-Ingestion-and-Distillation]]
+
 ## Trigger
 Execute when the user enters `arca-distill` (or `distill` / `brain-distill`) followed by a file name or link in `0-Inbox/`.
 

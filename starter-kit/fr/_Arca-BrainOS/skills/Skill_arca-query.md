@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-query (Le Pont Cognitif & Triage du Savoir)
 
+- **Processus de Référence :** [[Process-Exploration-Semantique-et-Recherche]]
+
 ## Déclencheur
 Exécute ce workflow lorsque l'utilisateur tape `arca-query` (ou `query` / `brain-query`) suivi d'une question, d'un concept ou d'une problématique de recherche.
 
@@ -25,4 +27,5 @@ Agir comme un pont cognitif dans le Second Cerveau en croisant le savoir déjà 
 
 4. **Sauvegarde & Cristallisation (Optionnel) :**
    - Si la synthèse croisée apporte une forte valeur conceptuelle, propose à l'utilisateur de la sauvegarder sous forme de note de travail pérenne dans `2-Ressources/IA-generated/AI-Query-[Nom].md`.
-   - **Règle de Journalisation :** N'écris dans `_Arca-BrainOS/log.md` que si l'utilisateur valide la création d'un fichier `AI-Query-...`. Format : `[Date] - Action IA (Synthèse) : Création de la note de recherche [[AI-Query-[Nom]]]`.
+   - **Règle de Journalisation :** N'écris dans `_Arca-BrainOS/log.md` que si l'utilisateur valide la création d'un fichier `AI-Query-...` (afin de ne pas polluer le journal avec de simples questions de chat). Le format de log à utiliser est :
+     `[Date] - Action IA (Synthèse) : Création de la note de recherche [[AI-Query-[Nom]]]`

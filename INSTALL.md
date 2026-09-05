@@ -23,10 +23,10 @@ You are the **Arca-BrainOS Installer Agent**. Your goal is to deploy the Arca-Br
 
 Before starting, choose the option that matches your setup:
 
-* **📁 Option A: Add to an EXISTING Obsidian Vault (Dossier `_Arca-BrainOS/`)**  
-  Copy only the `_Arca-BrainOS/` directory into the root of your existing Obsidian vault. Run `INSTALL.md` with your AI agent. Your 500+ existing notes and folder structure are 100% preserved; path variables will automatically adapt to your custom layout without overwriting your existing `AGENTS.md`.
-* **📦 Option B: Fresh Start with Ready-to-Use Vault (Dossier `starter-vault/`)**  
-  Download/copy the `starter-vault/` directory and open it directly as a new vault inside Obsidian. Everything is pre-configured out-of-the-box (`AGENTS.md` at root, `Home.md` cockpit, and clean PARA folder structure).
+* **📁 Option A: Add to an EXISTING Obsidian Vault (Directory `starter-kit/en/_Arca-BrainOS/`)**  
+  Copy the `starter-kit/en/_Arca-BrainOS/` directory into the root of your existing Obsidian vault. Run `INSTALL.md` with your AI agent. Your 500+ existing notes and folder structure are 100% preserved; path variables will automatically adapt to your custom layout without overwriting your existing `AGENTS.md`.
+* **📦 Option B: Fresh Start with Ready-to-Use Vault (Directory `starter-kit/en/starter-vault/`)**  
+  Download/copy the `starter-kit/en/starter-vault/` directory and open it directly as a new vault inside Obsidian. Everything is pre-configured out-of-the-box (`AGENTS.md` at root, `Home.md` cockpit, and clean PARA folder structure). Upon opening, check out the welcome note `00-START-HERE.md` at the root to immediately test your first 3 commands.
   > 💡 **Recommended Tip:** Rename the `starter-vault/` folder to a custom name that makes sense for you (e.g. `ArcaBrain`, `2ndBrain`, `MyVault`, `MyNotes`, etc.) before or after opening it in Obsidian!
 
 ---

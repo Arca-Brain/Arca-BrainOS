@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-audit (Maintenance, Santé du Vault & Bilan Temporel)
 
+- **Processus de Référence :** [[Process-Audit-et-Maintenance-du-Vault]]
+
 ## Déclencheur
 Exécute ce workflow lorsque l'utilisateur tape la commande `arca-audit` (ou `audit` / `brain-audit`).
 
@@ -35,8 +37,8 @@ Scanner la structure pour détecter les frictions, les notes isolées, maintenir
 
 6. **Journalisation & Archivage de l'Audit dans `_Arca-BrainOS/audit-log.md` :**
    - Ouvre le fichier journal central `_Arca-BrainOS/audit-log.md`.
-   - Met à jour les métadonnées frontmatter YAML (`last_update: "YYYY-MM-DD HH:mm"`, incrémente `total_audits`).
-   - Met à jour la section `# 📊 Executive Summary & Tendances Long Terme` au sommet du fichier.
+   - Met à jour les métadonnées frontmatter YAML (`derniere_mise_a_jour: "YYYY-MM-DD HH:mm"`, incrémente `total_audits`).
+   - Met à jour la section `# 📊 Executive Summary & Tendances Long Terme` au sommet du fichier (recalcul des indicateurs moyens, taux PARA et tendances).
    - Insère le rapport d'audit complet horodaté `### 📅 Audit du [AAAA-MM-JJ HH:mm]` au sommet de la section `# 🪵 Historique Chronologique des Audits`.
    - Enregistre une trace d'exécution d'une seule ligne dans `_Arca-BrainOS/log.md` : `[YYYY-MM-DD HH:mm] arca-audit -> Diagnostic de santé & mise à jour du journal audit-log.md`.
 
@@ -53,5 +55,7 @@ L'Agent affiche le résultat directement dans la console Antigravity sous forme 
 
 - **🚨 Notes Isolées :** [Liste des notes sans MOC]
 - **👻 Concepts Fantômes :** [Liens pointant vers le vide]
-- **💡 Pistes d'Amélioration :** [Suggestions de regroupements thématiques ou de passerelles manquantes]
+- **💡 Pistes d'Amélioration :** [Suggestions de regroupements thématiques ou de passerelles manquantes entre vos notes]
 - **💾 Archivage :** ✅ Rapport consigné avec succès dans `/_Arca-BrainOS/audit-log.md`.
+
+Chaque audit alimente automatiquement l'historique et l'Executive Summary dans `/_Arca-BrainOS/audit-log.md`.

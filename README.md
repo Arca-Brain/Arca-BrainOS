@@ -160,16 +160,40 @@ Arca-BrainOS is not a rigid framework: you are completely free to adapt note tem
 * **[Obsidian Web Clipper](https://obsidian.md/clipper)** (Official browser extension to capture articles and web pages into `0-Inbox/`)
 * An AI coding assistant (Google Antigravity CLI, Claude Code, OpenCode, Cursor, etc.)
 
-### 2. Installation (Choose Option A or Option B)
+### 2. Which AI Runner Should You Choose to Get Started?
 
-- **📁 Option A: Existing Vault**  
-  Copy `_Arca-BrainOS/` into your existing Obsidian vault. Then tell your AI assistant:
+Arca-BrainOS runs seamlessly with any agentic CLI or coding assistant. Here is a quick comparison to guide your choice:
+
+| AI Runner | Key Strengths | Recommended For | Recommended Models |
+| :--- | :--- | :--- | :--- |
+| **Google Antigravity** | **Free to start**, generous rate limits, huge context window (1M+ tokens), native agentic workflow | Immediate frictionless start with zero setup cost | Gemini 1.5 Pro / Flash |
+| **Claude Code** | Premier reasoning capabilities, high fidelity Markdown note editing, concise synthesis | Users with an active Anthropic API account | Claude 3.5 Sonnet |
+| **OpenCode** | 100% open-source terminal CLI, supports local inference servers | Total data sovereignty and offline setups | Local models (Ollama) or API |
+| **Cursor / Windsurf** | Full IDE experience pairing chat, terminal, and live file tree navigation | Users who prefer a graphic UI over a standalone CLI | Claude 3.5 Sonnet, GPT-4o |
+
+---
+
+### 3. Installation (Choose Option A or Option B)
+
+- **📁 Option A: Add to an Existing Vault (Directory `starter-kit/en/_Arca-BrainOS/`)**  
+  Copy `starter-kit/en/_Arca-BrainOS/` into your existing Obsidian vault root. Then tell your AI assistant:
   ```text
-  Read https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.md and install Arca-BrainOS for me.
+  Read https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.md (or local INSTALL.md) and install Arca-BrainOS for me.
   ```
 
-- **📦 Option B: Fresh Start (Starter Vault)**  
-  Open `starter-vault/` directly in Obsidian as a new vault (feel free to rename `starter-vault` to your preferred vault name like `MyVault` or `2ndBrain`).
+- **📦 Option B: Fresh Start (Starter Vault: Directory `starter-kit/en/starter-vault/`)**  
+  Download or copy the `starter-kit/en/starter-vault/` folder and open it directly as a new vault in Obsidian. Everything is pre-configured out-of-the-box (`AGENTS.md` at root, `Home.md` cockpit, clean PARA structure).
+  
+  > 💡 **Recommended First Step:** Upon opening the vault in Obsidian, open the welcome note **`00-START-HERE.md`** at the root. It walks you through your first 3 practical hands-on experiments in under 5 minutes!
+  > 
+  > *(Tip: Feel free to rename the `starter-vault/` folder to your preferred vault name like `ArcaBrain`, `2ndBrain`, or `MyNotes`)*.
+
+### 4. Verification Test
+In your AI terminal runner, run:
+```bash
+arca-test
+```
+*Your agent will execute automated assertions to verify vault health and path resolution.*
 
 ---
 

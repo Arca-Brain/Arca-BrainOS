@@ -42,23 +42,23 @@ Tu as désormais l'autorisation de modifier des fichiers en dehors de `IA-genera
 
 ## Catalogue des Compétences (Skills)
 
-### 📥 1. Cluster Inbox & Aiguillage — [[Process-Inbox-Clean-et-Dispatch]]
+### 📥 1. Cluster Inbox & Aiguillage : [[Process-Inbox-Clean-et-Dispatch]]
 - `arca-inbox-process` ou `inbox-process` / `brain-inbox-process` -> Charge `/_Arca-BrainOS/skills/Skill_arca-inbox-process.md`
 - `arca-organize-idea` ou `arca-idea` / `brain-organize-idea` -> Charge `/_Arca-BrainOS/skills/Skill_arca-organize-idea.md`
 - `arca-create-note` ou `create-project` / `create-theme` / `create-area` -> Charge `/_Arca-BrainOS/skills/Skill_arca-create-note.md`
 
-### 🧪 2. Cluster Distillation & Médias — [[Process-Ingestion-et-Distillation-de-Medias]]
+### 🧪 2. Cluster Distillation & Médias : [[Process-Ingestion-et-Distillation-de-Medias]]
 - `arca-distill` ou `distill` / `brain-distill` -> Charge `/_Arca-BrainOS/skills/Skill_arca-distill.md`
 - `arca-synthesize` ou `brain-synthesize` -> Charge `/_Arca-BrainOS/skills/Skill_arca-synthesize.md`
 - `arca-converge` ou `brain-converge` -> Charge `/_Arca-BrainOS/skills/Skill_arca-converge.md`
 - `arca-impact` ou `brain-impact` -> Charge `/_Arca-BrainOS/skills/Skill_arca-impact.md`
 - `arca-youtube` ou `brain-youtube` -> Charge `/_Arca-BrainOS/skills/Skill_arca-youtube.md`
 
-### 🔍 3. Cluster Exploration & Maintenance — [[Process-Exploration-Semantique-et-Recherche]] & [[Process-Audit-et-Maintenance-du-Vault]]
+### 🔍 3. Cluster Exploration & Maintenance : [[Process-Exploration-Semantique-et-Recherche]] & [[Process-Audit-et-Maintenance-du-Vault]]
 - `arca-query` ou `query` / `brain-query` -> Charge `/_Arca-BrainOS/skills/Skill_arca-query.md`
 - `arca-audit` ou `audit` / `brain-audit` -> Charge `/_Arca-BrainOS/skills/Skill_arca-audit.md`
 - `arca-test` ou `arca-test-suite` -> Charge `/_Arca-BrainOS/skills/Skill_arca-test-suite.md`
 
-### 🪵 4. Cluster Deep Work & Session — [[Process-Pilotage-de-Projets-et-Deep-Work]] & [[Process-Capitalisation-et-Synthese-MOC]]
+### 🪵 4. Cluster Deep Work & Session : [[Process-Pilotage-de-Projets-et-Deep-Work]] & [[Process-Capitalisation-et-Synthese-MOC]]
 - `arca-resume` ou `resume` / `brain-resume` -> Charge `/_Arca-BrainOS/skills/Skill_arca-resume.md`
 - `arca-close-session` ou `close-session` / `brain-close-session` -> Charge `/_Arca-BrainOS/skills/Skill_arca-close-session.md`

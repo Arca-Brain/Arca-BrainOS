@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-organize-idea (Organisation & Typage par Category)
 
+- **Processus de Référence :** [[Process-Inbox-Clean-et-Dispatch]]
+
 ## Déclencheur
 Exécute ce workflow lorsque l'utilisateur tape la commande `arca-organize-idea` (ou `arca-idea` / `organize-idea` / `brain-organize-idea`), éventuellement suivie du nom ou du lien d'une note spécifique dans l'Inbox.
 
@@ -9,14 +11,14 @@ Analyser, qualifier et structurer les notes brutes issues de l'Inbox. Le skill t
 ## Workflow d'Exécution Séquentiel
 
 1. **Périmètre & Scan des Contenus :**
-   - **Mode Note Unique :** Si une note spécifique est fournie (ex: `[[Nom-de-note]]`), cible uniquement cette note dans `0-Inbox/`.
-   - **Mode Batch (Inbox complète) :** Si aucun argument n'est fourni, scanne le dossier `0-Inbox/` pour l'ensemble des fichiers `.md` bruts non qualifiés.
+   - **Mode Note Unique :** Si une note spécifique est fournie (ex: `[[Nom-de-note]]`), cible uniquement cette note dans `0-Inbox/` (ou son emplacement Vault).
+   - **Mode Batch (Inbox complète) :** Si aucun argument n'est fourni, scanne le dossier `0-Inbox/` pour l'ensemble des fichiers `.md` bruts non qualifiés (exclure sous-dossiers et notes déjà qualifiées).
 
 2. **Diagnostic de Categorie & Analyse :**
    - Pour chaque note ciblée, analyse le contenu brut et détermine la `category` d'intention :
      - 💡 **`category: idea`** : 
        - *Pensée volante libre* : Réflexion conceptuelle sans projet cible immédiat (rattachée à un Thème MOC `[[T-...]]`).
-       - *Idée d'enrichissement de projet* : Réflexion spécifique destinée à alimenter un projet existant (`target: "[[P-...]]"`).
+       - *Idée d'enrichissement de projet* : Réflexion spécifique destinée à alimenter un projet existant à identifier (`target: "[[P-...]]"`).
      - ⚡ **`category: action`** : Tâche directe à effectuer ou à injecter dans un backlog de projet (`P-`).
      - 🌱 **`category: project-seed`** : Idée majeure destinée à devenir un projet à part entière (`P-`).
      - 📚 **`category: source`** : Ressource brute externe (article, vidéo) à distiller via `arca-distill`.
@@ -31,7 +33,8 @@ Analyser, qualifier et structurer les notes brutes issues de l'Inbox. Le skill t
    - **Si `category: idea` :**
      - Applique `/_Arca-BrainOS/templates/Template-Idea.md`.
      - Insère `category: idea`, et `target: "[[Nom-Cible]]"`.
-     - Conserve 100% de la saisie d'origine dans `## 📝 Note Brute`.
+     - Nettoyage YAML : Supprime tout tag résiduel `inbox`, `O-Inbox`, `0-Inbox` ou `statut/inbox` du champ `tags`.
+     - Conserve 100% de la saisie d'origine dans `## 📝 Note Brute (Raw Note)`.
      - Formule la synthèse dans `## 🎯 Idée Clé & Synthèse`.
      - Génère les propositions d'enrichissement dans `## 🚀 Actions & Projets Impactés`.
      - Injecte les actions `- [ ]` dans le projet cible `[[P-...]]` si applicable.

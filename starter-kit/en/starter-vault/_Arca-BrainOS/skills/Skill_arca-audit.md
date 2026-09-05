@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-audit (Maintenance, Vault Health & Time Audit)
 
+- **Reference Process:** [[Process-Vault-Health-and-Maintenance]]
+
 ## Trigger
 Execute this workflow when the user enters `arca-audit` (or `audit` / `brain-audit`).
 

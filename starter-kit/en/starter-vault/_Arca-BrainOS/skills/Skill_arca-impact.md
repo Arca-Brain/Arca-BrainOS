@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-impact (Impact Analysis & Project Alignment)
 
+- **Reference Process:** [[Process-Media-Ingestion-and-Distillation]]
+
 ## Trigger
 Execute when user enters `arca-impact` followed by a distilled note, or automatically invoked by `arca-distill`.
 

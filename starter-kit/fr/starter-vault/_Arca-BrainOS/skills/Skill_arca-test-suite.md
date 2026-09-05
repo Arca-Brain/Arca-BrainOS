@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-test-suite (Banc d'Essai & Non-Régression Agentique 100% Skills)
 
+- **Processus de Référence :** [[Process-Test-et-Evaluation-Agentique]]
+
 ## Déclencheur
 Exécute ce workflow lorsque l'utilisateur tape la commande `arca-test` ou `arca-test-suite` (ou `test-suite`).
 
@@ -52,8 +54,8 @@ Tester et valider l'intégrité globale de l'ensemble des 13 compétences agenti
     - Assertion : Horodate de fin, calcul durée réelle vs sans IA, finalisation sans cases à cocher actives dans le journal et maj du YAML cumulé.
     - Résultat : 🟢 PASS / 🔴 FAIL.
 
-12. **Test 12 : Création Directe & Routage d'Alias (`arca-create-note`)**
-    - Assertion : Support complet des alias direct (`create-project`, `create-theme`, `create-domaine`), typage exact YAML (`category: "Theme"`, `status: "active"`, `areas`) et zéro pollution textuelle.
+12. **Test 12 : Création Directe, Chaînage & Validation (`arca-create-note`)**
+    - Assertion : Support des alias direct (`create-project`, `create-theme`, `create-domaine`), validation humaine interactive avant écriture, proposition de chaînage des thèmes inexistants, scan de justification des domaines et typage exact YAML (`category`, `areas`).
     - Résultat : 🟢 PASS / 🔴 FAIL.
 
 13. **Test 13 : Couverture Documentaire Globale (READMEs)**
@@ -68,7 +70,7 @@ Tester et valider l'intégrité globale de l'ensemble des 13 compétences agenti
 # 🧪 Rapport d'Évaluation Agentique Arca-BrainOS (100% Skills Coverage)
 
 | Test | Compétence / Scope | Assertion Qualité | Statut |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :---: |
 | **Test 1** | `arca-inbox-process` | Qualification `category` & Détection doublons | 🟢 PASS |
 | **Test 2** | `arca-organize-idea` | Préservation 100% Raw Note & Style Humain | 🟢 PASS |
 | **Test 3** | `arca-distill` | Orchestration 4 Étapes Master Skill | 🟢 PASS |
@@ -80,7 +82,7 @@ Tester et valider l'intégrité globale de l'ensemble des 13 compétences agenti
 | **Test 9** | `arca-audit` | Formatage Markdown Tableaux (Col 0) & Log Audit | 🟢 PASS |
 | **Test 10** | `arca-resume` | Cadrage Cognitif & Init Journal Horodaté | 🟢 PASS |
 | **Test 11** | `arca-close-session` | Calcul ROI IA, Bilan Journal & Maj Frontmatter | 🟢 PASS |
-| **Test 12** | `arca-create-note` | Typage YAML (`category`, `areas`) & Routage Alias | 🟢 PASS |
+| **Test 12** | `arca-create-note` | Validation humaine, Chaînage thèmes & Scan justification | 🟢 PASS |
 | **Test 13** | Documentation | Couverture 100% READMEs (`skills`, `templates`, `process`, `AGENTS`) | 🟢 PASS |
 
 **Résultat Global :** 13 / 13 Tests Validés avec Succès 🚀 (Couverture : 100%)

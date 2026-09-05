@@ -1,7 +1,7 @@
 ---
-id: "202607172329"
+Id: "202607172329"
 category: Process
-date_created: "2026-07-17"
+date-created: "2026-07-17"
 tags:
   - process
   - capitalisation
@@ -13,6 +13,7 @@ tags:
 
 - **Fréquence** : Monthly / On Milestone (À l'issue de jalons majeurs de projets).
 - **Déclencheur** : Fin d'un projet, atteinte d'une milestone clé, ou récurrence de principes transversaux dans plusieurs projets.
+- **Temps actuel** : ~2h par projet (savoir confiné dans les projets terminés sans réutilisation globale).
 
 ---
 ## Input
@@ -22,7 +23,7 @@ tags:
 
 ## Étapes
 1. **Analyser le patrimoine de connaissances** : Scanner le dossier `1-Projects/` pour identifier les enseignements clés (`L-`) et les livrables d'impact.
-2. **Exécuter la synthèse transversale** : Invoquer les skills `compound` ou `knowledge` pour analyser les récurrences d'idées entre plusieurs projets.
+2. **Exécuter la synthèse transversale** : Invoquer les skills `compound` ou `knowledge` pour analyser les récurrences d'idées entre plusieurs projets et rédiger une note de synthèse transversale dans `2-Ressources/IA-generated/` ou `2-Ressources/`.
 3. **Mettre à jour les MOCs** : Invoquer `moc-update` pour rattacher les nouvelles leçons et synthèses aux Cartes de Contenu `T-` pertinentes.
 4. **Ancrer la connaissance** : Mettre à jour l'index central `_Arca-BrainOS/index.md` pour refléter la nouvelle structure MOC.
 5. **Journaliser l'action** : Enregistrer une ligne de log dans `_Arca-BrainOS/log.md`.
@@ -41,8 +42,30 @@ tags:
 * Cartes de Contenu (`T-`) mises à jour avec les nouveaux principes consolidés.
 * Réseau de liens `cross-linker` enrichi.
 
-## Exemples
-* Capitalisation des retours d'expérience sur la migration vers Obsidian ou l'hébergement d'infrastructures.
+## 💡 Exemples Concrets d'Exécution & Prompts Types
+
+### Cas 1 : Synthèse Transversale d'Enseignements Projets
+- **Le Déclencheur Humain (Prompt Utilisateur) :**
+  > Tapez dans votre terminal IA : *"Analyse mes projets terminés et extrait les règles d'or méthodologiques dans une note de synthèse"* (mobilise `compound` / `knowledge`).
+- **État Initial :**
+  Plusieurs projets d'écriture ou d'infrastructure contiennent des leçons (`L-`) ou des retours d'expérience isolés dans leurs journaux de bord.
+- **Orchestration Agentique :**
+  1. L'agent scanne les sections `## 🪵 Journal de Bord des Sessions` et les notes liées.
+  2. Il extrait les principes directeurs universels (indépendants du projet spécifique).
+  3. Il rédige une fiche consolidée `AI-Synthesis-[Sujet].md` dans `2-Ressources/IA-generated/` ou `2-Ressources/Notes/`.
+- **État Final (Output) :**
+  La connaissance contextuelle est transformée en actif intellectuel pérenne réutilisable.
+
+### Cas 2 : Enrichissement & Restructuration d'un Thème MOC
+- **Le Déclencheur Humain (Prompt Utilisateur) :**
+  > Tapez dans votre terminal IA : *"Mets à jour le MOC 2-Ressources/Themes/T-PKM.md avec les dernières distillations"* (mobilise `moc-update` / `arca-converge`).
+- **Orchestration Agentique (Compétence [[Skill_arca-converge]]) :**
+  L'agent ajoute les nouveaux liens conceptuels dans la bonne sous-section du Thème sans altérer les annotations manuelles rédigées par l'humain.
+
+### 🔗 Compétences Agentiques Associées
+- [[Skill_arca-converge]] : Ancrage de notes dans les MOCs thématiques (`T-`).
+- [[Skill_arca-create-note]] : Création et instanciation de nouvelles fiches Thèmes MOC (`create-theme`).
+- [[Skill_arca-close-session]] : Captation des apprentissages et leçons clés en fin de session de Deep Work.
 
 ## Douleurs principales
 * "Réinventer la roue" à chaque nouveau projet faute d'avoir extrait les enseignements des projets passés.
@@ -62,4 +85,4 @@ tags:
 * **Discernement de la valeur à long terme** : L'IA suggère des recoupements, mais l'humain tranche sur ce qui constitue une vraie règle d'excellence personnelle.
 * **Consolidation dans la vision d'avenir** : L'humain décide si ce savoir modifie les objectifs ou les standards futurs de ses Areas.
 
-**Pipeline complet** : Projets `P-` / Leçons `L-` ➔ `compound` (Agent IA) ➔ Synthèse croisée ➔ `cross-linker` & `moc-update` (Auto).
+**Pipeline complet** : Projets `P-` / Leçons `L-` $\rightarrow$ `compound` (Agent IA) $\rightarrow$ Synthèse croisée $\rightarrow$ `cross-linker` & `moc-update` (Auto).

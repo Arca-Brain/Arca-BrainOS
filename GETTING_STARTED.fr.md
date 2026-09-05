@@ -111,13 +111,13 @@ Pour capturer directement des articles, pages web et documentations depuis votre
 
 ## 🪄 3. Protocole d'Installation (2 Options)
 
-* **📁 Option A : Ajouter à un coffre EXISTANT (Dossier `_Arca-BrainOS/`)**  
-  Copiez `_Arca-BrainOS/` à la racine de votre coffre actuel et lancez dans votre terminal IA :
+* **📁 Option A : Ajouter à un coffre EXISTANT (Dossier `starter-kit/fr/_Arca-BrainOS/`)**  
+  Copiez `starter-kit/fr/_Arca-BrainOS/` à la racine de votre coffre actuel et lancez dans votre terminal IA :
   ```text
   Lis https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.fr.md (ou INSTALL.fr.md local) et installe Arca-BrainOS pour moi.
   ```
-* **📦 Option B : Démarrer de zéro avec un coffre prêt-à-l'emploi (Dossier `starter-vault/`)**  
-  Ouvrez directement le dossier `starter-vault/` dans Obsidian.  
+* **📦 Option B : Démarrer de zéro avec un coffre prêt-à-l'emploi (Dossier `starter-kit/fr/starter-vault/`)**  
+  Ouvrez directement le dossier `starter-kit/fr/starter-vault/` dans Obsidian. Dès l'ouverture, commencez par consulter le guide d'accueil **`00-COMMENCER-ICI.md`** situé à la racine pour tester immédiatement vos premières compétences agentiques en moins de 5 minutes.  
   > 💡 **Conseil :** Renommez `starter-vault/` avec le nom de votre choix (`ArcaBrain`, `2ndBrain`, `MesNotes`) avant ou après l'ouverture !
 
 ---

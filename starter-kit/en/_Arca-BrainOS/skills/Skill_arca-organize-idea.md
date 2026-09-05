@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-organize-idea (Idea Structuring & Category Typing)
 
+- **Reference Process:** [[Process-Inbox-Clean-and-Dispatch]]
+
 ## Trigger
 Execute when user enters `arca-organize-idea` (or `organize-idea`).
 

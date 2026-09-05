@@ -21,3 +21,13 @@ tags:
 3. **Fix Friction**: Anchor orphans into Theme MOCs and fix broken links.
 4. **Update Index**: Refresh `_Arca-BrainOS/index.md`.
 5. **Archive Audit**: Record timestamped report into `_Arca-BrainOS/audit-log.md`.
+
+## 💡 Concrete Examples & Prompt Templates
+
+### Case 1 : Monthly Vault Health Audit
+- **User Prompt:** `arca-audit`
+- **Agentic Orchestration ([[Skill_arca-audit]]):** Computes PARA health ratio, consolidates project ROI metrics, detects orphan notes and ghost links, appends audit report to `_Arca-BrainOS/audit-log.md`.
+
+### 🔗 Associated Agentic Skills
+- [[Skill_arca-audit]], [[Skill_arca-converge]], [[Skill_arca-test-suite]].
+

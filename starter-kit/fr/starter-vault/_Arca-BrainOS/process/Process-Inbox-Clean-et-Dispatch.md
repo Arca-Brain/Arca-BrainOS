@@ -1,7 +1,7 @@
 ---
-id: "202607172326"
+Id: "202607172326"
 category: Process
-date_created: "2026-07-17"
+date-created: "2026-07-17"
 tags:
   - process
   - inbox
@@ -12,6 +12,7 @@ tags:
 
 - **Fréquence** : Daily / Weekly (Idéalement en fin de journée ou lors de la revue hebdomadaire).
 - **Déclencheur** : Accumulation de notes brutes, vocaux, idées volantes ou fichiers capturés dans `0-Inbox/`.
+- **Fréquence** : Quotidienne ou hebdomadaire (session d'hygiène numérique).
 
 ---
 
@@ -21,10 +22,10 @@ tags:
 
 ## Étapes
 1. **Lancer le triage IA** : Invoquer la commande `arca-inbox-process` (ou `/inbox-process`) sur le dossier `0-Inbox/`.
-2. **Normaliser le YAML** : L'IA nettoie et formate les métadonnées (`id`, `category`, `tags`, `status`).
+2. **Normaliser le YAML** : L'IA nettoie et formate les métadonnées (Id, category, tags, status).
 3. **Détecter les doublons & structurer les contenus** :
-   - Si la note est une source externe (vidéo, podcast, livre) ➔ Aiguiller automatiquement vers `arca-distill`.
-   - Si la note est une idée personnelle / pensée volante ➔ Invoquer `arca-organize-idea` (Conserver la Note Brute + Formuler l'Idée Clé + Générer les Actions Projets & Maillage).
+   - Si la note est une source externe (vidéo, podcast, livre) $\rightarrow$ Aiguiller automatiquement vers `arca-distill`.
+   - Si la note est une idée personnelle / pensée volante $\rightarrow$ Invoquer `arca-organize-idea` (Conserver la Raw Note + Formuler l'Idée Clé + Générer les Actions Projets & Maillage).
 4. **Valider les propositions d'actions & maillage** : L'humain accepte ou ajuste les actions projets et correspondances suggérées par l'IA.
 5. **Conserver ou déplacer la note** : Garder la note d'idée dans `0-Inbox/` si des actions restent à planifier, ou la ranger dans `2-Ressources/Notes/` ou `1-Projects/`.
 
@@ -42,8 +43,40 @@ tags:
 * Sources externes transférées vers le pipeline de distillation (`arca-distill`).
 * Notes personnelles qualifiées et classées dans leur dossier définitif.
 
-## Exemples
-* Session de triage de l'Inbox avec qualification automatique de notes vocales et d'articles web.
+## 💡 Exemples Concrets d'Exécution & Prompts Types
+
+### Cas 1 : Traitement d'une Pensée Volante ou Idée Personnelle
+- **Le Déclencheur Humain (Prompt Utilisateur) :**
+  > Tapez dans votre terminal IA : `arca-inbox-process` (ou dans le chat : *"Trie mon Inbox et structure ma dernière idée"*).
+- **État Initial (Input dans `0-Inbox/`) :**
+  Une note brute de quelques lignes (ex: capture vocale sans frontmatter, titre vague, idées décousues).
+- **Orchestration Agentique (Compétence [[Skill_arca-organize-idea]]) :**
+  1. L'agent détecte qu'il s'agit d'une réflexion personnelle (et non d'un article externe).
+  2. Il conserve l'intégralité du texte original dans une section `## 📝 Raw Note (Texte Brut d'Origine)`.
+  3. Il reformule une **Idée Clé** synthétique en une phrase percutante.
+  4. Il extrait les actions concrètes rattachées aux projets actifs (`P-`) et suggère les liens wikilinks vers les thèmes (`T-`).
+  5. Il normalise les métadonnées YAML (`category: idea`, `tags: [...]`, `status: #reviewed`).
+- **État Final (Output) :**
+  La note est déplacée vers `2-Ressources/Notes/` et le projet concerné reçoit sa tâche à accomplir.
+
+### Cas 2 : Réception d'un Article Web ou Document Externe
+- **Le Déclencheur Humain (Prompt Utilisateur) :**
+  > Tapez dans votre terminal IA : `arca-distill 0-Inbox/Article-Web-Capture.md`
+- **État Initial (Input dans `0-Inbox/`) :**
+  Une page web capturée via le web clipper ou un transcript brut.
+- **Orchestration Agentique (Compétence [[Skill_arca-distill]]) :**
+  1. Génération de la fiche conceptuelle `AI-Distil-[Nom].md` dans `2-Ressources/IA-generated/` ([[Skill_arca-synthesize]]).
+  2. Ancrage automatique de la note dans la fiche Thème correspondante via [[Skill_arca-converge]].
+  3. Scan d'impact sur les projets actifs via [[Skill_arca-impact]].
+  4. Archivage physique de la note brute.
+- **État Final (Output) :**
+  L'Inbox est revenue à zéro, le savoir est distillé et ancré dans le graphe de connaissances.
+
+### 🔗 Compétences Agentiques Associées
+- [[Skill_arca-inbox-process]] : Triage, nettoyage YAML et routage de l'Inbox.
+- [[Skill_arca-organize-idea]] : Structuration des idées brutes avec sanctuarisation de la pensée humaine.
+- [[Skill_arca-distill]] : Master skill d'ingestion et distillation de sources externes.
+- [[Skill_arca-create-note]] : Instanciation interactive de projets, thèmes et domaines.
 
 ## Douleurs principales
 * Accumulation de fouillis numérique ("Inbox infini") créant de la charge mentale.
@@ -66,4 +99,4 @@ tags:
 * **Résolution des ambiguïtés** : Quand une note personnelle touche à plusieurs domaines, l'humain choisit le projet/thème principal.
 * **Refus de liens non pertinents** : L'humain garde le filtre de pertinence sur les connexions suggérées par l'IA.
 
-**Pipeline complet** : Fichier brut dans Inbox ➔ `arca-inbox-process` (Agent IA) ➔ Validation Maillage (Humain) ➔ Archivage (Auto).
+**Pipeline complet** : Fichier brut dans Inbox $\rightarrow$ `arca-inbox-process` (Agent IA) $\rightarrow$ Validation Maillage (Humain) $\rightarrow$ Archivage (Auto).

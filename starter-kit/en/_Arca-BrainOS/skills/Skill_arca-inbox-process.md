@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-inbox-process (Inbox Processing & Triage)
 
+- **Reference Process:** [[Process-Inbox-Clean-and-Dispatch]]
+
 ## Trigger
 Execute when user enters `arca-inbox-process` (or `inbox-process`).
 

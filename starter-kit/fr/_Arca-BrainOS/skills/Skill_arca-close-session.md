@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-close-session (Clôture & Mémoire de Session)
 
+- **Processus de Référence :** [[Process-Pilotage-de-Projets-et-Deep-Work]] & [[Process-Capitalisation-et-Synthese-MOC]]
+
 ## Déclencheur
 Exécute ce workflow lorsque l'utilisateur tape la commande `arca-close-session` (ou `close-session` / `brain-close-session`) suivie du nom ou du lien de la note du projet concerné.
 
@@ -9,19 +11,19 @@ Exécute ce workflow lorsque l'utilisateur tape la commande `arca-close-session`
    - Parcourt l'historique immédiat de la console et le fichier `_Arca-BrainOS/log.md` du jour pour lister les actions menées sur ce projet (notes distillées, scripts modifiés, bugs identifiés).
    - Ouvre la note du projet cible et repère la session active initiée au sommet de `## 🪵 Journal de Bord des Sessions`.
    - Extrait l'heure d'ouverture `[HH:mm]` consignée lors de `arca-resume` et enregistre l'heure de clôture actuelle `[HH:mm]`.
-   - Calcule la durée réelle ($\Delta t_{\text{réel}}$) et évalue de manière autonome le temps que cela aurait pris sans IA ($T_{\text{sans IA}}$) selon la complexité des tâches réalisées, ainsi que le temps économisé (Gain IA).
+   - Calcule la durée réelle ($\Delta t_{\text{réel}}$) et évalue de manière autonome (sans solliciter de validation dans le chat) le temps que cela aurait pris sans IA ($T_{\text{sans IA}}$) selon la complexité des tâches réalisées, ainsi que le temps économisé (Gain IA).
 
 2. **Mise à jour de la Liste Principale (Source Unique de Vérité) :**
    - Identifie la section principale des tâches au sommet (généralement `## 🚀 Actions Prochaines Étapes` ou `## Actions todo next`).
-   - Coche (`[x]`) chirurgicalement les tâches accomplies durant la session.
-   - Ajoute les nouvelles tâches identifiées pour la suite sous forme de cases à cocher actives (`- [ ]`).
+   - Coche (`[x]`) chirurgicalement les tâches accomplies durant la session. Si la liste est subdivisée en sous-sections/catégories thématiques (ex: `### [Catégorie]`), localise et coche la tâche à l'intérieur de sa catégorie d'origine.
+   - Ajoute les nouvelles tâches identifiées pour la suite sous forme de cases à cocher actives (`- [ ]`) en les classant sous la sous-section/catégorie thématique la plus pertinente.
 
 3. **Finalisation du Bilan Historique dans le Journal :**
    - Remplace le bloc temporaire en attente au sommet de `## 🪵 Journal de Bord des Sessions` par le bilan finalisé structuré selon le template ci-dessous.
    - **Règle absolue** : N'utilise **aucune** case à cocher active (`- [ ]` ou `- [x]`) dans ce journal pour éviter toute désynchronisation. Utilise uniquement des listes à puces textuelles simples (`-`).
 
 4. **Mise à jour des Métadonnées Cumulées du Projet (Frontmatter YAML) :**
-   - Lit les métadonnées existantes dans le frontmatter de la note projet (`sessions_count`, `total_real_duration`, `total_estimated_manual`, `total_time_saved`).
+   - Lit les métadonnées existantes dans le frontmatter de la note projet (ex: `sessions_count`, `total_real_duration`, `total_estimated_manual`, `total_time_saved`).
    - Incrémente le nombre de sessions (`sessions_count: +1`).
    - Met à jour la date de dernière session (`last_session: "AAAA-MM-JJ"`).
    - Additionne la durée réelle et le temps sans IA aux totaux existants et recalcule le gain cumulé (`total_time_saved`).
@@ -38,7 +40,7 @@ Exécute ce workflow lorsque l'utilisateur tape la commande `arca-close-session`
   - **Horaires :** [HH:mm début] ➔ [HH:mm fin] (Durée réelle : **XhYY**)
   - **Temps estimé sans IA :** ~AhBB *(Description succincte de la charge)*
   - **Gain de productivité :** 🚀 **+ChDD économisées** (Vitesse **xN.N**)
-- **🎯 Objectif atteint lors de cette session :** [Résumé en 1 phrase de ce qui était visé]
+- **🎯 Objectif atteint lors de cette session :** [Résumé en 1 sentence de ce qui était visé]
 - **✅ Tâches accomplies (reportées et cochées en haut) :**
   - [Action 1 accomplie]
   - [Action 2 accomplie]

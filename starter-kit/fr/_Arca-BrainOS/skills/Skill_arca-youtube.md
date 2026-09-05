@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-youtube
 
+- **Processus de Référence :** [[Process-Ingestion-et-Distillation-de-Medias]] & [[Process-Inbox-Clean-et-Dispatch]]
+
 ## Déclencheur
 Exécute ce workflow lorsque l'utilisateur tape `arca-youtube` (ou `brain-youtube`) suivi d'une URL YouTube.
 
@@ -12,7 +14,7 @@ Extraire la retranscription et la substance conceptuelle d'une vidéo YouTube po
    - Récupère le titre, l'auteur/chaîne, les timestamps et le texte de la retranscription de l'URL fournie.
 
 2. **Génération de la Note de Synthèse :**
-   - Applique strictly le modèle `/_Arca-BrainOS/templates/Template-Transcript-Media.md`.
+   - Applique strictement le modèle `/_Arca-BrainOS/templates/Template-Transcript-Media.md`.
    - Extrait le résumé exécutif, les idées clés avec repères temporels `[00:00]`, les citations marquantes, les actions concrètes et les références citées.
 
 3. **Sauvegarde dans l'Inbox :**

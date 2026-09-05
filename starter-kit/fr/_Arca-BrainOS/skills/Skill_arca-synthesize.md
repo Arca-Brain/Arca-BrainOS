@@ -1,5 +1,7 @@
 # 🛠️ Skill : arca-synthesize (Synthèse & Distillation)
 
+- **Processus de Référence :** [[Process-Ingestion-et-Distillation-de-Medias]]
+
 ## Déclencheur
 Invoqué soit par l'utilisateur (`arca-synthesize [fichier]` / `brain-synthesize`), soit appelé automatiquement par le Master Skill `arca-distill`.
 
@@ -14,15 +16,13 @@ Invoqué soit par l'utilisateur (`arca-synthesize [fichier]` / `brain-synthesize
 
 La note générée doit OBLIGATOIREMENT suivre cette structure :
 
-```yaml
 ---
-date_created: "YYYY-MM-DD"
+date: "YYYY-MM-DD"
 title: "Titre clair"
 description: "Résumé d'une phrase"
 tags: [ai-generated, theme/...]
 status: "#new"
 ---
-```
 
 ## Résumé Synthétique
 Un paragraphe fusionnant tous les apports de la source.
@@ -41,7 +41,7 @@ Un paragraphe fusionnant tous les apports de la source.
 
 ### Consigne de recherche des connexions :
 - Scanne activement le Vault pour identifier les notes pertinentes à proposer.
-- Cherche les correspondances thématiques ou de projets dans `2-Ressources/Themes/` (racine et sous-dossiers thématiques) ainsi que dans `1-Projects/`.
+- Cherche les correspondances thématiques ou de projets dans `2-Ressources/Themes/` (racine et sous-dossiers thématiques) ainsi que dans `1-Projects/` (notamment les notes de projet `P-` et les thèmes `T-` s'y trouvant).
 
 ## Historique des Sources
 - [[Lien-vers-la-source-1]]
