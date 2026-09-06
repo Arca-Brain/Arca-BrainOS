@@ -16,21 +16,22 @@ tags:
 
 ---
 ## Input
+* Mémoire opérationnelle de l'utilisateur (`_Arca-BrainOS/memory.md`) pour charger les préférences de travail et le style.
 * Note du projet cible `P-[Nom-Projet]` située dans `1-Projects/`.
 * Notes de travail associées (`Working Documents`) référencées dans le projet.
 * Journal de bord des sessions antérieures (`## 🪵 Journal de Bord des Sessions`).
 
 ## Étapes
-1. **Démarrer & Cadrer la session** : Taper la commande `arca-resume @[Projet]` pour scanner l'état du projet, recevoir la proposition d'intention, **enregistrer l'horodate d'ouverture (HH:mm)** et initier le bloc de session dans le journal de bord.
+1. **Démarrer & Cadrer la session** : Taper la commande `arca-resume @[Projet]` pour scanner l'état du projet, charger la mémoire opérationnelle, recevoir la proposition d'intention, **enregistrer l'horodate d'ouverture (HH:mm)** et initier le bloc de session dans le journal de bord.
 2. **Clarifier l'intention** : Aligner l'IA sur l'objectif précis du jour en répondant au briefing interactif.
 3. **Exécuter le travail (Deep Work)** : Produire les écrits, le code ou la méthode en pair-programming avec l'agent IA.
-4. **Clôturer la session** : Taper la commande `arca-close-session @[Projet]` pour trier les tâches accomplies/restantes, enregistrer l'horodate de clôture, **calculer la durée réelle vs le temps estimé sans IA**, finaliser le journal de bord et mettre à jour les métadonnées cumulées du projet.
+4. **Clôturer la session** : Taper la commande `arca-close-session @[Projet]` pour trier les tâches accomplies/restantes, enregistrer l'horodate de clôture, **calculer la durée réelle vs le temps estimé sans IA**, finaliser le journal de bord, proposer la capitalisation d'éventuelles habitudes dans `memory.md`, et mettre à jour les métadonnées cumulées du projet.
 
 ## Méthode & Critères de Qualité
 * **Structure requise** : Le projet `P-` doit conserver son plan strict (Working Docs, Actions Next, Jalons, Journal de bord) ainsi que ses métadonnées frontmatter de suivi de durée.
 * **À faire absolument (DO)** :
   * Consigner systématiquement les verrous techniques, l'horodatage et les prochaines étapes précises en fin de session.
-  * Preserver le texte original rédigé par l'humain dans les notes projets `P-` et leçons `L-`.
+  * Preserver le texte original rédigé par l'humain dans les notes projets `P-` et les notes personnelles.
 * **À éviter absolument (DON'T)** :
   * Ne pas démarrer une session sans intention claire.
   * Ne pas quitter un run sans fermer la session via `arca-close-session`.

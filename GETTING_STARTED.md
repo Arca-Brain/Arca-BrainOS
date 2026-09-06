@@ -36,15 +36,10 @@ Arca-BrainOS extends Tiago Forte's P.A.R.A structure into a 5-part decoupled dir
 Your-Obsidian-Vault/
 ├── 0-Inbox/                      # 📥 Buffer & Raw Ingestion Zone
 │   └── Youtube/                  # Raw YouTube transcript imports
-├── 1-Projects/                   # 🚀 Active Projects (P-[Name].md)
-├── 2-Ressources/                 # 📚 Long-Term Knowledge Base
-│   ├── Notes/                    # ✍️ Human-Authored Notes & Journal
-│   ├── IA-generated/             # 🤖 Autonomous AI Write Zone (AI-Distil-...)
-│   └── Themes/                   # 🗺️ Curated Maps of Content / MOCs (T-...)
+├── 1-Projects/                   # 🚀 Active Projects (P-[Name].md) & Incubation (_Incubation/)
+├── 2-Ressources/                 # 📚 Knowledge Base (Notes/, IA-generated/, Themes/)
 ├── 3-Domaines-de-vie/            # 🧠 Permanent Life Areas (README.md Index)
 └── 4-Archives/                   # 📦 Completed Work & Inactive Items
-    ├── Projets/                  # Archived Completed Projects
-    └── Areas/                    # Retired Life Areas
 ```
 
 #### 📥 `0-Inbox/` (Buffer & Ingestion Zone)
@@ -52,10 +47,10 @@ Your-Obsidian-Vault/
 - **Rule:** Maintained at "Inbox Zero" using `arca-inbox-process` or `arca-organize-idea`.
 - **Examples:** `0-Inbox/raw-thought-on-ai.md`, `0-Inbox/Youtube/transcript-deepmind.md`.
 
-#### 🚀 `1-Projects/` (Active Endeavors)
-- **Purpose:** Short to medium-term active projects with defined goals, milestones, and completion dates.
-- **Convention:** Notes follow the `P-[Project-Name].md` format and leverage `Template-Projet.md`.
-- **Examples:** `1-Projects/P-Arca-BrainOS.md`, `1-Projects/P-Camino-del-Norte.md`.
+#### 🚀 `1-Projects/` (Active Endeavors & Incubation)
+- **Purpose:** Short to medium-term active projects with defined goals, milestones, and completion dates. Also hosts the `_Incubation/` subfolder for dormant projects (Someday/Maybe).
+- **Convention:** Notes follow the `P-[Project-Name].md` format and leverage `Template-Project.md` (`status: active` or `status: someday`).
+- **Examples:** `1-Projects/P-Arca-BrainOS.md`, `1-Projects/_Incubation/P-System-Migration.md`.
 
 #### 📚 `2-Ressources/` (Knowledge Base)
 Divided into 3 distinct layers to maintain total separation between human reflection and AI processing:
@@ -95,6 +90,7 @@ Arca-BrainOS is 100% folder-agnostic. The core engine lives inside `_Arca-BrainO
 # 🌐 Vault Topography Variables (AGENTS.md)
 PATH_INBOX: "0-Inbox/"
 PATH_PROJECTS: "1-Projects/"
+PATH_INCUBATION: "1-Projects/_Incubation/"
 PATH_AREAS: "3-Domaines-de-vie/"
 PATH_THEMES: "2-Ressources/Themes/"
 PATH_IA_GENERATED: "2-Ressources/IA-generated/"

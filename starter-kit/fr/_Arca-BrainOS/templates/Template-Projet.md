@@ -1,11 +1,11 @@
 ---
 id: "{{date:YYYYMMDD}}{{time:HHmm}}"
 category: "Projet"
-status: "active" # Options: active | paused | completed
+status: "active" # Options: active | paused | someday | completed
 date_created: "{{date:YYYY-MM-DD}}"
 tags:
   - projet
-  - statut/actif
+  - statut/actif # Options: statut/actif | statut/someday | statut/en-pause | statut/termine
 areas:
   - "[[Creativite]]"
 themes:

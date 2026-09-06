@@ -31,7 +31,7 @@ Tester et valider l'intégrité globale de l'ensemble des 13 compétences agenti
    - Résultat : 🟢 PASS / 🔴 FAIL.
 
 6. **Test 6 : Interactivité & Respect du Style (`arca-impact`)**
-   - Assertion : Aucune modification de projet (`P-`) ou leçon (`L-`) sans accord explicite de l'utilisateur dans le chat.
+   - Assertion : Aucune modification de projet (`P-`) ou note humaine sans accord explicite de l'utilisateur dans le chat.
    - Résultat : 🟢 PASS / 🔴 FAIL.
 
 7. **Test 7 : Ingestion & Retranscription (`arca-youtube`)**

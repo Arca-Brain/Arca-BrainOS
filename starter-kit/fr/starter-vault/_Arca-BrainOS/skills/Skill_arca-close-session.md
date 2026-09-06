@@ -28,7 +28,13 @@ Exécute ce workflow lorsque l'utilisateur tape la commande `arca-close-session`
    - Met à jour la date de dernière session (`last_session: "AAAA-MM-JJ"`).
    - Additionne la durée réelle et le temps sans IA aux totaux existants et recalcule le gain cumulé (`total_time_saved`).
 
-5. **Journalisation Globale avec Métriques :**
+5. **Détection d'Habitudes & Capitalisation Frugale (`memory.md`) :**
+   - Parcourt les échanges de la session pour détecter si l'utilisateur a formulé une correction explicite, une règle stylistique ou une préférence d'interaction technique forte.
+   - Si un arbitrage à fort signal est repéré, formule une proposition dans le message de bilan :
+     > *"Durant cette session, tu as arbitré la règle suivante : [Description synthétique]. Souhaites-tu que je l'inscrive dans `_Arca-BrainOS/memory.md` ?"*
+   - Ne jamais modifier `memory.md` sans accord explicite de l'utilisateur (zéro écriture furtive).
+
+6. **Journalisation Globale avec Métriques :**
    - Ajoute la ligne de clôture dans `_Arca-BrainOS/log.md` :
      `[AAAA-MM-JJ HH:mm] - Session fermée pour [[Nom-du-Projet]] (Durée: XhYY | Sans IA: ~AhBB | Gain: +ChDD)`
 

@@ -18,3 +18,4 @@
 ### 🪵 Macro-Processus Deep Work & Capitalisation
 - [[Process-Pilotage-de-Projets-et-Deep-Work]] : *Cadre de cadrage, de suivi de session et de mesure d'impact temporel des projets.*
 - [[Process-Capitalisation-et-Synthese-MOC]] : *Guide de création et d'enrichissement continu des cartes de contenu thématiques (Thèmes).*
+- [[Process-Archivage-de-Projet]] : *Protocole de clôture finale, audit des tâches résiduelles, capitalisation d'expérience et archivage physique.*

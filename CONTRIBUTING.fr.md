@@ -50,7 +50,7 @@ PATH_SYSTEM: "_Arca-BrainOS/"
 ```
 
 ### B. Préservation du Style Humain (Règle 2)
-Les compétences agentiques ne doivent **jamais** effacer, réécrire ou modifier en aveugle le contenu rédigé par l'humain dans les notes projets (`P-`), leçons (`L-`) ou domaines (`3-Domaines-de-vie/`). Elles peuvent uniquement suggérer des wikilinks (`[[...]]`), mettre à jour les cases à cocher (`- [ ]`), ou ajouter des entrées de journal de bord.
+Les compétences agentiques ne doivent **jamais** effacer, réécrire ou modifier en aveugle le contenu rédigé par l'humain dans les notes projets (`P-`), notes personnelles (`2-Ressources/Notes/`) ou domaines (`3-Domaines-de-vie/`). Elles peuvent uniquement suggérer des wikilinks (`[[...]]`), mettre à jour les cases à cocher (`- [ ]`), ou ajouter des entrées de journal de bord.
 
 ### C. Maintien Inconditionnel des READMEs (Règle 4)
 Tout ajout, création ou renommage d'une compétence (`Skill_arca-*.md`), fiche process (`Process-*.md`) ou playbook (`Playbook-*.md`) **DOIT** s'accompagner de la mise à jour immédiate :

@@ -48,7 +48,7 @@ PATH_SYSTEM: "_Arca-BrainOS/"
 ```
 
 ### B. Preserve Human Voice (Rule 2)
-Agentic skills must **never** delete, overwrite, or silent-patch human-authored text inside project notes (`P-`), lessons (`L-`), or life areas (`3-Domaines-de-vie/`). Skills may only suggest wikilinks (`[[...]]`), update task checkboxes (`- [ ]`), or append worklog entries during session closure.
+Agentic skills must **never** delete, overwrite, or silent-patch human-authored text inside project notes (`P-`), personal notes (`2-Ressources/Notes/`), or life areas (`3-Domaines-de-vie/`). Skills may only suggest wikilinks (`[[...]]`), update task checkboxes (`- [ ]`), or append worklog entries during session closure.
 
 ### C. Unconditional README & Index Maintenance (Rule 4)
 Any addition, creation, or renaming of a skill (`Skill_arca-*.md`), process guide (`Process-*.md`), or playbook (`Playbook-*.md`) **MUST** immediately be accompanied by updates to:

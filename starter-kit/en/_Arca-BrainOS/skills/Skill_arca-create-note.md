@@ -14,6 +14,7 @@ This skill is triggered by any of the following commands or aliases:
 | Direct Command / Alias | Immediate Action Executed |
 | :--- | :--- |
 | `create-project`, `create-projet`, `arca-create-project`, `brain-create-project` | 🚀 Instantiates a **Project (`P-`)** in `PATH_PROJECTS` |
+| `create-incubation`, `arca-create-incubation`, `brain-create-incubation` | 🌱 Instantiates an **Incubating Project (`P-`)** in `PATH_PROJECTS/_Incubation` |
 | `create-theme`, `arca-create-theme`, `brain-create-theme` | 📜 Instantiates a **Theme (`T-`)** in `PATH_THEMES` |
 | `create-domaine`, `create-area`, `arca-create-area`, `brain-create-area` | 🧠 Instantiates an **Area of Life** in `PATH_AREAS` |
 | `create-note`, `arca-create-note`, `brain-create-note` | ❓ **Interactive Mode** (Asks what note type to create) |
@@ -49,6 +50,9 @@ Before creating or modifying any file on disk, the AI must present its diagnosti
 2. **Interactive Proposal to User:**
    Present diagnostic clearly in chat:
    - 📌 **Proposed Project Name:** `P-[Project-Name]`
+   - 🚦 **Status & Location:**
+     - **Active:** Created at the root of `PATH_PROJECTS` (`status: "active"`, tag `status/active`)
+     - **Incubation (Someday/Maybe):** Created in `PATH_PROJECTS/_Incubation/` (`status: "someday"`, tag `status/someday`)
    - 🧠 **Area(s) of Life:**
      - Existing area: `[[Existing-Area]]`
      - New area required: `[[New-Area]]` *(Not found in `PATH_AREAS`: creation proposed)*
@@ -57,13 +61,13 @@ Before creating or modifying any file on disk, the AI must present its diagnosti
      - Practical project: *No theme needed (action-driven)* $\rightarrow$ `themes: []`
    - ⚠️ **Missing Area Safety Check:** If user requests no area, warn gently:
      > *"Note: Projects without an attached Area of Life will not appear in the Home.md dashboard focus matrix. We recommend associating at least one core life area."*
-   - ❓ **Validation Request:** *"Do you approve this weaving? Would you like to instantiate the new area(s) or theme(s) as well?"*
+   - ❓ **Validation Request:** *"Do you approve this weaving and status (Active or Incubation)? Would you like to instantiate the new area(s) or theme(s) as well?"*
 
 3. **Execution & Chaining (Post Explicit Validation):**
-   - Instantiate `P-[Project-Name].md` in `PATH_PROJECTS` with `PATH_SYSTEM/templates/Template-Projet.md`.
+   - **If Active Project:** Instantiate `P-[Project-Name].md` in `PATH_PROJECTS` with `PATH_SYSTEM/templates/Template-Project.md` (`status: "active"`, tag `status/active`). Insert project entry under `### 🏁 Projets & chantiers de l'année` in attached Area notes (`PATH_AREAS`).
+   - **If Incubating Project:** Instantiate `P-[Project-Name].md` in `PATH_PROJECTS/_Incubation/` with `PATH_SYSTEM/templates/Template-Project.md` (`status: "someday"`, tag `status/someday`). The project will automatically display in the incubation table of the attached Area.
    - **Area Chaining:** If a new area was approved, immediately instantiate `[New-Area].md` in `PATH_AREAS` with `PATH_SYSTEM/templates/Template-Area.md`, and register it in `PATH_AREAS/README.md`.
    - **Theme Chaining:** If a new theme was approved, immediately instantiate `T-New-Theme.md` in `PATH_THEMES` with `PATH_SYSTEM/templates/Template-Theme.md`.
-   - **Bidirectional Link:** Insert project entry under `### 🏁 Projets & chantiers de l'année` in attached Area notes (`PATH_AREAS`).
    - Log creation and chained additions in `PATH_SYSTEM/log.md`.
 
 ---

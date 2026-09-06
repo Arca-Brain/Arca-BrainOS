@@ -35,7 +35,12 @@ Scanner la structure pour détecter les frictions, les notes isolées, maintenir
    - Extrait les métadonnées frontmatter YAML de chaque note projet : `sessions_count`, `total_real_duration`, `total_estimated_manual`, `total_time_saved`.
    - Calcule la somme globale des sessions, du temps réel (Deep Work + IA), du temps estimé sans IA, du gain de temps net et du multiplicateur global de vitesse (ROI IA).
 
-6. **Journalisation & Archivage de l'Audit dans `_Arca-BrainOS/audit-log.md` :**
+6. **Contrôle de Frugalité de la Mémoire Opérationnelle (`memory.md`) :**
+   - Lit le nombre total de lignes de `_Arca-BrainOS/memory.md`.
+   - Si le fichier dépasse 40 lignes (approche du seuil d'alerte de 50 lignes), alerte dans le rapport : `⚠️ Mémoire IA volumineuse ([N] lignes / max 50)`.
+   - Suggère d'élaguer les règles obsolètes ou de transférer les vieux REX du buffer actif vers les fiches thématiques MOC correspondantes.
+
+7. **Journalisation & Archivage de l'Audit dans `_Arca-BrainOS/audit-log.md` :**
    - Ouvre le fichier journal central `_Arca-BrainOS/audit-log.md`.
    - Met à jour les métadonnées frontmatter YAML (`derniere_mise_a_jour: "YYYY-MM-DD HH:mm"`, incrémente `total_audits`).
    - Met à jour la section `# 📊 Executive Summary & Tendances Long Terme` au sommet du fichier (recalcul des indicateurs moyens, taux PARA et tendances).

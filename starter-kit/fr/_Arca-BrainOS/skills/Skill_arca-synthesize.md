@@ -37,7 +37,7 @@ Un paragraphe fusionnant tous les apports de la source.
 (Traces des projets influencés ou des tâches planifiées à la suite de cette note).
 
 ## Connexions Suggérées
-(Liens vers les notes P-, L- ou T- pertinentes du Vault).
+(Liens vers les notes P- ou T- pertinentes du Vault).
 
 ### Consigne de recherche des connexions :
 - Scanne activement le Vault pour identifier les notes pertinentes à proposer.

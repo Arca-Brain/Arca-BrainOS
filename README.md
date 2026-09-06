@@ -243,7 +243,7 @@ Your-Obsidian-Vault/
 │   ├── templates/                # Standardized note templates
 │   └── tests/                    # Test harness fixtures & assertions
 ├── 0-Inbox/                      # Ingestion & raw captures
-├── 1-Projects/                   # Active projects (P-*.md)
+├── 1-Projects/                   # Active projects (P-*.md) & Incubation (_Incubation/)
 ├── 2-Ressources/                 # Knowledge base (Notes/, IA-generated/, Themes/)
 ├── 3-Domaines-de-vie/            # Permanent life areas (README.md index)
 └── 4-Archives/                   # Completed projects & dormant areas

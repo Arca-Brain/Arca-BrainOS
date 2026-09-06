@@ -18,13 +18,13 @@ tags:
 ---
 ## Input
 * Notes de projets `P-` terminées ou jalons validés dans `1-Projects/`.
-* Notes de leçons `L-` isolées.
+* Notes de connaissances ou retours d'expérience isolés.
 * Cartes de Contenu thématiques (`T-`) situées dans `2-Ressources/Themes/` (racine et sous-dossiers thématiques).
 
 ## Étapes
-1. **Analyser le patrimoine de connaissances** : Scanner le dossier `1-Projects/` pour identifier les enseignements clés (`L-`) et les livrables d'impact.
+1. **Analyser le patrimoine de connaissances** : Scanner le dossier `1-Projects/` pour identifier les enseignements clés et les livrables d'impact.
 2. **Exécuter la synthèse transversale** : Invoquer les skills `compound` ou `knowledge` pour analyser les récurrences d'idées entre plusieurs projets et rédiger une note de synthèse transversale dans `2-Ressources/IA-generated/` ou `2-Ressources/`.
-3. **Mettre à jour les MOCs** : Invoquer `moc-update` pour rattacher les nouvelles leçons et synthèses aux Cartes de Contenu `T-` pertinentes.
+3. **Mettre à jour les MOCs** : Invoquer `moc-update` pour rattacher les nouvelles synthèses et notes de connaissances aux Cartes de Contenu `T-` pertinentes.
 4. **Ancrer la connaissance** : Mettre à jour l'index central `_Arca-BrainOS/index.md` pour refléter la nouvelle structure MOC.
 5. **Journaliser l'action** : Enregistrer une ligne de log dans `_Arca-BrainOS/log.md`.
 
@@ -48,7 +48,7 @@ tags:
 - **Le Déclencheur Humain (Prompt Utilisateur) :**
   > Tapez dans votre terminal IA : *"Analyse mes projets terminés et extrait les règles d'or méthodologiques dans une note de synthèse"* (mobilise `compound` / `knowledge`).
 - **État Initial :**
-  Plusieurs projets d'écriture ou d'infrastructure contiennent des leçons (`L-`) ou des retours d'expérience isolés dans leurs journaux de bord.
+  Plusieurs projets d'écriture ou d'infrastructure contiennent des apprentissages ou des retours d'expérience isolés dans leurs journaux de bord.
 - **Orchestration Agentique :**
   1. L'agent scanne les sections `## 🪵 Journal de Bord des Sessions` et les notes liées.
   2. Il extrait les principes directeurs universels (indépendants du projet spécifique).
@@ -65,7 +65,7 @@ tags:
 ### 🔗 Compétences Agentiques Associées
 - [[Skill_arca-converge]] : Ancrage de notes dans les MOCs thématiques (`T-`).
 - [[Skill_arca-create-note]] : Création et instanciation de nouvelles fiches Thèmes MOC (`create-theme`).
-- [[Skill_arca-close-session]] : Captation des apprentissages et leçons clés en fin de session de Deep Work.
+- [[Skill_arca-close-session]] : Captation des apprentissages clés en fin de session de Deep Work.
 
 ## Douleurs principales
 * "Réinventer la roue" à chaque nouveau projet faute d'avoir extrait les enseignements des projets passés.
@@ -77,7 +77,7 @@ tags:
 
 | Étape | Levier | Solution Technique (Skill / n8n) | Rôle Humain & Arbitrage | Statut |
 | :--- | :--- | :--- | :--- | :--- |
-| **1. Détection du savoir réutilisable** | **Agent + Humain** | Skill `compound` / `knowledge` (Scan des projets & leçons). | **Intention** : Identifier quelle expérience mérite d'être capitalisée. | 🟢 (Opérationnel) |
+| **1. Détection du savoir réutilisable** | **Agent + Humain** | Skill `compound` / `knowledge` (Scan des projets & notes de connaissances). | **Intention** : Identifier quelle expérience mérite d'être capitalisée. | 🟢 (Opérationnel) |
 | **2. Synthèse transversale** | **Agent IA** | Génération de la note de synthèse croisée. | **Validation** : Relire et valider la fidélité des principes. | 🟢 (Opérationnel) |
 | **3. Cross-linking & MOC Update** | **Automatisation** | Skills `cross-linker` et `moc-update`. | **Surveillance** : Ancrage propre dans la structure globale. | 🟢 (Opérationnel) |
 
@@ -85,4 +85,4 @@ tags:
 * **Discernement de la valeur à long terme** : L'IA suggère des recoupements, mais l'humain tranche sur ce qui constitue une vraie règle d'excellence personnelle.
 * **Consolidation dans la vision d'avenir** : L'humain décide si ce savoir modifie les objectifs ou les standards futurs de ses Areas.
 
-**Pipeline complet** : Projets `P-` / Leçons `L-` $\rightarrow$ `compound` (Agent IA) $\rightarrow$ Synthèse croisée $\rightarrow$ `cross-linker` & `moc-update` (Auto).
+**Pipeline complet** : Projets `P-` / Notes de connaissances $\rightarrow$ `compound` (Agent IA) $\rightarrow$ Synthèse croisée $\rightarrow$ `cross-linker` & `moc-update` (Auto).

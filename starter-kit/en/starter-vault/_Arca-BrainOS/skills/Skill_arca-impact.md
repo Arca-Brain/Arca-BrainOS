@@ -9,7 +9,7 @@ Execute when user enters `arca-impact` followed by a distilled note, or automati
 Analyze a newly distilled note to identify potential impact on active projects (`1-Projects/`) or themes (`2-Ressources/Themes/`), present interactive recommendations, and apply user-validated changes.
 
 ## Sequential Execution Workflow
-1. **Context Search:** Scan `1-Projects/` for active projects (`P-[Name].md`) or lessons (`L-[Name].md`).
+1. **Context Search:** Scan `1-Projects/` for active projects (`P-[Name].md`).
 2. **Impact Diagnostic:** Formulate recommendations along 3 axes:
    - 💡 Strategic Alignment / Pivot
    - ⚙️ Tactical Actions / Tasks (`- [ ]`)

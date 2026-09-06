@@ -22,8 +22,12 @@ const activeProjects = dv.pages(`"${prefix}1-Projects"`)
     .where(p => (p.file.name.startsWith("P-") || p.category === "Projet" || p.category === "Project") 
              && p.status !== "completed" 
              && p.status !== "paused" 
+             && p.status !== "someday"
+             && !p.file.folder.includes("_Incubation")
              && !p.tags?.includes("statut/termine")
-             && !p.tags?.includes("status/completed"));
+             && !p.tags?.includes("status/completed")
+             && !p.tags?.includes("statut/someday")
+             && !p.tags?.includes("status/someday"));
 
 function cleanAreaName(a) {
     if (!a) return "";
@@ -209,7 +213,7 @@ dv.paragraph(`> [!rocket] 🚀 **Productivity Metrics & AI Leverage**\n` +
 ```
 
 > [!stats] 📈 Vault Activity & Health
-> - ⚡ **Active Work:** **Inbox:** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '0-Inbox"').length` | **Active Projects:** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '1-Projects"').where(p => (p.file.name.startsWith("P-") || p.category === "Projet" || p.category === "Project") && p.status !== "completed" && !p.tags?.includes("statut/termine") && !p.tags?.includes("status/completed")).length` | **Areas:** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '3-Domaines-de-vie"').where(p => p.file.name !== "2026" && p.file.name !== "Cartographie-processus-de-vie" && p.file.name !== "Life-process-mapping" && p.file.name !== "README").length`
+> - ⚡ **Active Work:** **Inbox:** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '0-Inbox"').length` | **Active Projects:** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '1-Projects"').where(p => (p.file.name.startsWith("P-") || p.category === "Projet" || p.category === "Project") && p.status !== "completed" && p.status !== "paused" && p.status !== "someday" && !p.file.folder.includes("_Incubation") && !p.tags?.includes("statut/termine") && !p.tags?.includes("status/completed")).length` | **Incubation:** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '1-Projects/_Incubation"').where(p => p.file.name.startsWith("P-")).length` | **Areas:** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '3-Domaines-de-vie"').where(p => p.file.name !== "2026" && p.file.name !== "Cartographie-processus-de-vie" && p.file.name !== "Life-process-mapping" && p.file.name !== "README").length`
 > - 🏛️ **Capitalized Knowledge:** **Themes:** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '2-Ressources/Themes"').where(p => p.file.name.startsWith("T-")).length` | **AI Distillations:** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '2-Ressources/IA-generated"').length` | **Archives:** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '4-Archives/Projets"').length`
 > - 🌐 **Global Volume:** **Total Notes:** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '"').length`
 > 

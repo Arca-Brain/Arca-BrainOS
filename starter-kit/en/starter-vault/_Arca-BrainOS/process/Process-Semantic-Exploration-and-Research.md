@@ -16,7 +16,7 @@ tags:
 ---
 ## Input
 * Research question or topic.
-* Vault notes (`AI-Distil-`, `L-`, `P-`).
+* Vault notes (`AI-Distil-`, `PATH_NOTES`, `P-`).
 
 ## Steps
 1. **Run Query**: Execute `arca-query "Your research topic"`.

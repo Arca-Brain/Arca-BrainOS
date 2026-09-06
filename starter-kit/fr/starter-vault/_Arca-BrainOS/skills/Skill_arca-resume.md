@@ -11,6 +11,7 @@ Ré-immerger l'utilisateur dans son contexte de travail avant de démarrer une s
 ## Workflow d'Exécution Séquentiel
 
 1. **Chargement & Analyse du Contexte :**
+   - Charge la mémoire opérationnelle `PATH_MEMORY` (`_Arca-BrainOS/memory.md`) pour calibrer le ton, les règles rédactionnelles (bannissement du tiret cadratin, nommage naturel) et les préférences techniques récentes de l'utilisateur.
    - Charge en mémoire la note du projet cible (ex: `[[P-[Nom-Projet]]]]`) **ainsi que l'ensemble des notes de travail liées dans sa section `## 🗺️ Working Documents` (ou équivalente)** pour appréhender le contexte exact des chantiers en cours.
    - Analyse la section `## 🪵 Journal de Bord des Sessions` en lisant les **2 ou 3 dernières entrées** pour comprendre la dynamique récente (les réalisations et les verrous restants).
    - Analyse la section `## 📌 Livrables & Jalons (Milestones)` pour identifier la phase active en cours et le prochain jalon à livrer.

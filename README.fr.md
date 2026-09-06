@@ -200,7 +200,7 @@ Votre-Coffre-Obsidian/
 │
 ├── Home.md                       # Cockpit Exécutif Optionnel (Inclus dans starter-vault)
 ├── 0-Inbox/                      # 🧠 PARTIE B : Vos Contenus 2nd Brain (Sentiers Configurables)
-├── 1-Projects/                   # Projets Actifs (P-...)
+├── 1-Projects/                   # Projets Actifs (P-...) & Incubation (_Incubation/)
 ├── 2-Ressources/                 # Base de Connaissances
 │   ├── Notes/                    # Notes humaines & journal
 │   ├── IA-generated/             # Zone d'écriture exclusive IA (AI-Distil-...)

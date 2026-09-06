@@ -17,7 +17,7 @@ tags:
 ---
 ## Input
 * Transcripts bruts YouTube, notes de lecture, articles web capturés dans `0-Inbox/`.
-* Vos projets actifs `P-` et leçons `L-` dans `1-Projects/` pour l'analyse d'impact.
+* Vos projets actifs `P-` dans `1-Projects/` pour l'analyse d'impact.
 
 ## Étapes
 1. **Capturer la source brute** : Importer le transcript de la vidéo ou du média dans `0-Inbox/` (via `arca-youtube [URL]` ou web clipper).

@@ -17,13 +17,13 @@ Agir comme un pont cognitif dans le Second Cerveau en croisant le savoir déjà 
 
 2. **Analyse de Structure & Gaps :**
    - Analyse si des notes distillées partagent des concepts forts mais ne sont pas reliées entre elles.
-   - Identifie si des projets actifs (`P-...`) ou des leçons (`L-...`) sont concernés par la thématique mais manquent de liens vers les nouvelles synthèses.
+   - Identifie si des projets actifs (`P-...`) ou des notes de ressources sont concernés par la thématique mais manquent de liens vers les nouvelles synthèses.
 
 3. **Formatage de la Réponse (Rapport Flash) :**
    Rédige une réponse structurée et concise dans le chat sous le format suivant :
    - **🧠 Savoir Distillé (Synthèse) :** Synthèse croisée et structurée de ce qui est déjà maîtrisé et ancré dans le Vault. Chaque affirmation forte doit être sourcée avec des wikilinks Obsidian `[[AI-Distil-Nom]]`.
    - **📥 Sources Brutes (Inbox) :** Liste des notes brutes, vidéos Youtube ou brouillons situés dans l'Inbox qui traitent de la thématique mais ne sont pas encore distillés.
-   - **🕸️ Opportunités de Maillage (Gaps) :** Suggestions de liens ou de passerelles manquantes entre vos projets (`P-`), leçons (`L-`) et thèmes (`T-`) pour renforcer le maillage sémantique.
+   - **🕸️ Opportunités de Maillage (Gaps) :** Suggestions de liens ou de passerelles manquantes entre vos projets (`P-`), notes de connaissances et thèmes (`T-`) pour renforcer le maillage sémantique.
 
 4. **Sauvegarde & Cristallisation (Optionnel) :**
    - Si la synthèse croisée apporte une forte valeur conceptuelle, propose à l'utilisateur de la sauvegarder sous forme de note de travail pérenne dans `2-Ressources/IA-generated/AI-Query-[Nom].md`.

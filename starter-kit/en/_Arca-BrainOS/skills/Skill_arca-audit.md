@@ -33,7 +33,11 @@ Scan the vault structure to detect friction, orphan notes, maintain graph integr
    - Extract YAML metadata: `sessions_count`, `total_real_duration`, `total_estimated_manual`, `total_time_saved`.
    - Calculate total sessions, real Deep Work hours, manual estimate, net time saved, and overall speed multiplier.
 
-6. **Logging & Audit Log Archiving:**
+6. **Operational Memory Frugality Check (`memory.md`):**
+   - Read total lines in `_Arca-BrainOS/memory.md`.
+   - If line count exceeds 40 lines (approaching 50-line ceiling), trigger an alert and propose pruning obsolete rules or moving old REX entries to MOC themes.
+
+7. **Logging & Audit Log Archiving:**
    - Update `_Arca-BrainOS/audit-log.md` with timestamps and executive summary.
    - Log execution line in `_Arca-BrainOS/log.md`: `[YYYY-MM-DD HH:mm] arca-audit -> Vault health diagnostic complete`.
 

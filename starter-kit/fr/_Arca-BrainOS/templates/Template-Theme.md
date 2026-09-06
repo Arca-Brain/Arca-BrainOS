@@ -24,8 +24,8 @@ last_review: "{{date:YYYY-MM-DD}}"
 
 ---
 ## 📝 Notes, Leçons & Réflexions Humaines
-*Les fiches de réflexion, leçons (`L-`) et notes rédigées.*
-- [[L-Exemple-Lecon]] : [Concept ou leçon]
+*Les fiches de réflexion, notes conceptuelles et synthèses rédigées.*
+- [[Note-Exemple-Concept]] : [Concept ou réflexion clé]
 - [[Note-Exemple]] : [Description]
 
 ---

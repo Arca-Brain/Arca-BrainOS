@@ -15,10 +15,10 @@ tags:
 
 ---
 ## Steps
-1. **Start & Frame Session**: Run `arca-resume @[Project]` to scan status, receive intention proposal, and log start timestamp `[HH:mm]`.
+1. **Start & Frame Session**: Run `arca-resume @[Project]` to load operational memory (`memory.md`), scan project status, receive intention proposal, and log start timestamp `[HH:mm]`.
 2. **Clarify Intention**: Align AI on exact focus.
 3. **Execute Work**: Co-create code, documents, or methods.
-4. **Close Session**: Run `arca-close-session @[Project]` to check completed tasks, log end timestamp `[HH:mm]`, calculate real duration vs manual baseline, and update cumulative YAML metadata (`total_real_duration`, `total_time_saved`).
+4. **Close Session**: Run `arca-close-session @[Project]` to check completed tasks, log end timestamp `[HH:mm]`, calculate real duration vs manual baseline, propose optional habit capture into `memory.md`, and update cumulative YAML metadata (`total_real_duration`, `total_time_saved`).
 
 ## 💡 Concrete Examples & Prompt Templates
 

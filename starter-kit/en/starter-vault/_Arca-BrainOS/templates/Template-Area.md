@@ -24,12 +24,23 @@ banner: ""
 ```dataview
 TABLE last_session AS "Last Run", sessions_count AS "Sessions", total_time_saved AS "AI Time Saved"
 FROM "1-Projects"
-WHERE contains(areas, this.file.link) OR contains(file.outlinks, this.file.link)
+WHERE (contains(areas, this.file.link) OR contains(file.outlinks, this.file.link)) AND status != "someday" AND !contains(file.folder, "_Incubation")
 SORT date(last_session) DESC
 ```
 
 ---
-## 🌱 Backlog & Future Ideas
+## 🌱 Backlog & Future Ideas (Incubation)
+*Project seeds, intuitions, and incubating work.*
+
+### 💤 Incubating Projects
+```dataview
+TABLE date_created AS "Incubating Since", themes AS "Themes"
+FROM "1-Projects/_Incubation"
+WHERE contains(areas, this.file.link) OR contains(file.outlinks, this.file.link)
+SORT date(date_created) DESC
+```
+
+### 💡 Raw Seeds & Intuitions
 - 💡 **[Category] :** [[Link-or-Name]] : [Short description]
 
 ---

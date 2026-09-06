@@ -18,3 +18,4 @@
 ### 🪵 Deep Work & Capitalization Workflow
 - [[Process-Project-Management-and-Deep-Work]] : *Framing deep work runs, session logging, and time tracking.*
 - [[Process-Cross-Project-Capitalization-and-MOC]] : *Guide for creating and continuously enriching Map of Content themes.*
+- [[Process-Project-Archiving]] : *Final project closure protocol, residual task audit, experience capitalization, and physical archiving.*

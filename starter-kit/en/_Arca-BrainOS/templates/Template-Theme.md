@@ -24,8 +24,8 @@ last_review: "{{date:YYYY-MM-DD}}"
 
 ---
 ## 📝 Notes, Lessons & Human Reflection
-*Reflection notes, lessons (`L-`), and human thoughts.*
-- [[L-Example-Lesson]] : [Concept or lesson]
+*Reflection notes, conceptual notes, and human thoughts.*
+- [[Note-Example-Concept]] : [Key concept or reflection]
 
 ---
 ## 🚀 Associated Projects

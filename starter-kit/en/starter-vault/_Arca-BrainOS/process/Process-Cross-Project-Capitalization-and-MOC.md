@@ -16,7 +16,7 @@ tags:
 
 ---
 ## Steps
-1. **Analyze Knowledge Assets**: Scan `1-Projects/` for key learnings (`L-`) and deliverables.
+1. **Analyze Knowledge Assets**: Scan `1-Projects/` for key learnings and deliverables.
 2. **Execute Cross-Synthesis**: Run `compound` or `knowledge` skill to extract recurring ideas across projects.
 3. **Update Theme MOCs**: Run `moc-update` to anchor new learnings into `T-` themes.
 4. **Index & Log**: Refresh `_Arca-BrainOS/index.md` and log entry.

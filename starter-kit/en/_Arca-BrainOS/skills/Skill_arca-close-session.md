@@ -27,6 +27,10 @@ Execute when the user enters `arca-close-session` (or `close-session` / `brain-c
    - Update last session date (`last_session: "YYYY-MM-DD"`).
    - Recalculate totals and net time saved (`total_time_saved`).
 
-5. **Global System Logging:**
+5. **Habit Detection & Frugal Memory (`memory.md`):**
+   - Review session interactions to detect recurring user corrections or strong workflow preferences.
+   - If a high-signal rule is detected, suggest adding it to `_Arca-BrainOS/memory.md` in chat (never edit without explicit user consent).
+
+6. **Global System Logging:**
    - Append log line in `_Arca-BrainOS/log.md`:
      `[YYYY-MM-DD HH:mm] - Session closed for [[Project-Name]] (Duration: XhYY | Manual: ~AhBB | Saved: +ChDD)`

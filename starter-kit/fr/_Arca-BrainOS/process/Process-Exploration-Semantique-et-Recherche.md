@@ -17,7 +17,7 @@ tags:
 ---
 ## Input
 * Question ou thématique d'exploration posée par l'humain.
-* Notes distillées (`AI-Distil-`), notes de leçons (`L-`) et sources brutes dans le Vault.
+* Notes distillées (`AI-Distil-`), notes de connaissances (`2-Ressources/Notes/`) et sources brutes dans le Vault.
 
 ## Étapes
 1. **Poser la requête d'exploration** : Lancer la commande `arca-query` suivie de la question ou du sujet d'exploration (ex: `arca-query "Que sais-je sur la transe cognitive et le chamanisme ?"`).
@@ -27,7 +27,7 @@ tags:
    - Les ponts sémantiques entre idées distantes.
    - Les trous de connaissances (*gaps* et questions ouvertes).
 4. **Approfondir (Optionnel)** : Utiliser les skills `research` ou `links` pour traverser le graphe de liens ou faire une recherche web complémentaire.
-5. **Capitaliser l'insight (Optionnel)** : Si l'exploration débouche sur une intuition majeure, l'enregistrer sous forme d'une note de leçon `L-` ou d'un brouillon d'écrit.
+5. **Capitaliser l'insight (Optionnel)** : Si l'exploration débouche sur une intuition majeure, l'enregistrer sous forme d'une note réflexive ou d'un brouillon d'écrit.
 
 ## Méthode & Critères de Qualité
 * **Structure requise** : La commande `arca-query` doit rester strictly **conversationnelle et informative** sans altérer les MOCs ni écrire dans `log.md` (anti-pollution).
@@ -41,7 +41,7 @@ tags:
 ## Output
 * Synthèse sémantique interactive dans le chat.
 * Détection des lacunes et opportunités de maillage.
-* (Optionnel) Nouvelle note d'ébauche ou de leçon créée dans l'Inbox.
+* (Optionnel) Nouvelle note d'ébauche ou de réflexion créée dans l'Inbox.
 
 ## 💡 Exemples Concrets d'Exécution & Prompts Types
 

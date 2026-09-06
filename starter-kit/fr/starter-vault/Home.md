@@ -22,7 +22,10 @@ const activeProjects = dv.pages(`"${prefix}1-Projects"`)
     .where(p => (p.file.name.startsWith("P-") || p.category === "Projet") 
              && p.status !== "completed" 
              && p.status !== "paused" 
-             && !p.tags?.includes("statut/termine"));
+             && p.status !== "someday"
+             && !p.file.folder.includes("_Incubation")
+             && !p.tags?.includes("statut/termine")
+             && !p.tags?.includes("statut/someday"));
 
 function cleanAreaName(a) {
     if (!a) return "";
@@ -208,7 +211,7 @@ dv.paragraph(`> [!rocket] 🚀 **Métriques de Productivité & Effet Levier IA**
 ```
 
 > [!stats] 📈 Activité & Santé du Coffre
-> - ⚡ **Actions en cours :** **Inbox :** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '0-Inbox"').length` | **Projets Actifs :** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '1-Projects"').where(p => (p.file.name.startsWith("P-") || p.category === "Projet") && p.status !== "completed" && !p.tags?.includes("statut/termine")).length` | **Domaines :** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '3-Domaines-de-vie"').where(p => p.file.name !== "2026" && p.file.name !== "Cartographie-processus-de-vie" && p.file.name !== "README").length`
+> - ⚡ **Actions en cours :** **Inbox :** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '0-Inbox"').length` | **Projets Actifs :** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '1-Projects"').where(p => (p.file.name.startsWith("P-") || p.category === "Projet") && p.status !== "completed" && p.status !== "paused" && p.status !== "someday" && !p.file.folder.includes("_Incubation") && !p.tags?.includes("statut/termine")).length` | **Incubation :** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '1-Projects/_Incubation"').where(p => p.file.name.startsWith("P-")).length` | **Domaines :** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '3-Domaines-de-vie"').where(p => p.file.name !== "2026" && p.file.name !== "Cartographie-processus-de-vie" && p.file.name !== "README").length`
 > - 🏛️ **Savoir capitalisé :** **Thèmes :** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '2-Ressources/Themes"').where(p => p.file.name.startsWith("T-")).length` | **Synthèses IA :** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '2-Ressources/IA-generated"').length` | **Archives :** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '4-Archives/Projets"').length`
 > - 🌐 **Volume Global :** **Total des Notes :** `$= const p = dv.current().file.folder ? dv.current().file.folder + '/' : ''; dv.pages('"' + p + '"').length`
 > 

@@ -14,6 +14,7 @@ Ce skill est déclenché par l'une des commandes ou alias suivants :
 | Commande Directe / Alias | Action Immédiate Exécutée |
 | :--- | :--- |
 | `create-project`, `create-projet`, `arca-create-project`, `brain-create-project` | 🚀 Instancie un **Projet (`P-`)** dans `PATH_PROJECTS` |
+| `create-incubation`, `arca-create-incubation`, `brain-create-incubation` | 🌱 Instancie un **Projet en Incubation (`P-`)** dans `PATH_PROJECTS/_Incubation` |
 | `create-theme`, `arca-create-theme`, `brain-create-theme` | 📜 Instancie un **Thème (`T-`)** dans `PATH_THEMES` |
 | `create-domaine`, `create-area`, `arca-create-area`, `brain-create-area` | 🧠 Instancie un **Domaine de Vie** dans `PATH_AREAS` |
 | `create-note`, `arca-create-note`, `brain-create-note` | ❓ **Mode Interactif** (Demande quel type de note créer) |
@@ -49,6 +50,9 @@ Avant toute modification ou création de fichier sur le disque, l'IA doit impér
 2. **Proposition Interactive à l'Humain :**
    Présenter clairement le diagnostic dans le chat :
    - 📌 **Nom du projet proposé :** `P-[Nom-Projet]`
+   - 🚦 **Statut & Emplacement :**
+     - **Actif :** Création à la racine `PATH_PROJECTS` (`status: "active"`, tag `statut/actif`)
+     - **En incubation (Someday/Maybe) :** Création dans `PATH_PROJECTS/_Incubation/` (`status: "someday"`, tag `statut/someday`)
    - 🧠 **Domaine(s) de Vie :**
      - Si domaine existant : `[[Domaine-Existant]]`
      - Si nouveau domaine requis : `[[Nouveau-Domaine]]` *(Non présent dans `PATH_AREAS` : création proposée)*
@@ -57,13 +61,13 @@ Avant toute modification ou création de fichier sur le disque, l'IA doit impér
      - Si projet pratique : *Aucun thème nécessaire (projet d'action concrète)* $\rightarrow$ `themes: []`
    - ⚠️ **Garde-fou en cas d'absence de Domaine :** Si l'utilisateur demande à ne spécifier aucun domaine, l'alerter :
      > *"Attention : sans Domaine de Vie rattaché, le projet n'apparaîtra pas dans la matrice de focalisation de `Home.md`. Nous te recommandons d'y associer au moins un domaine de responsabilité."*
-   - ❓ **Demande de validation :** *"Valides-tu ce maillage ? Souhaites-tu instancier dans la foulée le(s) nouveau(x) domaine(s) ou thème(s) ?"*
+   - ❓ **Demande de validation :** *"Valides-tu ce maillage et le statut (Actif ou Incubation) ? Souhaites-tu instancier dans la foulée le(s) nouveau(x) domaine(s) ou thème(s) ?"*
 
 3. **Exécution & Chaînage (Après validation explicite) :**
-   - Instancier `P-[Nom-Projet].md` dans `PATH_PROJECTS` avec `PATH_SYSTEM/templates/Template-Projet.md`.
+   - **Si projet Actif :** Instancier `P-[Nom-Projet].md` dans `PATH_PROJECTS` avec `PATH_SYSTEM/templates/Template-Projet.md` (`status: "active"`, tag `statut/actif`). Renseigner la note dans `### 🏁 Projets & chantiers de l'année` des Domaines rattachés.
+   - **Si projet en Incubation :** Instancier `P-[Nom-Projet].md` dans `PATH_PROJECTS/_Incubation/` avec `PATH_SYSTEM/templates/Template-Projet.md` (`status: "someday"`, tag `statut/someday`). Le projet s'affiche automatiquement dans la table Dataview d'incubation du Domaine rattaché.
    - **Chaînage Domaine de Vie :** Si un nouveau domaine a été validé, instancier immédiatement `[Nouveau-Domaine].md` dans `PATH_AREAS` avec `PATH_SYSTEM/templates/Template-Area.md`, et inscrire l'entrée dans `PATH_AREAS/README.md`.
    - **Chaînage Thème MOC :** Si un nouveau thème a été validé, instancier immédiatement `T-Nouveau-Theme.md` dans `PATH_THEMES` avec `PATH_SYSTEM/templates/Template-Theme.md`.
-   - **Raccordement bidirectionnel :** Renseigner la note de projet dans la section `### 🏁 Projets & chantiers de l'année` des fiches de Domaines de Vie rattachées (`PATH_AREAS`).
    - Journaliser l'instanciation et les créations en chaîne dans `PATH_SYSTEM/log.md`.
 
 ---

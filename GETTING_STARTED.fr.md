@@ -36,15 +36,10 @@ Arca-BrainOS adapte la structure PARA de Tiago Forte en une hiérarchie modulair
 Votre-Coffre-Obsidian/
 ├── 0-Inbox/                      # 📥 Zone de Capture & Ingestion Brute
 │   └── Youtube/                  # Ingestion automatique des transcripts YouTube
-├── 1-Projects/                   # 🚀 Projets Actifs (P-[Nom-Projet].md)
-├── 2-Ressources/                 # 📚 Base de Connaissances Long Terme
-│   ├── Notes/                    # ✍️ Notes Rédigées par l'Humain & Journal
-│   ├── IA-generated/             # 🤖 Zone d'Écriture Exclusive IA (AI-Distil-...)
-│   └── Themes/                   # 🗺️ Fiches Thèmes / MOCs (T-...)
-├── 3-Domaines-de-vie/            # 🧠 Domaines de Responsabilité Permanents (Index README.md)
-└── 4-Archives/                   # 📦 Projets Terminés & Contenus Inactifs
-    ├── Projets/                  # Archives des Projets Finalisés
-    └── Areas/                    # Archives des Domaines Inactifs
+├── 1-Projects/                   # 🚀 Projets Actifs (P-[Nom-Projet].md) & Incubation (_Incubation/)
+├── 2-Ressources/                 # 📚 Base de Connaissances (Notes/, IA-generated/, Themes/)
+├── 3-Domaines-de-vie/            # 🧠 Domaines de Responsabilité (Areas)
+└── 4-Archives/                   # 📦 Projets Terminés & Ressources Inactives
 ```
 
 #### 📥 `0-Inbox/` (Zone de Capture & Ingestion)
@@ -52,10 +47,10 @@ Votre-Coffre-Obsidian/
 - **Règle :** Maintenu à "Inbox Zero" grâce aux compétences `arca-inbox-process` ou `arca-organize-idea`.
 - **Exemples :** `0-Inbox/idee-brute-ia.md`, `0-Inbox/Youtube/transcript-video-karpathy.md`.
 
-#### 🚀 `1-Projects/` (Projets Actifs)
-- **Rôle :** Entreprises actives à court/moyen terme assorties d'objectifs, de jalons précis et d'une date de fin.
-- **Convention :** Les notes suivent le format `P-[Nom-Projet].md` et utilisent `Template-Projet.md`.
-- **Exemples :** `1-Projects/P-Arca-BrainOS.md`, `1-Projects/P-Camino-del-Norte.md`.
+#### 🚀 `1-Projects/` (Projets Actifs & Incubation)
+- **Rôle :** Entreprises actives à court/moyen terme assorties d'objectifs, de jalons précis et d'une date de fin. Héberge également le sous-dossier `_Incubation/` pour vos projets en sommeil (Someday/Maybe).
+- **Convention :** Les notes suivent le format `P-[Nom-Projet].md` et utilisent `Template-Projet.md` (`status: active` ou `status: someday`).
+- **Exemples :** `1-Projects/P-Arca-BrainOS.md`, `1-Projects/_Incubation/P-Migration-Systeme.md`.
 
 #### 📚 `2-Ressources/` (Base de Connaissances)
 Divisé en 3 couches distinctes pour maintenir une séparation totale entre la réflexion humaine et le traitement par l'IA :
@@ -95,6 +90,7 @@ Arca-BrainOS est 100% agnostique quant à l'organisation des dossiers. Le cœur 
 # 🌐 Topographie du Vault (Variables AGENTS.md)
 PATH_INBOX: "0-Inbox/"
 PATH_PROJECTS: "1-Projects/"
+PATH_INCUBATION: "1-Projects/_Incubation/"
 PATH_AREAS: "3-Domaines-de-vie/"
 PATH_THEMES: "2-Ressources/Themes/"
 PATH_IA_GENERATED: "2-Ressources/IA-generated/"

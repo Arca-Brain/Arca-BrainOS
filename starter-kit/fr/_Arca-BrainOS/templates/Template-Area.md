@@ -24,13 +24,23 @@ banner: ""
 ```dataview
 TABLE last_session AS "Dernier Run", sessions_count AS "Sessions", total_time_saved AS "Gain IA"
 FROM "1-Projects"
-WHERE contains(areas, this.file.link) OR contains(file.outlinks, this.file.link)
+WHERE (contains(areas, this.file.link) OR contains(file.outlinks, this.file.link)) AND status != "someday" AND !contains(file.folder, "_Incubation")
 SORT date(last_session) DESC
 ```
 
 ---
-## 🌱 Idées Futurs (Backlog)
+## 🌱 Idées Futurs (Backlog & Incubation)
 *Les graines de projets, intuitions et chantiers en incubation.*
+
+### 💤 Projets en Incubation
+```dataview
+TABLE date_created AS "En incubation depuis", themes AS "Thèmes"
+FROM "1-Projects/_Incubation"
+WHERE contains(areas, this.file.link) OR contains(file.outlinks, this.file.link)
+SORT date(date_created) DESC
+```
+
+### 💡 Graines & Intuitions Brutes
 - 💡 **[Catégorie] :** [[Lien-ou-Nom]] : [Description courte]
 
 ---
