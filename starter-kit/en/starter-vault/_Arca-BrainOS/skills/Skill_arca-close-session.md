@@ -34,3 +34,19 @@ Execute when the user enters `arca-close-session` (or `close-session` / `brain-c
 6. **Global System Logging:**
    - Append log line in `_Arca-BrainOS/log.md`:
      `[YYYY-MM-DD HH:mm] - Session closed for [[Project-Name]] (Duration: XhYY | Manual: ~AhBB | Saved: +ChDD)`
+
+7. **Adaptive & Resilient Git Snapshot & Backup:**
+   - Verify if the vault is a valid Git repository (`git rev-parse --is-inside-work-tree 2>/dev/null`).
+     - *If false (or Git not installed):* Silently skip this step without error (zero friction for beginners).
+   - *If the vault is a valid Git repository:*
+     - Check for pending changes across the vault (`git status --porcelain`).
+     - If modifications exist, stage all files and seal the session commit:
+       ```bash
+       git add .
+       git commit -m "Session Deep Work [YYYY-MM-DD]: [Session Title]"
+       ```
+     - **Adaptive Remote Push:**
+       - If remote `nas` exists (`git remote | grep -q "^nas$"`), attempt `git push nas`. If unreachable (e.g., disconnected network mount), proceed without error and notify gracefully: *"Local commit sealed. NAS unreachable (push deferred to next connection)."*
+       - Else if remote `origin` exists (`git remote | grep -q "^origin$"`), attempt `git push origin`.
+       - If no remote is configured (100% local Git), simply confirm the local commit.
+

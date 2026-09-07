@@ -38,6 +38,21 @@ Exécute ce workflow lorsque l'utilisateur tape la commande `arca-close-session`
    - Ajoute la ligne de clôture dans `_Arca-BrainOS/log.md` :
      `[AAAA-MM-JJ HH:mm] - Session fermée pour [[Nom-du-Projet]] (Durée: XhYY | Sans IA: ~AhBB | Gain: +ChDD)`
 
+7. **Scellement & Sauvegarde Git (Adaptatif & Résilient) :**
+   - Vérifie si le coffre est un dépôt Git (`git rev-parse --is-inside-work-tree 2>/dev/null`).
+     - *Si faux (ou Git non installé) :* Passe cette étape silencieusement sans bloquer ni générer d'erreur (zéro friction pour un débutant).
+   - *Si le coffre est un dépôt Git valide :*
+     - Vérifie la présence de modifications dans l'ensemble du coffre (`git status --porcelain`).
+     - S'il y a des changements, indexe tous les fichiers et crée le commit sémantique de clôture :
+       ```bash
+       git add .
+       git commit -m "Session Deep Work du [AAAA-MM-JJ] : [Titre court de la session]"
+       ```
+     - **Push distant adaptatif :**
+       - Si le remote `nas` existe (`git remote | grep -q "^nas$"`), tente `git push nas`. Si le push échoue (ex: montage réseau Windows `T:` déconnecté), ne bloque pas le workflow et prévient avec bienveillance : *"Commit local scellé. NAS non joignable (sauvegarde reportée au prochain branchement)."*
+       - Sinon, si le remote `origin` existe (`git remote | grep -q "^origin$"`), tente `git push origin`.
+       - Si aucun remote n'est configuré (mode Git 100% local), confirme simplement le commit local.
+
 ---
 ## Template de Bilan Historique (à injecter)
 

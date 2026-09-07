@@ -23,5 +23,5 @@
 
 ### 🪵 4. Cluster Deep Work & Session : [[Process-Pilotage-de-Projets-et-Deep-Work]] & [[Process-Capitalisation-et-Synthese-MOC]]
 - [[Skill_arca-resume]] : *Démarrage et cadrage cognitif avant un run de Deep Work avec initialisation du journal.*
-- [[Skill_arca-close-session]] : *Clôture de session, bilan temporel/ROI IA, mise à jour des tâches et journal de bord projet.*
+- [[Skill_arca-close-session]] : *Clôture de session, bilan temporel/ROI IA, mise à jour des tâches, journal de bord et sauvegarde Git adaptative.*
 - [[Skill_arca-archive-project]] : *Clôture finale, audit des tâches, capitalisation d'apprentissage et archivage physique vers 4-Archives/Projets/ ([[Process-Archivage-de-Projet]]).*

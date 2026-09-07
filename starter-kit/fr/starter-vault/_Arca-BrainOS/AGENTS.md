@@ -79,7 +79,7 @@ Lorsque l'utilisateur invoque l'une de ces commandes spécifiques (prefixée par
 - `arca-resume` ou `resume` / `brain-resume` -> Charge `/_Arca-BrainOS/skills/Skill_arca-resume.md`
   *Rôle :* Démarrage et cadrage cognitif. Scanne le projet cible pour récapituler l'état d'avancement, fixer les objectifs de la session de Deep Work, et lister les livrables attendus.
 - `arca-close-session` ou `close-session` / `brain-close-session` -> Charge `/_Arca-BrainOS/skills/Skill_arca-close-session.md`
-  *Rôle :* Clôture de session. Trie les tâches réalisées/restantes par sous-sections, rédige le journal de bord de session à la fin du projet (`P-`), et synchronise les actions globales.
+  *Rôle :* Clôture de session. Trie les tâches réalisées/restantes par sous-sections, rédige le journal de bord de session à la fin du projet (`P-`), synchronise les actions globales et scelle la sauvegarde Git adaptative.
 - `arca-archive-project` ou `archive-project` / `brain-archive-project` -> Charge `/_Arca-BrainOS/skills/Skill_arca-archive-project.md`
   *Rôle :* Clôture finale et archivage physique (`mv` vers `4-Archives/Projets/`). Audite les tâches résiduelles, extrait les apprentissages (orientés vers `memory.md` sans altérer `AGENTS.md`), scelle les métadonnées (`status: completed`), et actualise les Domaines de vie.
 
