@@ -207,7 +207,8 @@ Votre-Coffre-Obsidian/
 │   ├── log.md                    # Journal d'audit chronologique (1 ligne / action)
 │   ├── skills/                   # 🔌 Compétences Agentiques Modulaires (Skill_arca-*.md)
 │   ├── process/                  # 📚 Fiches Méthodologiques Embarquées (Process-*.md)
-│   ├── templates/                # 📄 Modèles de Notes (Projet, Theme, Area)
+│   ├── templates/                # 📄 Modèles de Notes (Projet, Theme, Area, ADR)
+│   ├── adr/                      # 📜 Registre des Décisions d'Architecture (ADR-001...)
 │   └── tests/                    # 🧪 Banc d'Essai Agentique & Fixtures
 │
 ├── Home.md                       # Cockpit Exécutif Optionnel (Inclus dans starter-vault)

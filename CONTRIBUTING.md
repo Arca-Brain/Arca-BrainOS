@@ -27,7 +27,8 @@ You can contribute to Arca-BrainOS in several ways:
 2. **📚 Methodological Process Guides (`Process-*.md`)** : Writing human/AI process documentation stored in `_Arca-BrainOS/process/`.
 3. **📘 Operational Playbooks (`Playbook-*.md`)** : Designing step-by-step enablement guides stored in `_Arca-BrainOS/playbooks/`.
 4. **🧪 Test Suite Assertions (`_Arca-BrainOS/tests/`)** : Adding assertions and fixtures to `Skill_arca-test-suite.md` to prevent regressions.
-5. **🐛 Bug Fixes & Documentation Improvements** : Clarifying guides, updating READMEs, or fixing path handling.
+5. **📜 Architecture Decision Records (`_Arca-BrainOS/adr/`)** : Proposing new ADRs to evolve the engine or formalize structural decisions.
+6. **🐛 Bug Fixes & Documentation Improvements** : Clarifying guides, updating READMEs, or fixing path handling.
 
 ---
 
@@ -61,7 +62,30 @@ You can ask your AI terminal agent to build skills for you! A well-written skill
 - An **Objective** (`## Objectif`).
 - A **Sequential Execution Workflow** (`## Workflow d'Exécution Séquentiel`).
 
-### E. Creating & Contributing Custom Skills or Process Guides
+### E. Style & Punctuation (Rule 5)
+Never use em-dashes (`—`) in notes, documentation, or syntheses. Systematically replace them with colons (`:`), commas (`,`), dots (`.`), or parentheses `()`.
+
+### F. Design Lifecycle & Architectural Governance: arca-grill and arca-adr
+Before writing code, prompts, or drafting a new skill, contributors are strongly encouraged to follow this design lifecycle:
+
+1. **Socratic Grilling (`arca-grill`):**
+   Run the command with your AI terminal agent:
+   ```bash
+   arca-grill [your idea or feature requirement]
+   ```
+   The agent will immediately halt code generation to explore the design tree across structured question rounds on the active decision frontier. It verifies facts in the vault, tests necessity vs existing skills, and safeguards system invariants.
+
+2. **Compliance with Foundational ADRs:**
+   The `_Arca-BrainOS/adr/` directory contains all system Architectural Decision Records. Any contribution must respect established invariants (notably LLM-agnostic sovereignty [[ADR-001]], decoupled 2-part architecture [[ADR-002]], human note sanctuarization [[ADR-005]], and frugal memory constraints [[ADR-009]]).
+
+3. **Architectural Decision Records (`arca-adr`):**
+   If your contribution introduces a structural design choice, a new data pattern, or amends an existing invariant, formalize it using:
+   ```bash
+   arca-adr [decision title]
+   ```
+   This generates a standardized record following [[Template-ADR]] stored in `_Arca-BrainOS/adr/`.
+
+### G. Creating & Contributing Custom Skills or Process Guides
 If you want to create a custom skill or contribute a third-party module (e.g., voice note capture, external tool integration, custom audit workflow):
 1. **Create the file:** Place your skill in `_Arca-BrainOS/skills/Skill_arca-[name].md` (or `process/Process-[name].md`) using canonical relative path variables (`PATH_*`).
 2. **AI-Assisted Design:** Ask your AI assistant to generate the skill: it will write the execution logic, add command aliases, and automatically update `AGENTS.md` and the parent folder `README.md`.

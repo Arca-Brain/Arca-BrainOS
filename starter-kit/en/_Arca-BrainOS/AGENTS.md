@@ -24,6 +24,7 @@ PATH_NOTES: "2-Ressources/Notes/"
 PATH_ARCHIVES: "4-Archives/Projets/"
 PATH_SYSTEM: "_Arca-BrainOS/"
 PATH_MEMORY: "_Arca-BrainOS/memory.md"
+PATH_ADR: "_Arca-BrainOS/adr/"
 ```
 
 - **Exclusive Writing Zone (Automatic):** The `PATH_IA_GENERATED` directory. You can write, merge, and edit synthesis files without asking for confirmation.
@@ -59,3 +60,5 @@ PATH_MEMORY: "_Arca-BrainOS/memory.md"
 - `arca-resume` -> Load `/_Arca-BrainOS/skills/Skill_arca-resume.md`
 - `arca-close-session` -> Load `/_Arca-BrainOS/skills/Skill_arca-close-session.md`
 - `arca-archive-project` (aliases: `archive-project`) -> Load `/_Arca-BrainOS/skills/Skill_arca-archive-project.md`
+- `arca-grill` (aliases: `grill-me`, `brain-grill`) -> Load `/_Arca-BrainOS/skills/Skill_arca-grill.md`
+- `arca-adr` (aliases: `create-adr`, `brain-adr`) -> Load `/_Arca-BrainOS/skills/Skill_arca-adr.md`

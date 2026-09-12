@@ -25,3 +25,5 @@
 - [[Skill_arca-resume]] : *Démarrage et cadrage cognitif avant un run de Deep Work avec initialisation du journal.*
 - [[Skill_arca-close-session]] : *Clôture de session, bilan temporel/ROI IA, mise à jour des tâches, journal de bord et sauvegarde Git adaptative.*
 - [[Skill_arca-archive-project]] : *Clôture finale, audit des tâches, capitalisation d'apprentissage et archivage physique vers 4-Archives/Projets/ ([[Process-Archivage-de-Projet]]).*
+- [[Skill_arca-grill]] : *Crible socratique par rounds (arbre de conception et frontière de décisions) pour challenger et verrouiller l'architecture avant implémentation.*
+- [[Skill_arca-adr]] : *Enregistrement et scellement d'une décision d'architecture dans `_Arca-BrainOS/adr/` selon le template standard.*

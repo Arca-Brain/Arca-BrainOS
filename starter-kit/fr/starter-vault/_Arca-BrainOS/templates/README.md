@@ -10,6 +10,7 @@
 - [[Template-Theme]] : *Modèle pour les cartes de contenu MOC (`T-`), incluant vision, Dataview distillations/notes et maillage.*
 - [[Template-Process]] : *Modèle pour les fiches de macro-processus (inputs, étapes, matrice Humain/IA, outputs).*
 - [[Template-Idea]] : *Modèle pour la qualification d'idées brutes (Note brute, synthèse, actions et maillage).*
+- [[Template-ADR]] : *Modèle de décision d'architecture (Architecture Decision Record : Contexte, Décision, Compromis, Alternatives).*
 
 ### 📓 Templates Journaux
 - [[Template-Daily]] : *Modèle pour la note quotidienne (journal de bord, captures rapides et revue).*

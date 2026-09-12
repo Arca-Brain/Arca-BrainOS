@@ -252,7 +252,8 @@ Your-Obsidian-Vault/
 │   ├── log.md                    # Single-line audit log
 │   ├── skills/                   # Agentic skills (Skill_arca-*.md)
 │   ├── process/                  # Methodological process guides (Process-*.md)
-│   ├── templates/                # Standardized note templates
+│   ├── templates/                # Standardized note templates (Project, Theme, ADR...)
+│   ├── adr/                      # 📜 Architecture Decision Records (ADR-001...)
 │   └── tests/                    # Test harness fixtures & assertions
 ├── 0-Inbox/                      # Ingestion & raw captures
 ├── 1-Projects/                   # Active projects (P-*.md) & Incubation (_Incubation/)

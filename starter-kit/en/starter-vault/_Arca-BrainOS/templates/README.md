@@ -10,6 +10,7 @@
 - [[Template-Theme]] : *Template for Theme MOC cards (`T-`), including vision, syntheses, and graph connections.*
 - [[Template-Process]] : *Template for macro-process guides (inputs, steps, Human/AI matrix, outputs).*
 - [[Template-Idea]] : *Template for raw idea qualification (Raw Note, summary, actions, and connections).*
+- [[Template-ADR]] : *Architecture Decision Record template (Context, Decision, Consequences, Alternatives).*
 
 ### 📓 Journal Templates
 - [[Template-Daily]] : *Template for daily notes (worklog, quick captures, and review).*
