@@ -25,3 +25,5 @@
 - [[Skill_arca-resume]] : *Start and cognitive framing before a Deep Work run with log initialization.*
 - [[Skill_arca-close-session]] : *Session closure, AI ROI calculation, task updates, project session worklog, and adaptive Git backup.*
 - [[Skill_arca-archive-project]] : *Final closure, task resolution, learning capitalization, and physical archiving to 4-Archives/Projets/ ([[Process-Project-Archiving]]).*
+- [[Skill_arca-grill]] : *Socratic grilling by rounds (design tree and decision frontier) to challenge and solidify architecture before implementation.*
+- [[Skill_arca-adr]] : *Record and seal architectural decisions in `_Arca-BrainOS/adr/` following the standard template.*

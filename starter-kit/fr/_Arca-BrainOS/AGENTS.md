@@ -25,6 +25,7 @@ PATH_ARCHIVES: "4-Archives/Projets/"
 PATH_SYSTEM: "_Arca-BrainOS/"
 PATH_PLAYBOOKS: "_Arca-BrainOS/playbooks/"
 PATH_MEMORY: "_Arca-BrainOS/memory.md"
+PATH_ADR: "_Arca-BrainOS/adr/"
 ```
 
 - **Zone d'écriture EXCLUSIVE (Automatique) :** Le dossier `PATH_IA_GENERATED`. Tu peux y écrire, fusionner et modifier des fichiers de synthèse sans demander de confirmation.
@@ -82,6 +83,10 @@ Lorsque l'utilisateur invoque l'une de ces commandes spécifiques (prefixée par
   *Rôle :* Clôture de session. Trie les tâches réalisées/restantes par sous-sections, rédige le journal de bord de session à la fin du projet (`P-`), synchronise les actions globales et scelle la sauvegarde Git adaptative.
 - `arca-archive-project` ou `archive-project` / `brain-archive-project` -> Charge `/_Arca-BrainOS/skills/Skill_arca-archive-project.md`
   *Rôle :* Clôture finale et archivage physique (`mv` vers `4-Archives/Projets/`). Audite les tâches résiduelles, extrait les apprentissages (orientés vers `memory.md` sans altérer `AGENTS.md`), scelle les métadonnées (`status: completed`), et actualise les Domaines de vie.
+- `arca-grill` ou `grill-me` / `brain-grill` -> Charge `/_Arca-BrainOS/skills/Skill_arca-grill.md`
+  *Rôle :* Crible socratique par rounds (arbre de conception et frontière de décisions) pour challenger et verrouiller l'architecture des compétences (`skills/`) d'Arca-BrainOS avant implémentation.
+- `arca-adr` ou `create-adr` / `brain-adr` -> Charge `/_Arca-BrainOS/skills/Skill_arca-adr.md`
+  *Rôle :* Enregistrement et scellement d'une décision d'architecture dans `_Arca-BrainOS/adr/` selon `Template-ADR.md`. Fige le contexte, la décision, les compromis et les alternatives écartées.
 
 ## Consignes de Comportement Général (Anti-Chatter)
 À l'exception des commandes `arca-query` et `arca-audit` qui sont par nature conversationnelles ou informatives, lorsque tu génères ou modifies des notes (via `arca-distill`, `arca-synthesize`, `arca-close-session` ou `arca-converge`), ton output ne doit contenir **AUCUN bavardage** (pas d'introduction ni de conclusion). Tu écris le Markdown pur directement.

@@ -29,7 +29,8 @@ Vous pouvez contribuer à Arca-BrainOS de plusieurs façons :
 2. **📚 Fiches Méthodologiques de Processus (`Process-*.md`)** : Rédaction de guides de processus mixte humain/IA stockés dans `_Arca-BrainOS/process/`.
 3. **📘 Playbooks Opérationnels (`Playbook-*.md`)** : Conception de guides d'enablement étape-par-étape stockés dans `_Arca-BrainOS/playbooks/`.
 4. **🧪 Assertions pour le Banc de Test (`_Arca-BrainOS/tests/`)** : Ajout d'assertions et de jeux d'essai (fixtures) dans `Skill_arca-test-suite.md` pour prévenir les régressions.
-5. **🐛 Corrections de Bugs & Documentation** : Clarification des guides, traduction, ou correction de la gestion des sentiers.
+5. **📜 Décisions d'Architecture (`_Arca-BrainOS/adr/`)** : Proposer de nouveaux ADRs pour faire évoluer le moteur ou formaliser des arbitrages structurants.
+6. **🐛 Corrections de Bugs & Documentation** : Clarification des guides, traduction, ou correction de la gestion des sentiers.
 
 ---
 
@@ -60,7 +61,27 @@ Tout ajout, création ou renommage d'une compétence (`Skill_arca-*.md`), fiche 
 ### D. Règle de Ponctuation (Règle 5)
 N'utilisez jamais de tiret cadratin (`—`) dans les notes ou documentations rédigées. Remplacez systématiquement cette ponctuation par des deux-points (`:`), des virgules (`,`), des points (`.`) ou des parenthèses `()`.
 
-### E. Création & Intégration de Compétences ou Processus Tiers
+### E. Cycle de Conception & Gouvernance : arca-grill et arca-adr
+Avant d'écrire du code, un prompt ou une nouvelle compétence, tout contributeur est vivement encouragé à suivre ce cycle méthodologique :
+
+1. **Crible Socratique (`arca-grill`) :**
+   Lancez la commande avec votre agent terminal :
+   ```bash
+   arca-grill [nom ou idée de la compétence]
+   ```
+   L'agent suspend immédiatement toute écriture pour dérouler un crible socratique par rounds (arbre de conception et frontière de décisions). Il inspecte les faits dans le coffre, challenge la légitimité du besoin et vérifie la conformité avec les invariants du système.
+
+2. **Respect des Décisions Fondatrices & Invariants (ADR) :**
+   Le dossier `_Arca-BrainOS/adr/` consigne l'ensemble des Architectural Decision Records du système. Toute contribution doit être compatible avec ces choix fondateurs (notamment la souveraineté LLM-agnostique [[ADR-001]], l'architecture découplée [[ADR-002]], l'isolation de la zone IA [[ADR-005]], et la mémoire frugale [[ADR-009]]).
+
+3. **Consignation d'Architecture (`arca-adr`) :**
+   Si votre contribution introduit un choix d'architecture structurant, un nouveau motif de données ou amende un invariant existant, scellez cette décision via :
+   ```bash
+   arca-adr [titre de la décision]
+   ```
+   Cette fiche suivra le format normalisé [[Template-ADR]] et sera stockée dans `_Arca-BrainOS/adr/`.
+
+### F. Création & Intégration de Compétences ou Processus Tiers
 Si vous souhaitez concevoir une compétence personnalisée ou contribuer un module tiers (ex: capture de notes vocales, intégration d'un outil externe, nouveau workflow d'analyse) :
 1. **Créer le fichier :** Déposez votre compétence dans `_Arca-BrainOS/skills/Skill_arca-[nom].md` (ou `process/Process-[nom].md`) en respectant les sentiers relatifs canoniques (`PATH_*`).
 2. **Conception assistée par l'IA :** Demandez à votre agent IA de concevoir le skill : il rédigera la logique d'exécution, ajoutera les alias et mettra à jour automatiquement `AGENTS.md` ainsi que le `README.md` du dossier parent.
