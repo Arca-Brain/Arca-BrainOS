@@ -8,6 +8,7 @@
 - [[Skill_arca-inbox-process]] : *Automatic triage, YAML cleaning, and routing of raw notes in `0-Inbox/`.*
 - [[Skill_arca-organize-idea]] : *Qualification and structuring of raw idea notes while preserving original text.*
 - [[Skill_arca-create-note]] : *Assisted, interactive instantiation of Projects (P- active or incubating), Themes (T-), or Areas with human validation, automatic theme chaining, and justification scans.*
+- [[Skill_arca-email-process]] : *GTD email triage, surgical task extraction to project notes (`P-`) without storing raw bodies, and supervised mailbox management.*
 
 ### 🧪 2. Distillation & Media Cluster : [[Process-Media-Ingestion-and-Distillation]]
 - [[Skill_arca-distill]] : *Master orchestration skill for raw source ingestion (synthesis, anchoring, archiving, impact).*
