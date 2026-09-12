@@ -38,7 +38,7 @@ status: "#completed"
 
 ---
 
-> 🎯 **Core Concept:** Move from scattered thoughts and fragmented AI tools to a sovereign, AI-native operating system executing your cognitive workflows directly inside your local Obsidian vault.
+> 🎯 **Core Concept:** Keep your notes sovereign, let AI handle the maintenance. Arca-BrainOS automates inbox triage, note linking, and project tracking directly inside your local Obsidian vault.
 
 
 ### ⭐ If you find Arca-BrainOS helpful, star the repository on GitHub!
@@ -71,6 +71,12 @@ The system is designed to seamlessly articulate two complementary dimensions of 
 By dynamically linking every active project to your **Life Areas (`3-Domaines-de-vie/`)**, Arca-BrainOS delivers a truly holistic overview of your life: it powers seasonal and annual reviews, balances your energy across domains, and turns accumulated knowledge into real-world action.
 
 > 📜 **Philosophy & Vision:** Want to understand the anthropological mutation and motivation behind this architecture? Read **[The Sovereign AI Workflow Manifesto (MANIFESTO.md)](MANIFESTO.md)**.
+
+<p align="center">
+  <img src="assets/starter-vault-show-dont-tell.png" alt="Arca-BrainOS Live Demo: CLI Orchestration on the Left, Structured Obsidian Note and MOC Links on the Right" width="100%">
+  <br>
+  <em>Show, don't tell: CLI terminal orchestration on the left, live structured Obsidian note and MOC links on the right.</em>
+</p>
 
 ```text
      [ Raw Inputs: YouTube Videos, Articles, Transcripts, Notes ]
@@ -225,6 +231,12 @@ All agentic capabilities are modular Markdown skills stored in `_Arca-BrainOS/sk
 * `arca-resume`: Cognitive framing for work sessions (progress summary and intent setting).
 * `arca-close-session`: Closes Deep Work sessions, updates project worklog, and calculates AI ROI.
 * `arca-create-note`: Fast instantiation via direct shortcuts (`create-project`, `create-theme`, `create-domaine`).
+
+<p align="center">
+  <img src="assets/starter-vault-project-deep-work.png" alt="Deep Work Session Framing with arca-resume and Automated Project Worklog in Obsidian" width="100%">
+  <br>
+  <em>Deep work session framing with arca-resume and automated project worklog directly inside Obsidian.</em>
+</p>
 
 ---
 

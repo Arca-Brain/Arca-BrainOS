@@ -38,7 +38,7 @@ status: "#completed"
 
 ---
 
-> 🎯 **Concept Clé :** Passez des pensées éparpillées et des outils IA fragmentés à un système d'exploitation souverain et AI-native qui exécute vos flux cognitifs directement au cœur de votre coffre Obsidian local.
+> 🎯 **Concept Clé :** Gardez vos notes souveraines, confiez l'intendance à l'IA. Arca-BrainOS automatise le tri, le maillage et le suivi de projet directement au cœur de votre coffre Obsidian.
 
 
 ### ⭐ Si Arca-BrainOS vous est utile, ajoutez une étoile au dépôt GitHub !
@@ -71,6 +71,12 @@ Ce système est pensé pour articuler deux dimensions complémentaires de vos pr
 En reliant dynamiquement chaque projet à vos **Domaines de vie (`3-Domaines-de-vie/`)**, Arca-BrainOS offre une véritable vision d'ensemble sur votre vie : il nourrit vos bilans et rétrospectives saisonnières ou annuelles, équilibre votre énergie et transforme la connaissance accumulée en actions concrètes.
 
 > 📜 **Philosophie & Vision :** Vous souhaitez comprendre la mutation anthropologique, le *Pharmakon* de Stiegler et la symbiose organologique derrière cette architecture ? Lisez **[Le Manifeste du Workflow Augmenté (MANIFESTO.fr.md)](MANIFESTO.fr.md)**.
+
+<p align="center">
+  <img src="assets/starter-vault-show-dont-tell.png" alt="Arca-BrainOS en action : Démonstration concrète de l'orchestration CLI et note Obsidian maillée" width="100%">
+  <br>
+  <em>Démonstration concrète : orchestration dans le terminal CLI à gauche, note Obsidian structurée et maillée aux MOCs à droite.</em>
+</p>
 
 ```text
      [ Flux Entrants : Vidéos YouTube, Articles, Transcripts, Notes ]
@@ -178,6 +184,12 @@ Toutes les capacités agentiques sont des compétences modulaires en Markdown st
 * `arca-resume` : Cadrage cognitif des sessions de travail (synthèse de l'avancement et définition de l'intention).
 * `arca-close-session` : Clôture des sessions de Deep Work, tenue du journal de bord du projet et calcul du ROI.
 * `arca-create-note` : Instanciation rapide via raccourcis direct (`create-project`, `create-theme`, `create-domaine`).
+
+<p align="center">
+  <img src="assets/starter-vault-project-deep-work.png" alt="Cadrage de session Deep Work avec arca-resume et journal de bord automatisé dans Obsidian" width="100%">
+  <br>
+  <em>Cadrage cognitif de session avec arca-resume et journal de bord de projet automatisé directement dans Obsidian.</em>
+</p>
 
 ---
 
