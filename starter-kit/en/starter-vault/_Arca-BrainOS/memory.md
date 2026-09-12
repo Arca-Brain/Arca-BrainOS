@@ -19,11 +19,11 @@
 - **Atomic POSIX Commands:** Prefer direct shell operations (`mv`, `cp`, `mkdir -p`) supported by native binaries (`agy`).
 - **Folder Governance:** Never invent new root folders; strictly adhere to the 5 canonical PARA folders and `1-Projects/_Incubation/`.
 - **Constitution Sanctity:** `AGENTS.md` is the Vault Constitution. Operational tweaks and habits belong here in `memory.md`, never in `AGENTS.md`.
+- **GitHub Release Workflow (Branches & Pull Requests):** For any update to the public repository (`_release-github-arca-brainos`), never push directly to `main`. Systematically create a thematic feature branch (`feat/...`), prepare the title and description in English, and use the Pull Request process for visual review before merging.
+- **Off-Session Git Sobriety:** Restrict automated Git commits and remote pushes exclusively to the formal project close-session ritual (`arca-close-session`). Outside project sessions (Inbox triage, idea qualification, ad-hoc maintenance), operate directly on the filesystem without triggering automatic commits or pushes.
 
 ---
 
 ## 💡 Recent Project Learnings (Active Buffer)
 *(Dynamic section: holds 3 to 5 recent learnings from project archiving before consolidation)*
-- [2026-09-06] **GTD Incubation:** Dormant projects and ideas are parked in `1-Projects/_Incubation/` with `status: someday` to protect active focus in `Home.md`.
-EOF && \
-cp _release-github-arca-brainos/starter-kit/en/_Arca-BrainOS/memory.md _release-github-arca-brainos/starter-kit/en/starter-vault/_Arca-BrainOS/memory.md
+*(Empty buffer: no pending learnings awaiting consolidation)*
