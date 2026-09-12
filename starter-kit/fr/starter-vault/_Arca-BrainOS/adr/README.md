@@ -16,3 +16,9 @@
 7. [[ADR-007-Dichotomie-Projets-Intellectuels-vs-Monde-Reel]] : *Qualification séparée des projets intellectuels (`themes: [...]`) et des projets du monde réel (`themes: []`).*
 8. [[ADR-008-Protocole-Deep-Work-et-Bilan-ROI-Temporel]] : *Encadrement rituel des sessions (`arca-resume`, `arca-close-session`) et mesure mathématique du gain de temps.*
 9. [[ADR-009-Modele-Memoire-Frugale-CoALA-4-Niveaux]] : *Architecture de mémoire étagée en 4 strates textuelles frugales (`_Arca-BrainOS/memory.md` < 50 lignes).*
+
+---
+
+### 🚀 Extensions Post-v1.0.0
+
+10. [[ADR-010-Skill-arca-email-process]] : *Passerelle de messagerie hybride (MCP/local), extraction d'actions GTD et gestion supervisée de l'Inbox sans stockage de corps bruts.*

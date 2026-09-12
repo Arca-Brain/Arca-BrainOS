@@ -55,6 +55,8 @@ Lorsque l'utilisateur invoque l'une de ces commandes spécifiques (prefixée par
   *Rôle :* Structurer une note d'idée brute sans perdre le texte initial (Raw Note preserved), synthétiser l'idée clé, extraire les actions pour les projets (`P-`) et faire le maillage sémantique.
 - `arca-create-note` ou `create-project` / `create-projet` / `create-incubation` / `create-theme` / `create-area` / `create-domaine` -> Charge `/_Arca-BrainOS/skills/Skill_arca-create-note.md`
   *Rôle :* Instancier et mailler de manière interactive une note Projet (`P-` actif ou en incubation), Thème (`T-`) ou Domaine (`Area`) avec validation humaine, chaînage automatique des nouveaux thèmes et scan de justification.
+- `arca-email-process` ou `email-process` / `brain-email` -> Charge `/_Arca-BrainOS/skills/Skill_arca-email-process.md`
+  *Rôle :* Triage GTD des emails de l'Inbox, extraction chirurgicale des actions vers les projets (`P-`) sans stockage de corps bruts, et gestion supervisée de la messagerie (hybride MCP/local).
 
 ### 🧪 2. Cluster Distillation & Médias : [[Process-Ingestion-et-Distillation-de-Medias]]
 - `arca-distill` ou `distill` / `brain-distill` -> Charge `/_Arca-BrainOS/skills/Skill_arca-distill.md`

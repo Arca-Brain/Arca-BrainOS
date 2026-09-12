@@ -43,6 +43,7 @@ PATH_ADR: "_Arca-BrainOS/adr/"
 - `arca-inbox-process` -> Load `/_Arca-BrainOS/skills/Skill_arca-inbox-process.md`
 - `arca-organize-idea` -> Load `/_Arca-BrainOS/skills/Skill_arca-organize-idea.md`
 - `arca-create-note` (aliases: `create-project`, `create-incubation`, `create-theme`, `create-area`) -> Load `/_Arca-BrainOS/skills/Skill_arca-create-note.md`
+- `arca-email-process` (aliases: `email-process`, `brain-email`) -> Load `/_Arca-BrainOS/skills/Skill_arca-email-process.md`
 
 ### 🧪 2. Distillation Cluster
 - `arca-distill` -> Load `/_Arca-BrainOS/skills/Skill_arca-distill.md`
