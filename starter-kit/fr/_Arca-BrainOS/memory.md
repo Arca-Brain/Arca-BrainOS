@@ -19,9 +19,12 @@
 - **Commandes Atomiques & Binaire Natif :** Privilégier les commandes POSIX directes (`mv`, `cp`, `mkdir -p`) permises par le binaire natif Linux (`agy`).
 - **Gouvernance des Dossiers :** Ne jamais inventer de nouveaux dossiers à la racine du Vault ; respecter strictement les 5 dossiers canoniques PARA et le sous-dossier `1-Projects/_Incubation/`.
 - **Sanctuarisation d'AGENTS.md :** `AGENTS.md` est la Constitution du Vault. Les ajustements de comportement quotidiens doivent être consignés ici dans `memory.md`, jamais dans `AGENTS.md`.
+- **Workflow de Release GitHub (Branches & Pull Requests) :** Pour toute mise à jour du dépôt public (`_release-github-arca-brainos`), ne jamais pousser directement sur `main`. Créer systématiquement une branche de fonctionnalité thématique (`feat/...`), préparer le titre et la description en anglais, et utiliser le processus de Pull Request pour inspection visuelle avant fusion.
+- **Sobriété Git Hors Session :** Réserver les commits et pushs Git (vers le NAS) exclusivement au rituel formel de clôture de projet (`arca-close-session`). Hors session projet (triage Inbox, qualification d'idées, maintenance ponctuelle), travailler en direct sur le système de fichiers sans déclencher de commit ni de push automatique.
+
 
 ---
 
 ## 💡 REX & Apprentissages Projets Récents (Buffer Actif)
 *(Section dynamique : accueille 3 à 5 apprentissages récents issus de l'archivage de projets avant consolidation ou archivage)*
-- [2026-09-06] **Incubation GTD :** Les idées et chantiers en sommeil sont stockés dans `1-Projects/_Incubation/` avec `status: someday` pour préserver la clarté du focus chaud dans `Home.md`.
+*(Buffer vide : aucun apprentissage en attente de consolidation)*
