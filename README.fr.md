@@ -23,167 +23,79 @@ status: "#completed"
 
 ---
 
-**Workflow agentique souverain & co-pilote local pour Obsidian**
+**Un assistant IA local et souverain pour vos projets, vos notes de vie**
 
 🇬🇧 **[Read the English version (README.md)](README.md)**
 
 [![Obsidian](https://img.shields.io/badge/Obsidian-Vault%20Ready-7C3AED?style=flat-square&logo=obsidian&logoColor=white)](https://obsidian.md)
-[![Licence: Hybride AGPLv3 / CC BY-NC-SA 4.0](https://img.shields.io/badge/Licence-Hybride%20AGPLv3%20%2F%20CC%20BY--NC--SA%204.0-blue?style=flat-square)](LICENSE)
+[![Licence: MIT](https://img.shields.io/badge/Licence-MIT-green.svg?style=flat-square)](LICENSE)
 [![LLM Agnostique](https://img.shields.io/badge/LLM-Agnostique%20%26%20Portable-emerald?style=flat-square)](#-principes-cl%C3%A9s-de-conception)
-[![Vitesse ROI](https://img.shields.io/badge/ROI-Vitesse%20x3%20⚡-orange?style=flat-square)](#-roi-terrain-mesur%C3%A9--m%C3%A9triques)
+[![Vitesse ROI](https://img.shields.io/badge/ROI-Vitesse%20x4%20⚡-orange?style=flat-square)](#-roi-terrain-mesur%C3%A9--m%C3%A9triques)
 [![Développé avec Google Antigravity](https://img.shields.io/badge/D%C3%A9velopp%C3%A9_avec-Google%20Antigravity-4285F4?style=flat-square&logo=google&logoColor=white)](https://github.com/Arca-Brain/Arca-BrainOS)
 
-**[Quickstart](#-quickstart-onboarding-en-1-minute)** · **[Guide Onboarding](GETTING_STARTED.fr.md)** · **[Manifeste](MANIFESTO.fr.md)** · **[Compétences Agentiques](#-larsenal-des-comp%C3%A9tences-agentiques)** · **[Architecture](#-architecture--topographie-du-vault-conception-d%C3%A9coupl%C3%A9e)** · **[Contribuer](CONTRIBUTING.fr.md)** · **[FAQ](#-faq--gestion-des-risques)**
-
-
----
-
-> 🎯 **Concept Clé :** Gardez vos notes souveraines, confiez l'intendance à l'IA. Arca-BrainOS automatise le tri, le maillage et le suivi de projet directement au cœur de votre coffre Obsidian.
-
-
-### ⭐ Si Arca-BrainOS vous est utile, ajoutez une étoile au dépôt GitHub !
-
-Les étoiles aident d'autres penseurs et bâtisseurs à découvrir le projet et à le faire progresser.
-
-[![Star Arca-BrainOS sur GitHub](https://img.shields.io/badge/Star%20Arca--BrainOS%20sur%20GitHub-⭐-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Arca-Brain/Arca-BrainOS)
-
+**[Quickstart](#-quickstart-onboarding-en-1-minute)** · **[Guide Onboarding](GETTING_STARTED.fr.md)** · **[Manifeste](MANIFESTO.fr.md)** · **[Architecture](#-architecture--topographie-du-vault-conception-d%C3%A9coupl%C3%A9e)** · **[Contribuer](CONTRIBUTING.fr.md)**
 
 ---
 
-## 💥 Le Problème : Pourquoi la plupart des Second Brains s'éteignent
+> 🎯 **Concept Clé :** Gardez vos notes et votre mémoire personnelle chez vous, hors des plateformes propriétaires. Arca-BrainOS dote vos assistants IA (en ligne de commande avec Claude Code, Antigravity, OpenCode, ou via des environnements comme Claude Cowork et Gemini Spark) d'une mémoire persistante directement dans vos fichiers Markdown. Vous restez 100% propriétaire de vos données et totalement libre de changer de modèle IA à tout moment sans rien perdre de votre contexte.
 
-Construire un Second Cerveau (PKM) se transforme souvent en un piège de friction et de maintenance :
+---
 
-* **Écosystèmes fragmentés & SaaS propriétaires :** Vos pensées, documents et flux de travail sont dispersés entre de multiples dépôts, onglets web et plateformes SaaS qui deviennent de plus en plus les gardiens propriétaires de vos données personnelles, verrouillant votre contexte dans des silos cloud.
-* **Lourde charge de maintenance administrative :** Fatigue mentale constante liée au ménage manuel du coffre : trier l'inbox, déplacer des fichiers, mettre en forme des notes et maintenir les liens.
-* **Le piège de la configuration :** Passer des dizaines d'heures à essayer de configurer un système efficace parfait dans son coffre (bidouiller des scripts Dataview, des snippets CSS et des arborescences complexes) au lieu d'exécuter des projets réels et d'obtenir des résultats concrets.
+## 💥 Le Problème : Le fossé entre pensée humaine et agents IA
+
+1. **L'amnésie systématique des agents IA :** Qu'ils s'exécutent en terminal (Claude Code, Antigravity, OpenCode) ou en espace de travail de bureau (Claude Cowork, Gemini Spark), les agents IA sont surpuissants mais amnésiques. À chaque nouvelle session, tout le contexte métier s'évapore et l'interaction repart de zéro.
+2. **Le piège de l'intendance documentaire :** Organiser ses données personnelles et ses notes tourne souvent au cauchemar : tri manuel incessant, maintenance fastidieuse des liens et perte de temps dans la configuration d'outils au lieu de faire avancer ses projets réels.
+3. **L'enfermement dans les silos propriétaires :** Confier sa mémoire à des plateformes cloud fermées morcelle les données, crée une dépendance captive et compromet la souveraineté intellectuelle.
 
 ---
 
 ## 🛡️ La Solution : Arca-BrainOS
 
-**Arca-BrainOS** est un système d'exploitation open-source et AI-native conçu pour **Obsidian** (et pleinement compatible avec tout éditeur de notes en fichiers texte Markdown bruts). Il équipe votre coffre d'une flotte de **compétences agentiques autonomes (`Skill_arca-*.md`)** qui exécutent les tâches cognitives récurrentes, structurent vos connaissances et co-pilotent vos sessions de Deep Work.
+**Arca-BrainOS** est un système d'exploitation open-source et agentique pour **Obsidian** (et tout éditeur Markdown local). Il dote votre environnement de travail (terminal CLI, Claude Cowork, Gemini Spark) d'une flotte de **compétences autonomes (`Skill_arca-*.md`)** qui exécutent les corvées documentaires, maintiennent l'ontologie de votre savoir et pilotent vos sessions de Deep Work.
 
-Ce système est pensé pour articuler deux dimensions complémentaires de vos projets :
-- **Les projets intellectuels & numériques :** Ingénierie logicielle, écriture, recherche sur des sujets, etc.
-- **La préparation & le cadrage de projets concrets dans le monde réel :** Préparation d'un chantier de rénovation, organisation d'un voyage ou d'un trek, suivi de santé/rééducation, apprentissage d'une pratique manuelle ou artistique (aquarelle,...), etc.
+Le système articule harmonieusement deux dimensions de vos projets :
+- **Les projets intellectuels & numériques :** Ingénierie logicielle, architecture de systèmes, recherche et rédaction.
+- **Les projets d'action dans le monde réel :** Rénovation, préparation de vacances ou de randonnée itinerantes, suivi de santé/rééducation, pratique artistique.
 
-En reliant dynamiquement chaque projet à vos **Domaines de vie (`3-Domaines-de-vie/`)**, Arca-BrainOS offre une véritable vision d'ensemble sur votre vie : il nourrit vos bilans et rétrospectives saisonnières ou annuelles, équilibre votre énergie et transforme la connaissance accumulée en actions concrètes.
+Chaque projet est dynamiquement relié à vos **Domaines de vie (`3-Domaines-de-vie/`)** pour équilibrer votre énergie et nourrir vos rétrospectives saisonnières.
 
-> 📜 **Philosophie & Vision :** Vous souhaitez comprendre la mutation anthropologique, le *Pharmakon* de Stiegler et la symbiose organologique derrière cette architecture ? Lisez **[Le Manifeste du Workflow Augmenté (MANIFESTO.fr.md)](MANIFESTO.fr.md)**.
+> 📜 **Philosophie & Vision :** Pour comprendre la mutation anthropologique, le *Pharmakon* de Stiegler et le refus des monopoles d'IA fermés, consultez **[Le Manifeste du Workflow Augmenté (MANIFESTO.fr.md)](MANIFESTO.fr.md)**.
 
 <p align="center">
   <img src="assets/starter-vault-show-dont-tell.png" alt="Arca-BrainOS en action : Démonstration concrète de l'orchestration CLI et note Obsidian maillée" width="100%">
   <br>
-  <em>Démonstration concrète : orchestration dans le terminal CLI à gauche, note Obsidian structurée et maillée aux MOCs à droite.</em>
+  <em>Démonstration concrète : orchestration dans le terminal CLI à gauche, note Obsidian structurée et maillée aux cartes thématiques à droite.</em>
 </p>
 
-```text
-     [ Flux Entrants : Vidéos YouTube, Articles, Transcripts, Notes ]
-                                │
-                                ▼
- ┌─────────────────────────────────────────────────────────────┐
- │ 1. Ingestion & Distillation (Capture & Synthèses IA)        │ 🤖 100% Automatisé
- └─────────────────────────────────────────────────────────────┘
-                                │
-                                ▼
- ┌─────────────────────────────────────────────────────────────┐
- │ 2. Organisation & Maillage (Thèmes T-, Domaines & Liens)    │ 🤝 Assisté par l'IA
- └─────────────────────────────────────────────────────────────┘
-                                │
-                                ▼
- ┌─────────────────────────────────────────────────────────────┐
- │ 3. Deep Work & Exécution (Projets P- & Production)          │ 🧠 Libération Humaine
- └─────────────────────────────────────────────────────────────┘
-                                │
-                                ▼
- ┌─────────────────────────────────────────────────────────────┐
- │ 4. Audit & Maintenance (Santé du Coffre & Recherche RAG)   │ ⚙️ Supervision IA
- └─────────────────────────────────────────────────────────────┘
-                                │
-                                ▼
-       [ Système Soutenable à Long Terme & Vitesse x3 ⚡ ]
-```
+#### 🎯 Les 4 Piliers d'Arca-BrainOS :
 
-#### 🎯 Pourquoi ce système ne s'éteint jamais (La différence Arca-BrainOS) :
-
-- **📥 1. Ingestion & Distillation (Automatisée) :** Vos contenus bruts (vidéos, articles, podcasts) sont automatiquement capturés et synthétisés en notes d'inbox denses et exploitables.
-- **🗂️ 2. Organisation & Maillage (Assistés) :** L'IA gère la maintenance fastidieuse. Elle tisse les liens wikilinks (`[[...]]`), alimente vos cartes Thèmes (`T-`) et vos Domaines de vie. **Zéro fatigue mentale de rangement** : votre coffre reste structuré et soutenable sur le long terme sans aucun effort administratif.
-- **🚀 3. Deep Work & Exécution (Libération Humaine) :** La gestion de projet fastidieuse est déléguée. Vous vous concentrez uniquement sur la création et les décisions à haute valeur sur vos projets (`P-`). Durant vos sessions, vous décidez librement de vous faire assister par l'IA (co-rédaction, structuration) ou de créer 100% par vous-même.
-- **🩺 4. Audit & Maintenance (Supervision) :** L'IA surveille la santé du coffre (liens brisés, notes orphelines, recherche sémantique RAG `arca-query`), sous la seule validation de vos choix structurants.
+- **📥 1. Ingestion & Distillation (Automatisée & Extensible) :** Capture et synthèse conceptuelle immédiate des flux bruts (articles web, vidéos, podcasts, notes vocales). Ce sas d'entrée est extensible via des connecteurs MCP (Model Context Protocol) selon vos propres outils : boîte email, messageries (WhatsApp, Telegram) ou gestionnaires de tâches.
+- **🗂️ 2. Organisation & Maillage (Assistés) :** Gestion intelligente de vos notes : l'IA crée et entretient les liens pertinents entre vos notes (`[[...]]`), puis les rattache automatiquement à vos cartes thématiques et à vos Domaines de vie, sans aucun effort de classement manuel.
+- **🚀 3. Deep Work & Exécution (Libération Humaine) :** Résumé de la session précédente, cadrage du focus actif (`arca-resume`), journalisation chronologique et mesure du gain de temps (`arca-close-session`).
+- **🩺 4. Audit & Santé du Coffre (Supervisée) :** Diagnostic proactif des notes orphelines, réparation des liens brisés et exploration transversale (`arca-query`).
 
 ---
 
-## ⚡ ROI Terrain Mesuré & Métriques
+## ⚡ ROI Terrain Mesuré : Vitesse x4
 
-Arca-BrainOS est fondé sur des **données empiriques réelles**, suivies en continu sur des projets réels d'ingénierie, de recherche et d'écriture.
+Arca-BrainOS repose sur des **données empiriques réelles**, mesurées en continu sur 24 projets concrets et plus de 160 sessions de Deep Work :
 
-> 💡 **Contexte Crucial :** Ces métriques n'ont pas été mesurées sur un coffre démo vide. Elles ont été obtenues sur un **coffre réel préexistant** contenant des centaines de notes héritées. Une fois convaincus de la puissance du système, les co-pilotes IA exécutent un rétrofit progressif et propre des notes historiques, du YAML et des fiches Thèmes.
+| Métrique Clé | Résultat Mesuré | Impact Concret |
+| :--- | :---: | :--- |
+| **Multiplicateur de Vitesse** | **⚡ x4** | Vos projets avancent 4x plus vite |
+| **Temps Net Économisé** | **🚀 +434 heures** | Plus de 10 semaines de travail intellectuel libérées |
+| **Temps Réel Investi avec IA** | **152h** | Au lieu de ~587h de travail manuel estimé |
 
-| Métrique                         |       Valeur Mesurée        | Signification Terrain                              |
-| :------------------------------- | :-------------------------: | :------------------------------------------------- |
-| **Ligne de Base du Coffre**      |  **Coffre Réel Préexistant** | Testé sur de vraies notes historiques, pas un démo |
-| **Sessions de Deep Work Clôturées**|       **62 sessions**       | Ingénierie réelle & production intellectuelle      |
-| **Temps Réel Investi avec IA**   |          **80h40**          | Temps de session suivi avec Arca-BrainOS           |
-| **Temps Estimé Sans IA**         |         **~258h00**         | Référentiel de travail de la connaissance (MIT/Harvard) |
-| **Temps Net Économisé**          |       **🚀 +177h20**        | Effort cognitif direct libéré                      |
-| **Multiplicateur de Vitesse**    |          **⚡ x3**          | **Exécution de projet 3x plus rapide**             |
-
----
-
-## 🧩 Les 3 Phases d'Adoption de l'IA
-
-La plupart des travailleurs de la connaissance restent bloqués en Phase 1 ou 2 :
-
-1. **Phase 1 : Usage Opportuniste (Prompting ad-hoc) :** Poser des questions isolées dans des interfaces web ChatGPT/Claude. Forte friction, mémoire nulle.
-2. **Phase 2 : Usage Fragmenté (Gems & Projects) :** Créer des silos dans des plateformes propriétaires (ChatGPT Projects, Claude Projects). Le contexte est enfermé dans des clouds tiers.
-3. **Phase 3 : Intégration Systémique (Arca-BrainOS) :** Vos agents IA opèrent directement sur votre coffre Markdown local avec un contexte complet en temps réel. **Zéro enfermement, mémoire infinie.**
+> 💡 **Contexte Réel :** Mesuré sur un coffre préexistant de plusieurs centaines de notes, et non sur un environnement démo vide.
 
 ---
 
 ## 💎 Principes Clés de Conception
 
-1. **Agnostique aux LLMs :** Fonctionne de manière fluide avec Claude 3.5 Sonnet, Gemini 1.5 Pro, GPT-4o ou des LLMs locaux (Ollama/oMLX).
-2. **Standard Ouvert Markdown :** Fichiers `.md` 100% lisibles par l'humain. Aucune base de données propriétaire ni dépendance fermée.
-3. **Préservation du Style Humain :** Les agents IA ne suppriment ni ne réécrivent jamais le texte rédigé par l'humain ; ils enrichissent les métadonnées et suggèrent des liens wikilinks.
-4. **Extension Auto-Documentée :** Pour créer un nouveau skill ou process, **demandez simplement à votre agent LLM de le concevoir**. Votre co-pilote rédigera la logique et effectuera automatiquement toutes les mises à jour d'indexation (`AGENTS.md`, `skills/README.md`, `process/README.md`) tout en maintenant la conformité aux tests (`arca-test`).
-
-### 🎨 Adaptabilité des Templates & Extension des Compétences
-
-Arca-BrainOS n'est pas un cadre rigide : vous êtes totalement libre d'adapter la structure des modèles (`Template-Projet.md`, `Template-Area.md`, `Template-Theme.md`) ou d'ajouter de nouvelles compétences (`Skill_arca-*.md`) selon vos besoins réels.
-
-* **Préservation de la compatibilité YAML :** Veillez simplement à conserver les métadonnées minimales nécessaires au bon fonctionnement des requêtes Dataview et des scripts (`target`, `tags`, `areas`, `themes`, `date_created`).
-* **💡 Recommandation d'Or (Utilisez votre Agent IA) :** Ne modifiez pas les templates ou les compétences à la main. Demandez directement à votre agent IA (Antigravity, Claude Code, OpenCode) :
-  > *"Adapte mon Template-Projet pour ajouter une section X, tout en garantissant la compatibilité avec les métadonnées YAML et les compétences existantes."*
-  
-  L'agent ajustera la structure proprement, mettra à jour les index parents (`skills/README.md`, `AGENTS.md`) et s'assurera de la conformité via `arca-test`.
-
----
-
-## 🔌 L'Arsenal des Compétences Agentiques
-
-Toutes les capacités agentiques sont des compétences modulaires en Markdown stockées dans `_Arca-BrainOS/skills/` et exécutables via vos terminaux IA (**Antigravity**, **Claude Code**, **OpenCode**, **Cursor**) :
-
-### 📥 1. Capture & Tri
-* `arca-inbox-process` : Normalise le YAML, nettoie les notes brutes et aiguille les flux entrants.
-* `arca-organize-idea` : Structuration d'idées brutes en notes d'action sans dénaturer le texte humain d'origine.
-* `arca-youtube` : Extrait la transcription et les métadonnées de vidéos YouTube pour créer une note brute.
-
-### 🧪 2. Distillation & Ancrage Thématique (*The Killer Feature*)
-* `arca-distill` : Master skill d'ingestion média (Synthèse $\rightarrow$ Ancrage $\rightarrow$ Archivage $\rightarrow$ Analyse d'impact).
-* `arca-synthesize` : Rédige des synthèses conceptuelles structurées (`AI-Distil-...`) dans `/2-Ressources/IA-generated/`.
-* `arca-converge` : Ancre les distillations dans les fiches Thèmes (`T-`) via des liens wikilinks.
-* `arca-impact` : Scanne les projets actifs (`P-`) pour proposer des tâches concrètes découlant des nouvelles connaissances.
-
-### 🔍 3. Exploration & Maintenance du Vault
-* `arca-query` : Co-pilote RAG conversationnel créant des ponts cognitifs entre des idées distantes.
-* `arca-audit` : Diagnostic de santé PARA, détection des notes orphelines, liens brisés et suivi ROI.
-* `arca-test-suite` : Banc d'essai agentique automatisé exécutant les assertions de non-régression.
-
-### 🪵 4. Deep Work & Exécution
-* `arca-resume` : Cadrage cognitif des sessions de travail (synthèse de l'avancement et définition de l'intention).
-* `arca-close-session` : Clôture des sessions de Deep Work, tenue du journal de bord du projet et calcul du ROI.
-* `arca-create-note` : Instanciation rapide via raccourcis direct (`create-project`, `create-theme`, `create-domaine`).
+1. **🔒 Souverain & Local-First :** Fichiers Markdown bruts (`.md`) sur votre disque. Zéro dépendance SaaS, propriété intégrale et pérenne de vos données.
+2. **🤖 Runner & LLM-Agnostique :** Fonctionne aussi bien en ligne de commande (Google Antigravity, Claude Code, OpenCode) qu'avec des assistants de bureau connectés à vos fichiers locaux (Claude Cowork, Gemini Spark, Codex), ou des modèles 100% locaux sous Ollama. Changez d'outil à volonté sans friction.
+3. **🧠 Mémoire Inter-Sessions Persistante :** Votre coffre devient la mémoire à long terme de l'agent IA, neutralisant l'amnésie entre les runs.
+4. **🤝 Symbiose Non-Destructive :** L'IA gère l'intendance et enrichit le maillage. Elle n'altère ni ne réécrit jamais le style ou les contenus rédigés par l'humain.
 
 <p align="center">
   <img src="assets/starter-vault-project-deep-work.png" alt="Cadrage de session Deep Work avec arca-resume et journal de bord automatisé dans Obsidian" width="100%">
@@ -193,155 +105,79 @@ Toutes les capacités agentiques sont des compétences modulaires en Markdown st
 
 ---
 
-## 📂 Architecture & Topographie du Vault (Conception Découplée)
+## 📂 Architecture & Topographie du Vault
 
-Arca-BrainOS s'appuie sur une **architecture strictly découplée en 2 parties** :
+Arca-BrainOS repose sur une **architecture strictement découplée en deux parties** :
 
-1. **Partie A : Le Moteur OS (`_Arca-BrainOS/`) :** Un conteneur unique et 100% portable regroupant les skills, process, templates, tests et `AGENTS.md`.
-2. **Partie B : Votre Contenu 2nd Brain (Coffre existant ou nouveau) :** Vos notes personnelles, projets et dossiers. **Arca-BrainOS est 100% agnostique de votre arborescence** : adaptez simplement les variables de sentiers dans `AGENTS.md` (`PATH_INBOX`, `PATH_PROJECTS`, `PATH_THEMES`, `PATH_AREAS`) pour raccorder le moteur à votre propre structure !
+1. **Partie A : Le Moteur OS (`_Arca-BrainOS/`) :** Conteneur 100% portable regroupant les compétences (`skills/`), processus, modèles, registre d'architecture (`adr/`) et tests.
+2. **Partie B : Votre Contenu Personnel (Coffre existant ou neuf) :** Vos notes et dossiers. Arca-BrainOS s'adapte à votre propre arborescence via les variables de sentiers configurables dans `AGENTS.md`.
 
 ```text
 Votre-Coffre-Obsidian/
 ├── _Arca-BrainOS/                # 🧠 PARTIE A : Le Conteneur Moteur OS (100% Portable)
-│   ├── AGENTS.md                 # Prompt Système Maître & Variables de Sentier (PATH_PROJECTS, etc.)
+│   ├── AGENTS.md                 # Configuration système & variables de sentiers
 │   ├── log.md                    # Journal d'audit chronologique (1 ligne / action)
 │   ├── skills/                   # 🔌 Compétences Agentiques Modulaires (Skill_arca-*.md)
-│   ├── process/                  # 📚 Fiches Méthodologiques Embarquées (Process-*.md)
+│   ├── process/                  # 📚 Fiches Méthodologiques (Process-*.md)
 │   ├── templates/                # 📄 Modèles de Notes (Projet, Theme, Area, ADR)
 │   ├── adr/                      # 📜 Registre des Décisions d'Architecture (ADR-001...)
 │   └── tests/                    # 🧪 Banc d'Essai Agentique & Fixtures
 │
 ├── Home.md                       # Cockpit Exécutif Optionnel (Inclus dans starter-vault)
-├── 0-Inbox/                      # 🧠 PARTIE B : Vos Contenus 2nd Brain (Sentiers Configurables)
+├── 0-Inbox/                      # 🧠 PARTIE B : Vos Contenus 2nd Brain (Configurables)
 ├── 1-Projects/                   # Projets Actifs (P-...) & Incubation (_Incubation/)
-├── 2-Ressources/                 # Base de Connaissances
-│   ├── Notes/                    # Notes humaines & journal
-│   ├── IA-generated/             # Zone d'écriture exclusive IA (AI-Distil-...)
-│   └── Themes/                   # Fiches Thèmes MOC (T-...)
-├── 3-Domaines-de-vie/            # Domaines de responsabilité (Index canonique README.md)
-└── 4-Archives/                   # Projets Terminés & Domaines Inactifs
+├── 2-Ressources/                 # Base de Connaissances (Notes/, IA-generated/, Themes/)
+├── 3-Domaines-de-vie/            # Domaines de responsabilité (Index README.md)
+└── 4-Archives/                   # Projets Clôturés & Domaines Inactifs
 ```
-
-### 🌐 Principes & Possibilités de Déploiement : Un Système Qui Évolue Avec Vous
-
-Arca-BrainOS n'impose aucun cadre rigide : il s'adapte naturellement à vos habitudes et à vos besoins du moment. Selon ce qui compte le plus pour vous, trois grandes possibilités d'usage s'offrent à vous :
-
-1. **La Simplicité Immédiate (Le Bureau de Travail)**  
-   *Pour qui ?* Pour démarrer tout de suite, sans aucune configuration compliquée.  
-   *Le principe :* Vous utilisez le système directement sur votre ordinateur avec les modèles d'IA de votre choix. En une minute, vous disposez d'un assistant au cœur de vos notes pour structurer vos idées, cadrer vos projets et mener vos sessions de réflexion en profondeur.
-
-2. **La Liberté en Mobilité (Capturer la Pensée en Mouvement)**  
-   *Pour qui ?* Pour ceux qui ont leurs meilleures intuitions en marchant, en voyage ou loin de leur bureau.  
-   *Le principe :* Vous libérez la capture de l'écran d'ordinateur. Dictez une note vocale ou partagez un lien depuis votre smartphone (via une simple messagerie comme Telegram) : l'IA accueille votre pensée, la met en forme et la range au bon endroit dans votre coffre pour que tout soit prêt lors de votre retour au calme.
-
-3. **L'Autonomie & la Confidentialité Totale (Votre Espace 100% Privé)**  
-   *Pour qui ?* Pour ceux qui souhaitent garder la maîtrise absolue de leur patrimoine intellectuel et de leurs données sensibles.  
-   *Le principe :* Vous choisissez le niveau de souveraineté de votre esprit numérique. Le système peut fonctionner soit avec des services éthiques garantissant la non-conservation de vos données (Zero Data Retention), soit de manière 100% autonome et hors-ligne sur votre propre matériel, sans jamais dépendre d'un cloud externe.
 
 ---
 
 ## ⚡ Quickstart (Onboarding en 1 Minute)
 
-> 💡 **Guide Opérationnel Détaillé :** Vous cherchez un guide d'onboarding pas-à-pas complet ? Consultez **[GETTING_STARTED.fr.md](GETTING_STARTED.fr.md)**.
+> 💡 **Guide Opérationnel Détaillé :** Pour une visite guidée complète, consultez **[GETTING_STARTED.fr.md](GETTING_STARTED.fr.md)**.
 
 ### 1. Prérequis
-* **[Obsidian](https://obsidian.md)** (v1.5+)
-* **Plugin Communautaire Requis :**
-  * **[Dataview Plugin](https://github.com/blacksmithgu/obsidian-dataview) :** Alimente le cockpit `Home.md` et les widgets de focus.
-    * *Réglages requis :* Activez **"Enable JavaScript Queries"** (`dataviewjs`) et **"Enable Inline JavaScript Queries"** sous `Dataview > Settings`.
-* **Extension de Capture Web Recommandée :**
-  * **[Obsidian Web Clipper](https://obsidian.md/clipper) :** Extension de navigateur officielle (`https://obsidian.md/clipper`) pour capturer directement des articles et pages web dans `0-Inbox/`.
-* **Runner Terminal IA :**
-  * Un exécuteur de terminal IA exécuté localement dans votre coffre (ex: **Google Antigravity**, **Claude Code**, **OpenCode**, ou **Cursor**).
+* **[Obsidian](https://obsidian.md)** 
+* **Un Assistant ou Runner IA :** En terminal local (**Google Antigravity**, **Claude Code**, **OpenCode**) ou en environnement de travail de bureau (**Claude Cowork**, **Gemini Spark**, **Codex**).
+* *(Optionnel)* **[Dataview Plugin](https://github.com/blacksmithgu/obsidian-dataview)** : Requis uniquement si vous utilisez le cockpit visuel `Home.md`.
 
-### 2. Quel Runner IA Choisir pour Débuter ?
+### 2. Installation (2 Options au Choix)
 
-Arca-BrainOS fonctionne avec n'importe quel terminal ou assistant agentique. Voici un comparatif rapide pour vous orienter selon vos priorités :
-
-| Runner IA | Points Forts | Recommandé pour | Modèles Recommandés |
-| :--- | :--- | :--- | :--- |
-| **Google Antigravity** | **Gratuit au démarrage**, quotas généreux, immense fenêtre de contexte (1M+ tokens), interface agentique dédiée | Démarrage immédiat sans frais ni friction | Gemini 1.5 Pro / Flash |
-| **Claude Code** | Raisonnement de pointe, grande finesse d'édition de notes Markdown et rigueur de synthèse | Utilisateurs disposant d'un compte API Anthropic | Claude 3.5 Sonnet |
-| **OpenCode** | 100% open-source, CLI rapide, compatible avec les serveurs d'inférence locaux | Souveraineté totale et utilisation hors-ligne | Modèles locaux (Ollama) ou API |
-| **Cursor / Windsurf** | Éditeur complet intégrant chat, terminal et visualisation directe des fichiers | Adeptes d'interfaces graphiques unifiées | Claude 3.5 Sonnet, GPT-4o |
-
----
-
-### 3. Installation (2 Options)
-
-#### 📁 Option A : Ajouter à un coffre Obsidian EXISTANT (Dossier `starter-kit/fr/_Arca-BrainOS/`)
-Copiez le dossier moteur `starter-kit/fr/_Arca-BrainOS/` à la racine de votre coffre actuel. Ouvrez votre terminal IA (Antigravity / Claude Code / OpenCode) dans votre coffre et lancez l'instruction d'amorçage de [`INSTALL.fr.md`](INSTALL.fr.md) :
-
+#### 📁 Option A : Ajouter à un coffre Obsidian EXISTANT
+Copiez le dossier `starter-kit/fr/_Arca-BrainOS/` à la racine de votre coffre actuel. Lancez votre terminal IA et collez l'instruction :
 ```text
 Lis https://github.com/Arca-Brain/Arca-BrainOS/blob/main/INSTALL.fr.md (ou INSTALL.fr.md local) et installe Arca-BrainOS pour moi.
 ```
+*L'agent analyse vos sentiers, configure `AGENTS.md` et lance les vérifications sans modifier vos notes existantes.*
 
-*Votre Agent Installateur analysera votre arborescence existante, détectera vos sentiers personnalisés, déploiera `_Arca-BrainOS/`, configurera `AGENTS.md` et exécutera `arca-test` sans détruire ni écraser vos notes actuelles.*
+#### 📦 Option B : Démarrer de zéro avec un coffre prêt-à-l'emploi
+Ouvrez directement le dossier `starter-kit/fr/starter-vault/` comme nouveau coffre dans Obsidian.
+> 💡 Ouvrez la note d'accueil **`00-COMMENCER-ICI.md`** à la racine pour tester 3 premières commandes en 5 minutes.
 
-#### 📦 Option B : Démarrer de zéro avec un coffre prêt-à-l'emploi (Dossier `starter-kit/fr/starter-vault/`)
-Téléchargez ou copiez le dossier `starter-kit/fr/starter-vault/` et ouvrez-le directement comme un nouveau coffre dans Obsidian. Tout est inclus "Out of the box" (`AGENTS.md` à la racine, cockpit `Home.md`, et structure PARA propre).
-
-> 💡 **Première étape recommandée :** À l'ouverture du coffre, ouvrez la note d'accueil **`00-COMMENCER-ICI.md`** située à la racine. Elle vous guide pas à pas pour réaliser vos 3 premières expérimentations concrètes en moins de 5 minutes !
-> 
-> *(Conseil : vous pouvez renommer le dossier `starter-vault/` avec un nom personnalisé tel que `ArcaBrain`, `2ndBrain`, ou `MesNotes`)*.
-
-### 4. Test de Vérification
+### 3. Test de Vérification
 Dans votre terminal IA, lancez :
 ```bash
 arca-test
 ```
-*Votre agent exécutera les assertions automatisées pour vérifier la santé du coffre et la résolution des sentiers.*
+*L'agent exécute les assertions automatisées pour valider l'intégrité du système.*
 
 ---
 
-## ❓ FAQ & Gestion des Risques
+## 📜 Licence Open-Source
 
-### En quoi Arca-BrainOS diffère-t-il d'Obsidian pur ou des chats IA isolés ?
-Obsidian pur offre des fichiers Markdown locaux mais exige une organisation manuelle constante. Les chats IA isolés (ChatGPT, Claude) n'ont aucun contexte réel de vos notes passées. Arca-BrainOS fait le pont : vos agents IA opèrent directement sur vos fichiers locaux avec tout votre contexte, automatisant la friction tout en gardant 100% de vos données locales et lisibles.
+Arca-BrainOS est un logiciel open-source libre et souverain publié sous **[Licence MIT](LICENSE)** (voir [`LICENSE.md`](LICENSE.md)).
 
-### Que se passe-t-il si un agent fait une erreur ou si je veux annuler des modifications ?
-Arca-BrainOS est conçu pour **zéro perte de données, une transparence totale et une récupération immédiate** :
-* **Rollback en Session :** Si un agent interprète mal une consigne durant une session, dites-lui simplement dans le chat : *"Annule la dernière modification sur le fichier X"*. L'agent relira son historique et restaurera le fichier.
-* **Garde-fou des 3 Fichiers :** Il est interdit aux agents de modifier ou créer plus de 3 fichiers hors de `/2-Ressources/IA-generated/` au cours d'un même workflow sans validation explicite.
-* **Journal d'Audit Unique :** Chaque action est consignée dans `_Arca-BrainOS/log.md` (1 ligne par action avec horodatage).
-* **Contrôle de Version Git :** Nous recommandons d'initialiser Git sur votre coffre (`git init`). Les rollbacks peuvent être exécutés instantanément via Git ou votre système de sauvegarde Obsidian Sync.
-
-### Les agents IA vont-ils réécrire ou modifier mes notes rédigées à la main ?
-**Non.** Arca-BrainOS fonctionne sous les garde-fous stricts définis dans `AGENTS.md` :
-* **Zone d'Écriture Exclusive IA :** L'écriture autonome est isolée dans `/2-Ressources/IA-generated/` (synthèses `AI-Distil-...`).
-* **Zone Supervisée :** Pour les notes humaines (`1-Projects/`, `2-Ressources/Notes/`, `3-Domaines-de-vie/`), les agents ne réécrivent jamais le texte humain. Ils proposent uniquement des liens wikilinks `[[...]]` ou mettent à jour le journal de bord lors de `arca-close-session`.
-
----
-
-## 📜 Licence & Protection Stratégique
-
-Arca-BrainOS est publié sous un modèle de **Licence Hybride / Double Licence** (voir [`LICENSE.md`](LICENSE.md)) :
-
-* **Code, Skills & Scripts (`_Arca-BrainOS/skills/`, `tests/`, `scripts/`) :** Licence **GNU Affero General Public License v3.0 (GNU AGPLv3)**. Libre pour l'usage personnel et communautaire Open-Source.
-* **Playbooks, Méthodes & Manifestes (`playbooks/`, `process/`, `MANIFESTO.md`) :** Licence **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**. Usage libre à titre individuel ; revente commerciale, consulting d'entreprise payant ou intégration dans des produits tiers interdits sans accord écrit préalable.
-
-> 💡 **Pourquoi ce choix de licence ?**  
-> Nous croyons à un accès 100% libre et souverain pour les particuliers, chercheurs et passionnés. Cependant, nous choisissons **explicitement de ne PAS utiliser une licence permissive MIT** afin d'empêcher des sociétés ou éditeurs tiers de s'accaparer ce travail open-source, de le fermer dans des logiciels propriétaires ou de revendre nos méthodes à des fins commerciales sans contribuer en retour.
+Cette licence garantit une adoption sans friction, une compatibilité totale avec les environnements d'entreprise et l'assurance d'un bien commun préservé.
 
 ---
 
 ## 🙏 Remerciements & Inspirations
 
-Arca-BrainOS s'appuie sur les travaux de pionniers de la productivité, du PKM et de l'ingénierie agentique :
-
-* **[David Allen](https://gettingthingsdone.com)** : Auteur de **Getting Things Done (GTD)**.
-* **[Sönke Ahrens](https://takesmartnotes.com)** : Auteur de ***How to Take Smart Notes*** (méthode Zettelkasten).
-* **[Tiago Forte](https://fortelabs.com)** : Pionnier de **Building a Second Brain (BASB)**, du framework C.O.D.E et de la méthode P.A.R.A.
-* **[Ryder Carroll](https://bulletjournal.com)** : Créateur de la méthode **Bullet Journal**.
-* **[Daniel Miessler](https://danielmiessler.com)** : Pour le framework **Personal AI Infrastructure (PAI)**, **LifeOS** et les principes d'architecture modulaire UNIX (`_Arca-BrainOS/`).
-* **[Eliott Meunier](https://www.youtube.com/@eliottmeunier)** : Éducateur et pionnier du PKM francophone sur Obsidian.
-* **[Jeff Su](https://www.youtube.com/@JeffSu)** : Pour ses tutoriels sur l'optimisation des flux de travail.
-* **[Obsidian.md](https://obsidian.md)** : Pour la création de la toile Markdown locale souveraine.
-* **[Blacksmithgu & Communauté Dataview](https://github.com/blacksmithgu/obsidian-dataview)** : Pour le plugin Dataview.
-* **Équipes Google Antigravity & Claude Code** : Pour le développement des exécuteurs agentiques en terminal local.
+Arca-BrainOS s'appuie sur les travaux de **David Allen** (GTD), **Tiago Forte** (BASB & PARA), **Sönke Ahrens** (Zettelkasten), **Daniel Miessler** (PAI & architecture UNIX), **Bernard Stiegler** (Pharmakon), **Eliott Meunier** et la communauté **Obsidian**.
 
 ---
 
 <p align="center">
-  <i>Développé avec ❤️ pour les penseurs, bâtisseurs et passionnés du savoir.</i>
+  <i>Développé avec passion par Hugues & la communauté Arca-BrainOS.</i>
 </p>

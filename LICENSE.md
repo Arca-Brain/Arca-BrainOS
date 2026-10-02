@@ -1,30 +1,38 @@
-# 📜 Dual License Agreement: Arca-BrainOS
+# 📜 Open-Source License: MIT
 
-Arca-BrainOS is released under a **Dual / Hybrid License** model to guarantee open, sovereign access for individual thinkers, researchers, and community builders, while protecting the project against unauthorized corporate exploitation or commercial resale by third-party companies.
-
----
-
-## 1. Engine, Code & Agentic Skills (`_Arca-BrainOS/skills/`, `tests/`, `scripts/`)
-
-The software code, agentic skills, and test scripts of Arca-BrainOS are licensed under the **GNU Affero General Public License v3.0 (GNU AGPLv3)**.
-
-* **Permissions:** You are free to run, study, modify, and distribute the code for personal, educational, or open-source community use.
-* **Copyleft Requirement:** If you modify or integrate this code into any software, service, or cloud product (including network-accessible web services), you MUST release the entire source code of your derivative work under the same AGPLv3 license.
+Arca-BrainOS is released as open-source software under the terms of the **MIT License**.
 
 ---
 
-## 2. Playbooks, Methodologies & Educational Content (`playbooks/`, `process/`, `MANIFESTO.md`)
+```text
+MIT License
 
-All framework playbooks, methodological guides, and written conceptual content are licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)**.
+Copyright (c) 2026 Hugues & The Arca-BrainOS Community
 
-* **Attribution (BY):** You must give appropriate credit to Arca-BrainOS and the original author (Hugues).
-* **NonCommercial (NC):** You may NOT use these playbooks, methodologies, or written materials for commercial purposes, paid corporate consulting, resold templates, or commercial training without prior written authorization.
-* **ShareAlike (SA):** If you remix, transform, or build upon the material, you must distribute your contributions under the same CC BY-NC-SA 4.0 license.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 ---
 
-## 3. Author Exemption & Commercial Licensing
+## 🎯 Practical Summary
 
-As the sole author and copyright holder, Hugues retains full, unrestricted rights to grant commercial licenses, offer paid B2B consulting services, and commercialize Pro starter kits (Dual-Licensing Model). 
-
-For corporate deployments, B2B commercial licensing, white-label licensing, or consulting partnerships, please contact the author directly.
+The MIT License is a permissive, developer-friendly open-source license:
+* **Permissions:** You are completely free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software for personal, academic, or commercial purposes.
+* **Condition:** Keep the copyright notice and permission notice in all copies or substantial portions of the software.
+* **Simplicity & Trust:** Zero ambiguity, zero corporate friction, and total interoperability with modern developer tools and PKM ecosystems.

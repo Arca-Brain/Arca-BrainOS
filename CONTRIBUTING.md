@@ -127,9 +127,8 @@ To maintain a healthy, transparent relationship between the project and its open
 
 1. **Public Recognition & Attribution:** Every contributor retains copyright over their original work and will be **publicly credited and acknowledged** in the GitHub commit history, repository contributor metrics, and official release notes.
 2. **Contributor Grant:** By submitting a Pull Request to Arca-BrainOS, you grant Hugues (the original project author) a non-exclusive, perpetual, worldwide, royalty-free license to include, modify, distribute, and commercialize your contribution as part of the unified Arca-BrainOS ecosystem (including the open-source GitHub repository and official Pro starter kits).
-3. **Dual License Alignment:**
-   - Code, skills, and scripts are contributed under **GNU AGPLv3**.
-   - Playbooks, process guides, and written content are contributed under **CC BY-NC-SA 4.0**.
+3. **Open-Source License Alignment:**
+   - All skills, scripts, documentation, and code are contributed under the **MIT License**.
 
 ---
 

@@ -1,28 +1,21 @@
-# Dual License Agreement: Arca-BrainOS
+MIT License
 
-Arca-BrainOS is released under a **Dual / Hybrid License** model to guarantee open, sovereign access for individuals and community builders, while protecting the project against unauthorized commercial exploitation by corporate entities.
+Copyright (c) 2026 Hugues & The Arca-BrainOS Community
 
----
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## 1. Engine, Code & Agentic Skills (`_Arca-BrainOS/skills/`, `tests/`, `scripts/`)
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-The software code, agentic skills, and test scripts of Arca-BrainOS are licensed under the **GNU Affero General Public License v3.0 (GNU AGPLv3)**.
-
-* **Permissions:** You are free to run, study, modify, and distribute the code for personal, educational, or community use.
-* **Copyleft Requirement:** If you modify or integrate this code into any software, service, or cloud product (including network-accessible services), you MUST release the entire source code of your derivative work under the same AGPLv3 license.
-
----
-
-## 2. Playbooks, Methodologies & Educational Content (`playbooks/`, `process/`, `MANIFESTO.md`)
-
-All methodologies, framework playbooks, and written conceptual content are licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)**.
-
-* **Attribution (BY):** You must give appropriate credit to Arca-BrainOS and Hugues.
-* **NonCommercial (NC):** You may NOT use these playbooks, methodologies, or written materials for commercial purposes, paid consulting, corporate training, or resold templates without prior written authorization.
-* **ShareAlike (SA):** If you remix, transform, or build upon the material, you must distribute your contributions under the same CC BY-NC-SA 4.0 license.
-
----
-
-## 3. Commercial Licensing & Inquiries
-
-For corporate deployments, B2B commercial licensing, white-label usage, or consulting partnerships, please contact the author directly to request a commercial license grant.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
