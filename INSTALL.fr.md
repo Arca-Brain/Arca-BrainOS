@@ -35,12 +35,12 @@ Avant de commencer, choisissez l'option correspondant à votre besoin :
 
 Arca-BrainOS est 100% agnostique : il fonctionne avec n'importe quel terminal CLI agentique ou assistant IA de bureau opérant sur des fichiers locaux. Voici un comparatif rapide pour vous orienter selon vos priorités :
 
-| Runner / Assistant IA | Points Forts | Recommandé pour | Modèles Conseillés |
-| :--- | :--- | :--- | :--- |
-| **Google Antigravity** | **Gratuit au démarrage**, quotas généreux, immense fenêtre de contexte (1M+ tokens), interface agentique dédiée | Démarrage immédiat sans frais ni friction | Gemini 1.5 Pro / Flash |
-| **Claude Code / Claude Cowork** | Raisonnement de pointe, grande finesse d'édition de notes Markdown et rigueur de synthèse | Utilisateurs disposant d'un compte Anthropic (terminal ou bureau) | Claude 3.5 Sonnet |
-| **OpenCode** | 100% open-source, CLI ultra-rapide, compatible avec les serveurs d'inférence locaux | Souveraineté totale et utilisation hors-ligne | Modèles locaux (Ollama / Qwen / Llama) ou API |
-| **Cursor / Windsurf / Codex** | Éditeur complet avec chat, terminal et visualisation directe des modifications sous forme de diffs | Adeptes d'environnements graphiques unifiés | Claude 3.5 Sonnet, GPT-4o |
+| Runner / Assistant IA | Points Forts | Recommandé pour |
+| :--- | :--- | :--- |
+| **Google Antigravity** | **Gratuit au démarrage**, quotas généreux, immense fenêtre de contexte (1M+ tokens), interface agentique dédiée | Démarrage immédiat sans frais ni friction |
+| **Claude Code / Claude Cowork** | Raisonnement de pointe, grande finesse d'édition de notes Markdown et rigueur de synthèse | Utilisateurs disposant d'un compte Anthropic (terminal ou bureau) |
+| **OpenCode** | 100% open-source, CLI ultra-rapide, compatible avec les serveurs d'inférence locaux (Ollama) | Souveraineté totale et utilisation hors-ligne |
+| **Cursor / Windsurf / Codex** | Éditeur complet avec chat, terminal et visualisation directe des modifications sous forme de diffs | Adeptes d'environnements graphiques unifiés |
 
 ---
 
