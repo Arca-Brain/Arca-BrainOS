@@ -31,7 +31,6 @@ status: "#completed"
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 [![LLM Agnostic](https://img.shields.io/badge/LLM-Agnostic%20%26%20Portable-emerald?style=flat-square)](#-key-design-principles)
 [![ROI Speed](https://img.shields.io/badge/ROI-Speed%20x4%20⚡-orange?style=flat-square)](#-proven-field-roi--speed-x4)
-[![Built with Google Antigravity](https://img.shields.io/badge/Built_with-Google%20Antigravity-4285F4?style=flat-square&logo=google&logoColor=white)](https://github.com/Arca-Brain/Arca-BrainOS)
 
 **[Quickstart](#-quickstart-1-minute-onboarding)** · **[Getting Started](GETTING_STARTED.md)** · **[Manifesto](MANIFESTO.md)** · **[Architecture](#-architecture--vault-topography-decoupled-design)** · **[Contributing](CONTRIBUTING.md)**
 
