@@ -123,9 +123,8 @@ Afin d'assurer des relations claires et transparentes avec la communauté des co
 
 1. **Attribution & Reconnaissance Publique :** Chaque contributeur conserve son droit d'auteur original et sera **publicment crédité** dans l'historique des commits GitHub, les métriques du dépôt et les notes de release officielles.
 2. **Cession d'Usage Contributeur :** En soumettant une Pull Request à Arca-BrainOS, vous accordez à Hugues (auteur original) une licence non exclusive, perpétuelle, mondiale et libre de droits pour intégrer, modifier, distribuer et valoriser votre contribution au sein de l'écosystème Arca-BrainOS (incluant le dépôt open-source et les kits Pro officiels).
-3. **Alignement Licence Hybride :**
-   - Les compétences, scripts et code sont contribués sous **GNU AGPLv3**.
-   - Les playbooks, fiches de processus et guides sont contribués sous **CC BY-NC-SA 4.0**.
+3. **Alignement Licence Open-Source :**
+   - L'ensemble des compétences, scripts, documentations et code sont contribués sous licence **MIT**.
 
 ---
 
