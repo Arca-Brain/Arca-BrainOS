@@ -174,8 +174,32 @@ To understand the core logic of each step and guide your AI co-pilot, refer to t
 
 ---
 
+## ❓ 7. FAQ & Risk Management
+
+### How does Arca-BrainOS differ from vanilla Obsidian or isolated AI chats?
+Vanilla Obsidian provides open local Markdown files but requires continuous manual organization. Isolated AI chats (ChatGPT, Claude) have zero historical context of your past notes. Arca-BrainOS bridges the gap: your AI agents operate directly on your local files with your full context, eliminating organizational friction while keeping 100% of your data local and readable.
+
+### What happens if an agent makes a mistake or if I want to undo changes?
+Arca-BrainOS is built for **zero data loss, full transparency, and immediate recovery**:
+* **In-Session Rollback:** If an agent misinterprets an instruction during a session, simply say in chat: *"Undo the last modification on file X"*. The agent will review its history and restore the file.
+* **3-File Safety Threshold:** Agents are prohibited from modifying or creating more than 3 files outside `/2-Ressources/IA-generated/` during a single workflow without your explicit confirmation.
+* **Single Audit Trail:** Every agentic action is logged in `_Arca-BrainOS/log.md` (1 line per action with timestamp).
+* **Git Version Control:** We strongly recommend initializing Git in your vault (`git init`). Rollbacks can be performed instantly via Git or your Obsidian Sync version history.
+
+### Will AI agents rewrite or alter my human-authored notes?
+**No.** Arca-BrainOS operates under strict governance rules defined in `AGENTS.md`:
+* **Exclusive AI Writing Zone:** Autonomous writing is strictly isolated in `/2-Ressources/IA-generated/` (`AI-Distil-...` notes).
+* **Supervised Zone:** For human-authored notes (`1-Projects/`, `2-Ressources/Notes/`, `3-Domaines-de-vie/`), agents never rewrite human prose. They only suggest `[[...]]` wikilinks or append session logs during `arca-close-session`.
+
+### Does my data stay private? (Zero Data Retention & Local Models)
+**Absolutely.** You retain complete control over your data flows:
+* **Open & Local Format:** All notes live in plain text inside your local Markdown vault (`.md`), with no opaque databases or mandatory cloud lock-in.
+* **Inference Agnosticism:** You can connect agents to 100% offline local models (via Ollama, LM Studio, or a private NAS), or to enterprise endpoints guaranteeing strict Zero Data Retention (ZDR).
+
+---
+
 ## 🔗 Useful Links & References
 * 📜 **[The Sovereign AI Workflow Manifesto](MANIFESTO.md)**
 * 🪄 **[Installer Prompt (INSTALL.md)](INSTALL.md)**
 * 🤝 **[Contribution Guidelines (CONTRIBUTING.md)](CONTRIBUTING.md)**
-* ⚖️ **[Dual License Agreement (LICENSE.md)](LICENSE.md)**
+* ⚖️ **[MIT License (LICENSE.md)](LICENSE.md)**

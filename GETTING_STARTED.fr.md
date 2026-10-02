@@ -174,8 +174,32 @@ Pour comprendre la logique de chaque étape et guider votre co-pilote IA, appuye
 
 ---
 
+## ❓ 7. FAQ & Gestion des Risques
+
+### En quoi Arca-BrainOS diffère-t-il d'Obsidian pur ou des chats IA isolés ?
+Obsidian pur offre des fichiers Markdown locaux mais exige une organisation manuelle constante. Les chats IA isolés (ChatGPT, Claude) n'ont aucun contexte réel de vos notes passées. Arca-BrainOS fait le pont : vos agents IA opèrent directement sur vos fichiers locaux avec tout votre contexte, automatisant la friction tout en gardant 100% de vos données locales et lisibles.
+
+### Que se passe-t-il si un agent fait une erreur ou si je veux annuler des modifications ?
+Arca-BrainOS est conçu pour **zéro perte de données, une transparence totale et une récupération immédiate** :
+* **Rollback en Session :** Si un agent interprète mal une consigne durant une session, dites-lui simplement dans le chat : *"Annule la dernière modification sur le fichier X"*. L'agent relira son historique et restaurera le fichier.
+* **Garde-fou des 3 Fichiers :** Il est interdit aux agents de modifier ou créer plus de 3 fichiers hors de `/2-Ressources/IA-generated/` au cours d'un même workflow sans validation explicite.
+* **Journal d'Audit Unique :** Chaque action est consignée dans `_Arca-BrainOS/log.md` (1 ligne par action avec horodatage).
+* **Contrôle de Version Git :** Nous recommandons d'initialiser Git sur votre coffre (`git init`). Les rollbacks peuvent être exécutés instantanément via Git ou votre système de sauvegarde Obsidian Sync.
+
+### Les agents IA vont-ils réécrire ou modifier mes notes rédigées à la main ?
+**Non.** Arca-BrainOS fonctionne sous les garde-fous stricts définis dans `AGENTS.md` :
+* **Zone d'Écriture Exclusive IA :** L'écriture autonome est isolée dans `/2-Ressources/IA-generated/` (synthèses `AI-Distil-...`).
+* **Zone Supervisée :** Pour les notes humaines (`1-Projects/`, `2-Ressources/Notes/`, `3-Domaines-de-vie/`), les agents ne réécrivent jamais le texte humain. Ils proposent uniquement des liens wikilinks `[[...]]` ou mettent à jour le journal de bord lors de `arca-close-session`.
+
+### Mes données restent-elles privées ? (Zero Data Retention & Modèles Locaux)
+**Absolument.** Vous conservez le contrôle total de vos flux :
+* **Format ouvert & local :** Toutes vos notes résident en clair dans votre coffre local Markdown (`.md`), sans base de données opaque ni cloud obligatoire.
+* **Agnosticisme d'inférence :** Vous pouvez connecter vos agents à des modèles locaux 100% hors-ligne (via Ollama, LM Studio ou NAS privé), ou à des endpoints respectant la stricte non-rétention des données (ZDR).
+
+---
+
 ## 🔗 Liens Utiles & Références
 * 📜 **[Le Manifeste Arca-BrainOS (MANIFESTO.fr.md)](MANIFESTO.fr.md)**
 * 🪄 **[Prompt d'Installation (INSTALL.fr.md)](INSTALL.fr.md)**
 * 🤝 **[Guide de Contribution (CONTRIBUTING.fr.md)](CONTRIBUTING.fr.md)**
-* ⚖️ **[Licence Hybride (LICENSE.md)](LICENSE.md)**
+* ⚖️ **[Licence MIT (LICENSE.md)](LICENSE.md)**

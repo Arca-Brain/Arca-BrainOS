@@ -31,6 +31,19 @@ Before starting, choose the option that matches your setup:
 
 ---
 
+## 🖥️ Which AI Runner or Assistant Should You Choose?
+
+Arca-BrainOS is 100% agnostic: it works seamlessly with any agentic CLI terminal or desktop AI workspace operating on local Markdown files. Here is a quick comparison to guide your setup:
+
+| AI Runner / Assistant | Key Strengths | Best For | Recommended Models |
+| :--- | :--- | :--- | :--- |
+| **Google Antigravity** | **Free to start**, generous quotas, massive context window (1M+ tokens), dedicated agentic interface | Immediate setup with zero cost or friction | Gemini 1.5 Pro / Flash |
+| **Claude Code / Claude Cowork** | State-of-the-art reasoning, surgical Markdown note editing, deep synthesis | Users with an Anthropic account (CLI or desktop workspace) | Claude 3.5 Sonnet |
+| **OpenCode** | 100% open-source, ultra-fast CLI, compatible with local inference servers | Total sovereignty and offline usage | Local models (Ollama / Qwen / Llama) or custom APIs |
+| **Cursor / Windsurf / Codex** | Full editor integrating chat, terminal, and live note diffs | Users who prefer an all-in-one visual IDE | Claude 3.5 Sonnet, GPT-4o |
+
+---
+
 ## 📋 Sequential 6-Step Execution Protocol
 
 ### 🔍 Step 1: Inspection & Smart Vault Detection (Path Auto-Discovery)
