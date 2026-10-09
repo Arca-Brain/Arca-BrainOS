@@ -23,7 +23,7 @@ status: "#completed"
 
 ---
 
-**Un assistant IA local et souverain pour vos projets, vos notes de vie**
+**Le harnais cognitif intentionnel pour vos projets de vie (ancré dans vos notes Obsidian)**
 
 🇬🇧 **[Read the English version (README.md)](README.md)**
 
@@ -36,7 +36,9 @@ status: "#completed"
 
 ---
 
-> 🎯 **Concept Clé :** Gardez vos notes et votre mémoire personnelle chez vous, hors des plateformes propriétaires. Arca-BrainOS dote vos assistants IA (en ligne de commande avec Claude Code, Antigravity, OpenCode, ou via des environnements comme Claude Cowork et Gemini Spark) d'une mémoire persistante directement dans vos fichiers Markdown. Vous restez 100% propriétaire de vos données et totalement libre de changer de modèle IA à tout moment sans rien perdre de votre contexte.
+> 🎯 **Concept Clé :** Gardez votre mémoire personnelle chez vous, hors des plateformes propriétaires. Arca-BrainOS agit comme un **harnais cognitif intentionnel** qui encadre vos assistants d'IA avec des rails Markdown déterministes et une mémoire persistante inter-sessions directement sur votre coffre local. Vous conservez 100% de la propriété de vos données et changez de moteur d'IA à volonté sans jamais perdre votre contexte ni votre voix.
+> 
+> 💡 **Qu'est-ce qu'un harnais cognitif intentionnel ?** Un modèle d'IA dispose d'une puissance brute, mais il est amnésique, sans repères et sans mains. Contrairement aux plugins fragiles ou aux agents autonomes déviants par self-learning aveugle, un *harnais cognitif intentionnel* fournit l'armature indispensable : des rails déterministes, une mémoire persistante et des règles de frontières strictes pour canaliser l'IA tout en maintenant l'intention humaine aux commandes.
 
 ---
 
@@ -50,7 +52,9 @@ status: "#completed"
 
 ## 🛡️ La Solution : Arca-BrainOS
 
-**Arca-BrainOS** est un système d'exploitation open-source et agentique pour **Obsidian** (et tout éditeur Markdown local). Il dote votre environnement de travail (terminal CLI, Claude Cowork, Gemini Spark) d'une flotte de **compétences autonomes (`Skill_arca-*.md`)** qui exécutent les corvées documentaires, maintiennent l'ontologie de votre savoir et pilotent vos sessions de Deep Work.
+Arca-BrainOS fonctionne selon une triade indissociable : **les moteurs d'IA interchangeables** (Claude, Gemini, modèles locaux) apportent la force de calcul brute, le **harnais Arca-BrainOS** garantit les flux déterministes et la mémoire persistante sur vos fichiers texte, tandis que **vous, le pilote humain**, conservez l'intention stratégique, le jugement critique et la validation finale.
+
+Il dote votre environnement de travail (terminal CLI, Claude Cowork, Gemini Spark) d'une flotte de **compétences autonomes (`Skill_arca-*.md`)** qui exécutent les corvées documentaires, maintiennent l'ontologie de votre savoir et pilotent vos sessions de Deep Work.
 
 Le système articule harmonieusement deux dimensions de vos projets :
 - **Les projets intellectuels & numériques :** Ingénierie logicielle, architecture de systèmes, recherche et rédaction.

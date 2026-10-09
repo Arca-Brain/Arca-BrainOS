@@ -10,11 +10,11 @@ status: #active
 
 # 👋 Welcome to Your Arca-BrainOS Sandbox!
 
-Congratulations on opening the **Arca-BrainOS Starter Vault**.
+Congratulations on opening the **Arca-BrainOS Starter Vault**, your **Intentional Cognitive Harness**.
 
 This vault is a pre-configured, fully autonomous, and secure environment. Your knowledge lives **100% locally in plain Markdown files (`.md`)**: you maintain complete data sovereignty with zero proprietary lock-in.
 
-> 💡 **Personal Exploration Context:** This system is crafted for personal usage on your local machine. Take your time to explore freely!
+> 💡 **Why an "Intentional Cognitive Harness"?** This vault does not rely on fragile plugins. It provides the essential armature, multi-tier memory, and deterministic rails that allow your CLI AI assistant to operate directly within your files, at your pace, and under your absolute control.
 
 ---
 

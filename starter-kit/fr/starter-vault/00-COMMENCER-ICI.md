@@ -10,11 +10,11 @@ status: #actif
 
 # 👋 Bienvenue dans votre Bac à Sable Arca-BrainOS !
 
-Félicitations, vous venez d'ouvrir le **Starter Vault Arca-BrainOS**. 
+Félicitations, vous venez d'ouvrir le **Starter Vault Arca-BrainOS**, votre **harnais cognitif intentionnel**. 
 
 Ce coffre est un environnement prêt à l'emploi, entièrement autonome et sécurisé. Vos données sont hébergées à **100 % en local dans des fichiers Markdown pur (`.md`)** : vous gardez le contrôle total de vos notes, sans aucun enfermement propriétaire.
 
-> 💡 **Contexte d'expérimentation :** Ce système a été conçu pour un usage personnel sur votre machine personnelle. Prenez le temps de l'explorer librement !
+> 💡 **Pourquoi un « harnais cognitif intentionnel » ?** Ce coffre ne repose sur aucun plugin fragile. Il fournit l'armature, la mémoire persistante et les règles déterministes qui permettent à votre assistant IA en ligne de commande de travailler directement dans vos fichiers, à votre service et sous votre contrôle absolu.
 
 ---
 

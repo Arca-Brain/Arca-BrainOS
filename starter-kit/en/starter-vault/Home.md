@@ -1,4 +1,5 @@
 # Home page
+> **Arca-BrainOS: The Intentional Cognitive Harness for Your Life Projects (Rooted in Your Obsidian Notes).**
 
 <div align="center">
 

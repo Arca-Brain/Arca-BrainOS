@@ -1,4 +1,5 @@
 # Home page
+> **Arca-BrainOS : Le harnais cognitif intentionnel pour vos projets de vie (ancré dans vos notes Obsidian).**
 
 <div align="center">
 
