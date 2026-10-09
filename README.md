@@ -23,7 +23,7 @@ status: "#completed"
 
 ---
 
-**A sovereign, local AI assistant for your projects and life notes**
+**The Intentional Cognitive Harness for Your Life Projects (Rooted in Your Obsidian Notes)**
 
 🇫🇷 **[Lire la version française (README.fr.md)](README.fr.md)**
 
@@ -36,7 +36,9 @@ status: "#completed"
 
 ---
 
-> 🎯 **Core Concept:** Keep your notes and personal memory at home, outside captive platforms. Arca-BrainOS equips your AI assistants (CLI agents like Claude Code, Antigravity, OpenCode, or desktop workspaces like Claude Cowork and Gemini Spark) with persistent memory directly in your local Markdown files. You retain 100% data ownership and the complete freedom to switch AI models anytime without losing your context.
+> 🎯 **Core Concept:** Keep your personal memory at home, outside captive platforms. Arca-BrainOS acts as an **Intentional Cognitive Harness** that wraps frontier AI assistants in deterministic Markdown rails and persistent inter-session memory directly over your local vault. You retain 100% data ownership and switch AI engines freely without ever losing your context or your voice.
+> 
+> 💡 **What is an Intentional Cognitive Harness?** An AI model has raw horsepower but zero memory, direction, or hands. Unlike brittle plugins that break on updates or autonomous agents that run wild through unguided self-learning, an *intentional cognitive harness* provides the essential armature: deterministic rails, multi-tier memory, and strict boundary rules that channel the model's speed while keeping human intention firmly in command.
 
 ---
 
@@ -50,7 +52,9 @@ status: "#completed"
 
 ## 🛡️ The Solution: Arca-BrainOS
 
-**Arca-BrainOS** is an open-source, agentic operating system designed for **Obsidian** (and any local Markdown editor). It equips your workspace (terminal CLI, Claude Cowork, Gemini Spark) with a fleet of **autonomous skills (`Skill_arca-*.md`)** that handle documentation chores, maintain the ontology of your knowledge, and steer your Deep Work sessions.
+Arca-BrainOS operates as an indivisible three-part triad: **interchangeable AI engines** (Claude, Gemini, local models) provide raw analytical speed, the **Arca-BrainOS harness** enforces deterministic workflows and persistent memory across your plain text files, while **you, the human pilot**, retain full strategic intention, critical judgment, and final review.
+
+It equips your workspace (terminal CLI, Claude Cowork, Gemini Spark) with a fleet of **autonomous skills (`Skill_arca-*.md`)** that handle documentation chores, maintain the ontology of your knowledge, and steer your Deep Work sessions.
 
 The system articulates two complementary dimensions of your projects:
 - **Intellectual & digital projects:** Software engineering, systems architecture, research, and writing.
