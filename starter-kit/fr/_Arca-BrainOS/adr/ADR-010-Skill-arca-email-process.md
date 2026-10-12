@@ -6,7 +6,7 @@ tags:
   - adr
   - architecture
   - arca-brainos
-target: "[[P-Arca-BrainOS]]"
+target: "[[P-Projet-Alpha]]"
 ---
 
 # 📜 ADR-010 : Architecture et Passerelle du Skill arca-email-process
@@ -14,7 +14,7 @@ target: "[[P-Arca-BrainOS]]"
 ---
 
 ## 1. Contexte & Problématique
-La gestion quotidienne des emails professionnels et personnels constitue l'une des sources majeures de charge mentale et d'interruption cognitive. Les retours terrain de bêta-testeurs (notamment Baptiste Gandrille, CEO Yuko) ont démontré l'intérêt d'interconnecter le flux de messagerie avec le Second Cerveau Obsidian.
+La gestion quotidienne des emails professionnels et personnels constitue l'une des sources majeures de charge mentale et d'interruption cognitive. Les retours terrain ont démontré l'intérêt d'interconnecter le flux de messagerie avec le Second Cerveau Obsidian.
 
 Toutefois, brancher un agent IA sur une boîte de réception soulève des risques architecturaux majeurs :
 - **Risque de pollution du coffre :** Importer l'intégralité des corps de texte d'emails sature l'espace, alourdit l'historique Git et dilue la pertinence de la recherche sémantique (RAG).
@@ -40,7 +40,7 @@ Il est acté de concevoir la compétence `arca-email-process` selon les principe
 6. **Périmètre et Frugalité :** Requête sur `in:inbox -is:starred` (lus et non lus). Si le volume dépasse 25 emails, traitement automatique du lot de tête des 10 plus récents avec compteur d'emails restants. Commande enrichie acceptant des arguments optionnels (quantité ou filtre Gmail).
 7. **Filtre Anti-Boucle & Mémoire Spécialisée Sidecar (`rules-email.md`) :**
    - L'exclusion systématique `-is:starred` empêche de retraiter inutilement les emails d'action maintenus volontairement étoilés dans la boîte de réception.
-   - Afin de préserver la frugalité de `memory.md` (sanctuarisé à < 50 lignes selon [[ADR-009-Modele-Memoire-Frugale-CoALA-4-Niveaux]]), les règles de routage spécifiques par expéditeur sont stockées dans une mémoire sidecar dédiée : `_Arca-BrainOS/skills/rules-email.md`, chargée exclusivement lors de l'exécution d'`arca-email-process`.
+   - Afin de préserver la frugalité de `memory.md` (sanctuarisé à < 50 lignes selon [[ADR-009-Modele-Memoire-Frugale-CoALA-4-Niveaux]]), les règles de routage spécifiques par expéditeur sont stockées dans une mémoire sidecar dédiée : `_Arca-BrainOS/rules-email.md`, chargée exclusivement lors de l'exécution d'`arca-email-process`.
 
 ---
 
@@ -64,7 +64,32 @@ Il est acté de concevoir la compétence `arca-email-process` selon les principe
 ---
 
 ## 5. Références & Liens
-- Projet Maître : [[1-Projects/P-Arca-BrainOS|P-Arca-BrainOS]]
-- Retours Bêta : Retours terrain des utilisateurs et bêta-testeurs (Yuko / Airbus)
+- Projet Maître : [[P-Projet-Alpha]]
+- Note de Cadrage : [[2-Ressources/Notes/e-mail batch|e-mail batch.md]]
 - Compétence de Crible : [[_Arca-BrainOS/skills/Skill_arca-grill|Skill_arca-grill]]
 - Compétence Dérivée : [[_Arca-BrainOS/skills/Skill_arca-email-process|Skill_arca-email-process]]
+
+---
+
+## 6. Addendum v2 : Pipeline GTD en 3 Lots, Buffer Unique & Bouclier Cybersécurité (2026-10-12)
+
+Suite aux retours d'usage face à des volumes réels d'emails (> 20 messages), l'architecture du skill `arca-email-process` a été significativement renforcée :
+
+### 6.1. Remplacement du Tableau Monolithique par 3 Lots GTD Successifs
+Le tableau unique à 7 colonnes créait un goulot d'étranglement cognitif dès que le volume augmentait. Le protocole s'exécute désormais en 3 vagues séquentielles :
+1. **Lot 1 (Bruit & Archivage Massif) :** Regroupe 70 à 80% du flux (newsletters, reçus, notifications). Présenté sous forme compacte et validé en bloc d'un seul mot (`ok archive`).
+2. **Lot 2 (Références & Veille) :** Conserve les informations et pièces utiles sans action immédiate. Orienté intelligemment soit vers les projets actifs (`1-Projects/`), soit vers les projets en incubation (`1-Projects/_Incubation/`), soit vers les Thèmes et Domaines de vie.
+3. **Lot 3 (Next Actions & Engagements) :** Focus chirurgical sur les tâches réelles (généralement 3 à 8 emails).
+
+### 6.2. Traitement des Actions : Projet vs Buffer Unique Idempotent
+- **Actions rattachées à un Projet (`P-`) :** Injection directe dans la liste de tâches du projet cible.
+- **Actions unitaires hors projet :** Centralisation dans un fichier unique dans l'Inbox : **`0-Inbox/Emails-Actions-Todo.md`**, découpé par sous-sections horodatées (`### 📅 Triage du AAAA-MM-JJ [HH:mm]`). L'agent applique un scan d'idempotence systématique sur toutes les sections précédentes pour empêcher toute duplication d'action non traitée. Ce fichier constitue la passerelle en attente du futur skill de synchronisation de tâches externes (ex : Todoist via MCP).
+
+### 6.3. Assomption du Prérequis MCP Google Workspace
+Pour éviter la dispersion technique d'un double pilote d'ingestion artificiel, le skill assume formellement le serveur MCP `google-workspace` comme prérequis strict.
+
+### 6.4. Bouclier Anti-Prompt Injection (Indirect Prompt Injection)
+Face aux risques d'injection indirecte de commandes LLM via des emails malveillants :
+- **Frontière de données non fiables :** Le contenu d'email est classé comme donnée brute inerte, excluant formellement toute interprétation comme consigne système.
+- **Détection & Alerte :** Les motifs suspects déclenchent un drapeau d'alerte explicite dans le chat et neutralisent l'extraction d'action.
+- **Sanitisation & Air-Gap :** Nettoyage des caractères de commande et obligation absolue d'une validation humaine par lot avant toute écriture.

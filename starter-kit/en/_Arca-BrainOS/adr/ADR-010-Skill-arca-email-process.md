@@ -6,7 +6,7 @@ tags:
   - adr
   - architecture
   - arca-brainos
-target: "[[P-Sovereign-AI-Project]]"
+target: "[[P-Project-Alpha]]"
 ---
 
 # 📜 ADR-010 : Architecture and Ingestion Gateway for arca-email-process Skill
@@ -39,7 +39,7 @@ The `arca-email-process` skill is designed around the following principles:
 6. **Volume Cap & Frugality:** Standard query on `in:inbox -is:starred`. Batches capped at the top 10 most recent if total exceeds 25 emails.
 7. **Anti-Loop Filter & Sidecar Memory (`rules-email.md`):**
    - Excluding `-is:starred` prevents reprocessing active flagged tasks on recurring runs.
-   - To preserve `memory.md` frugality (< 50 lines per ADR-009), sender-specific routing preferences reside in a specialized sidecar file: `_Arca-BrainOS/skills/rules-email.md`.
+   - To preserve `memory.md` frugality (< 50 lines per ADR-009), sender-specific routing preferences reside in a specialized sidecar file: `_Arca-BrainOS/rules-email.md`.
 
 ---
 
@@ -61,6 +61,32 @@ The `arca-email-process` skill is designed around the following principles:
 ---
 
 ## 5. References & Links
-- Core Project: [[P-Sovereign-AI-Project]]
-- Grilling Skill: [[Skill_arca-grill]]
-- Derived Skill: [[Skill_arca-email-process]]
+- Master Project: [[P-Project-Alpha]]
+- Curation Note: [[2-Ressources/Notes/e-mail batch|e-mail batch.md]]
+- Grilling Skill: [[_Arca-BrainOS/skills/Skill_arca-grill|Skill_arca-grill]]
+- Derived Skill: [[_Arca-BrainOS/skills/Skill_arca-email-process|Skill_arca-email-process]]
+
+---
+
+## 6. Addendum v2: 3-Batch GTD Pipeline, Action Buffer & Cybersecurity Shield (2026-10-12)
+
+Following user feedback on real-world email volumes (> 20 emails), the architecture of `arca-email-process` has been updated with significant robustness enhancements:
+
+### 6.1. Transition from Monolithic Table to 3 Sequential GTD Batches
+The previous 7-column table created cognitive friction when handling large inboxes. Triage now operates in 3 distinct waves:
+1. **Batch 1 (Noise & Bulk Archiving):** Groups 70 to 80% of volume (newsletters, receipts, notifications). Validated in bulk with a single response (`ok archive`).
+2. **Batch 2 (Reference & Knowledge):** Retains actionable insights and technical documents without immediate tasks. Routes to active projects (`1-Projects/`), incubation projects (`1-Projects/_Incubation/`), or Themes and Life Areas.
+3. **Batch 3 (Next Actions & Commitments):** Concentrated focus on genuine action items (typically 3 to 8 emails).
+
+### 6.2. Action Routing: Direct Project Injection vs Idempotent Central Buffer
+- **Actions linked to an Active Project (`P-`):** Injected directly into the project's task list.
+- **Stand-alone actions without project:** Centralized in a single persistent file in the inbox: **`0-Inbox/Emails-Actions-Todo.md`**, structured by timestamped sections (`### 📅 Triage: YYYY-MM-DD [HH:mm]`). The agent runs an idempotence scan across all prior sections to prevent duplicate tasks. This file acts as a staging queue for external task integration skills (e.g. Todoist MCP).
+
+### 6.3. Strict Google Workspace MCP Prerequisite
+To eliminate unnecessary complexity and code divergence, the skill formally relies on the `google-workspace` MCP server as a strict prerequisite.
+
+### 6.4. Cybersecurity Shield (Indirect Prompt Injection)
+To protect against prompt injection attacks via external emails:
+- **Untrusted Input Boundary:** Email content is strictly parsed as inert data, forbidding any execution as agent instructions.
+- **Detection & Alerts:** Suspicious prompt injection patterns trigger immediate security warnings in chat and neutralize action extraction.
+- **Output Sanitization & Air-Gap:** Stripping of executable commands, combined with mandatory human verification before any vault write or Gmail API call.
