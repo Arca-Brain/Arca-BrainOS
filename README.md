@@ -12,8 +12,8 @@ Contextual events explaining traffic variations and volume surges:
 
 | Date | Channel / Event | Context & Observed Impact |
 | :--- | :--- | :--- |
-| **2026-10-02** | **Inaugural Release v1.0.0-MVP** | Public GitHub launch (first spike: 10 unique cloners). |
-| **2026-10-09** | **Reddit Launch (`r/secondbrain` & `r/PKMS`)** | Major traffic surge (~12k views, 28 unique cloners, +6 stars). |
+| **2026-09-12** | **Inaugural Release v1.0.0** | Public GitHub launch  |
+| **2026-10-09** | **Reddit post (`r/secondbrain` & `r/PKMS`)** | traffic ~12k views, with unique viewer et cloners the next days). |
 
 ## 📁 Historical Data Files
 
