@@ -19,14 +19,14 @@ Analyser, qualifier et structurer les notes brutes issues de l'Inbox. Le skill t
      - 💡 **`category: idea`** : 
        - *Pensée volante libre* : Réflexion conceptuelle sans projet cible immédiat (rattachée à un Thème MOC `[[T-...]]`).
        - *Idée d'enrichissement de projet* : Réflexion spécifique destinée à alimenter un projet existant à identifier (`target: "[[P-...]]"`).
-     - ⚡ **`category: action`** : Tâche directe à effectuer ou à injecter dans un backlog de projet (`P-`).
+     - ⚡ **`category: action`** : Tâche directe à effectuer, soit rattachée à un backlog de projet actif (`target: "[[P-...]]"`), soit qualifiée d'*action volante* hors projet (destinée au buffer `0-Inbox/Emails-Actions-Todo.md`).
      - 🌱 **`category: project-seed`** : Idée majeure destinée à devenir un projet à part entière (`P-`).
      - 📚 **`category: source`** : Ressource brute externe (article, vidéo) à distiller via `arca-distill`.
 
 3. **Phase Interactive & Clarification (Synthèse dans le Chat) :**
-   - **En Mode Note Unique :** Présente le diagnostic précis de la note avec la catégorie et la cible proposée.
+   - **En Mode Note Unique :** Présente le diagnostic précis de la note avec la catégorie et la cible proposée (`[[P-...]]` pour une action de projet, ou `0-Inbox/Emails-Actions-Todo.md` pour une action volante hors projet).
    - **En Mode Batch :** Présente un tableau récapitulatif dans le chat de l'ensemble des notes analysées avec leur `category` et `target` suggérés.
-   - Si une catégorie ou un projet cible est ambigu, demande clarification à l'utilisateur avant d'écrire les modifications.
+   - Si une catégorie ou la destination de l'action (projet `P-` vs action volante) est ambiguë, demande clarification à l'utilisateur avant d'écrire les modifications.
 
 4. **Exécution & Application des Changements :**
 
@@ -37,13 +37,14 @@ Analyser, qualifier et structurer les notes brutes issues de l'Inbox. Le skill t
      - Conserve 100% de la saisie d'origine dans `## 📝 Note Brute (Raw Note)`.
      - Formule la synthèse dans `## 🎯 Idée Clé & Synthèse`.
      - Génère les propositions d'enrichissement dans `## 🚀 Actions & Projets Impactés`.
-     - Injecte les actions `- [ ]` dans le projet cible `[[P-...]]` si applicable.
+     - Injecte les actions `- [ ]` dans le projet cible `[[P-...]]` (ou dans `0-Inbox/Emails-Actions-Todo.md` s'il s'agit d'une action volante hors projet).
      - Ajoute le maillage dans `## 🔗 Connexions & Maillage Sémantique`.
 
    - **Si `category: action` :**
      - Isole la tâche exacte à accomplir.
-     - Injecte la tâche `- [ ]` directement dans la section `## 🚀 Actions Prochaines Étapes` du projet cible `[[P-...]]`.
-     - Marque la note Inbox avec `category: action` et propose son archivage ou sa suppression.
+     - **Cas A (Action rattachée à un Projet `P-`) :** Injecte la tâche `- [ ]` directement dans la section `## 🚀 Actions Prochaines Étapes` (ou `## Actions todo next`) du projet cible `[[P-...]]`.
+     - **Cas B (Action volante hors projet) :** Injecte la tâche `- [ ] <Description> (Source: Note Inbox [[Titre]] du AAAA-MM-JJ) #<domaine>` dans une section horodatée de `0-Inbox/Emails-Actions-Todo.md` (en créant le fichier selon le modèle standard s'il avait été purgé).
+     - Une fois l'action injectée, propose la suppression (`rm`) de la note d'action éphémère dans `0-Inbox/` (ou son déplacement vers `2-Ressources/Notes/` si elle comporte des éléments de référence à conserver).
 
    - **Si `category: project-seed` :**
      - Prépare l'amorce de la note de projet `P-[Nom-Projet].md` dans `1-Projects/` via `Template-Projet.md` en qualifiant obligatoirement l'Area rattachée (`areas: ["[[Nom-Domaine]]"]`) et le Thème MOC (`themes: ["[[T-Nom]]"]`).

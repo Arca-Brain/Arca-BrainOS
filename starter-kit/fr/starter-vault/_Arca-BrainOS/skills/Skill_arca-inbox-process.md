@@ -12,7 +12,7 @@ Nettoyer, structurer et trier intelligemment les notes brutes et documents prés
 
 1. **Identification & Analyse Préliminaire :**
    - Si une note spécifique est fournie (ex: `[[Nom-de-note]]`), cible cette note dans `0-Inbox/`.
-   - Si aucun argument n'est fourni, scanne le dossier `0-Inbox/` pour l'ensemble des fichiers `.md` (exclure sous-dossiers et fichiers cachés).
+   - Si aucun argument n'est fourni, scanne le dossier `0-Inbox/` pour l'ensemble des fichiers `.md` (exclure les sous-dossiers, les fichiers cachés et le fichier tampon `Emails-Actions-Todo.md` réservé à `arca-task-process`).
    - Pour chaque note, analyse son contenu brut et ses métadonnées YAML.
 
 2. **Gare de Triage & Qualification de Category :**
@@ -23,7 +23,9 @@ Nettoyer, structurer et trier intelligemment les notes brutes et documents prés
    - **Qualification de la `category` de capture :**
      - 📚 **`category: source`** (Lien vidéo/podcast, article web, document externe) $\rightarrow$ Aiguille vers `Skill_arca-distill.md`.
      - 💡 **`category: idea`** (Pensée volante libre ou idée d'enrichissement) $\rightarrow$ Applique le workflow `Skill_arca-organize-idea.md` (Raw Note + Idée Clé + Actions & Maillage).
-     - ⚡ **`category: action`** (Tâche directe à exécuter pour un projet) $\rightarrow$ Invoque `Skill_arca-organize-idea.md` pour injection dans le backlog de `target`.
+     - ⚡ **`category: action`** (Tâche directe à exécuter) $\rightarrow$ Invoque `Skill_arca-organize-idea.md` avec arbitrage de destination :
+       - *Cas A (Action de Projet) :* Si rattachée à un projet actif `1-Projects/P-*.md`, proposer l'injection dans le backlog de `target: "[[P-...]]"`.
+       - *Cas B (Action volante hors projet) :* Si l'action est unitaire et ne relève d'aucun projet `P-` actif (démarche administrative, santé, finance, rappel), proposer son injection dans le buffer central `0-Inbox/Emails-Actions-Todo.md` (pour prise en charge ultérieure par `arca-task-process` vers Todoist), suivie de la suppression (`rm`) de la note d'action éphémère (ou de son classement dans `2-Ressources/Notes/` si elle contient une trace documentaire à garder).
      - 🌱 **`category: project-seed`** (Idée majeure destinée à créer un nouveau projet `P-`) $\rightarrow$ Invoque `Skill_arca-organize-idea.md` pour pré-créer la note `P-`.
      - 📝 **`category: note`** (Livrable de session, analyse stratégique, note de cadrage) $\rightarrow$ Vérifier le maillage projet (voir règle ci-dessous) puis déplacer vers `2-Ressources/Notes/`.
 
@@ -32,7 +34,7 @@ Nettoyer, structurer et trier intelligemment les notes brutes et documents prés
    - **Contrôle d'ancrage factuel :** Effectuer systématiquement une recherche textuelle (`grep`) pour vérifier si le wikilink `[[Nom-de-note]]` est réellement présent dans la note cible (`target: "[[P-...]]"` ou dans les thèmes `T-`).
    - **Double maillage obligatoire pour tout livrable / note de travail :**
      1. *Working Documents :* Si la note n'est pas référencée dans la section `## 🗺️ Working Documents` du projet cible, proposer son ajout avec un libellé clair.
-     2. *Actions résiduelles :* Scanner le contenu de la note pour détecter si elle contient des arbitrages, expérimentations, recommandations techniques ou étapes opérationnelles non encore inscrites au backlog. Si oui, formuler et proposer une tâche `- [ ]` explicite dans `## Actions todo next` du projet cible.
+     2. *Actions résiduelles :* Scanner le contenu de la note pour détecter si elle contient des arbitrages, expérimentations, recommandations techniques ou étapes opérationnelles non encore inscrites au backlog. Si oui, formuler et proposer une tâche `- [ ]` explicite : soit dans `## Actions todo next` du projet cible `[[P-...]]` (action de projet), soit dans `0-Inbox/Emails-Actions-Todo.md` s'il s'agit d'une action volante hors projet.
    - **Condition de déplacement :** Aucun fichier ne doit être déplacé (`mv`) hors de `0-Inbox/` vers `2-Ressources/Notes/` tant que ce double maillage (lien Working Documents + action todo si requise) n'est pas formellement acté.
 
 4. **Phase Interactive & Validation :**

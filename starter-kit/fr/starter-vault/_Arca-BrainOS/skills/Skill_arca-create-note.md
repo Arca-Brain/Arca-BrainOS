@@ -87,7 +87,7 @@ Avant toute modification ou création de fichier sur le disque, l'IA doit impér
    - ❓ **Demande de validation :** *"Confirmes-tu l'ouverture de ce thème et le raccordement de ces projets et notes existants ?"*
 
 3. **Exécution (Après validation explicite) :**
-   - Instancier `T-[Nom-Theme].md` dans `PATH_THEMES` avec [`Template-Theme.md`](file:///home/chug/2ndBrain/_Arca-BrainOS/templates/Template-Theme.md).
+   - Instancier `T-[Nom-Theme].md` dans `PATH_THEMES` avec `Template-Theme.md`.
    - Mettre à jour les métadonnées `themes` des projets et notes validés.
    - Raccorder le thème aux fiches de Domaines parents.
    - Journaliser l'action dans `PATH_SYSTEM/log.md`.

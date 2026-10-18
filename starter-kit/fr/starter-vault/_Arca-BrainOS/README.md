@@ -15,7 +15,7 @@
 - **`[[_Arca-BrainOS/scripts/README|scripts/]]`** : *Scripts & Registres Automatisés*
   Contient les scripts shell (ingestion YouTube) et leurs registres de dédoublonnage.
 - **`[[_Arca-BrainOS/adr/README|adr/]]`** : *Architecture Decision Records*
-  Registre officiel des décisions architecturales et arbitrages structurants (ADR-001 à ADR-011).
+  Registre officiel des décisions architecturales et arbitrages structurants (ADR-001 à ADR-012).
 - **`tests/`** : *Banc d'Essai Agentique & Fixtures*
   Contient les jeux de test (`fixtures/`) et le protocole d'évaluation de non-régression (`arca-test`).
 
@@ -27,6 +27,8 @@
   Buffer d'apprentissage court/moyen terme de l'agent IA, sanctuarisé sous les 50 lignes (style sans tiret cadratin, habitudes techniques, REX projets).
 - **[[rules-email]]** : *Règles Métier & Préférences de Tri des Emails*
   Mémoire spécialisée du skill `arca-email-process` consignant les règles d'expéditeurs apprises selon les 3 lots GTD (bruit, références, actions).
+- **[[rules-tasks]]** : *Règles Métier & Cartographie GTD des Tâches*
+  Mémoire spécialisée du skill `arca-task-process` (`arca-todo`) consignant la correspondance entre les Domaines/Projets Obsidian et l'arborescence Todoist de l'utilisateur.
 - **[[log]]** : *Journal Système Chronologique*
   Consigne chaque action système ou exécutée par l'IA sur une seule ligne horodatée.
 - **[[audit-log]]** : *Historique des Audits & Executive Summary ROI*

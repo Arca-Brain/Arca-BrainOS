@@ -22,3 +22,5 @@
 ### 🚀 Post-v1.0.0 Extensions
 
 10. [[ADR-010-Skill-arca-email-process]] : *Hybrid messaging gateway (MCP/local), GTD action extraction, and supervised inbox management without raw body storage.*
+11. [[ADR-011-Single-MIT-Open-Source-License]] : *Adoption of a single universal MIT open-source license across the entire repository.*
+12. [[ADR-012-Skill-arca-task-process]] : *GTD task orchestration (Single Unified Dashboard), self-cleaning dispatch of `Emails-Actions-Todo.md` to Todoist via MCP (`@doist/todoist-mcp`), and sidecar memory `rules-tasks.md`.*
