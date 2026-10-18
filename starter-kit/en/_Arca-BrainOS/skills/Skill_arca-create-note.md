@@ -87,7 +87,7 @@ Before creating or modifying any file on disk, the AI must present its diagnosti
    - ❓ **Validation Request:** *"Do you confirm creating this theme and linking these existing notes/projects?"*
 
 3. **Execution (Post Explicit Validation):**
-   - Instantiate `T-[Theme-Name].md` in `PATH_THEMES` with [`Template-Theme.md`](file:///home/chug/2ndBrain/_Arca-BrainOS/templates/Template-Theme.md).
+   - Instantiate `T-[Theme-Name].md` in `PATH_THEMES` with `Template-Theme.md`.
    - Update `themes` metadata in validated projects/notes.
    - Link theme to parent Area notes.
    - Log action in `PATH_SYSTEM/log.md`.

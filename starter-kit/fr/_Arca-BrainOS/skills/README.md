@@ -9,6 +9,7 @@
 - [[Skill_arca-organize-idea]] : *Qualification et structuration des notes d'idées brutes sans altération du texte d'origine.*
 - [[Skill_arca-create-note]] : *Instanciation assistée et interactive de Projets (P- actifs ou en incubation), Thèmes (T-) ou Domaines (Area) avec validation humaine, chaînage automatique des thèmes et scan de justification.*
 - [[Skill_arca-email-process]] : *Triage GTD en 3 lots des emails de l'Inbox (bruit, références, actions projets ou buffer), sécurisation Gmail via MCP et mémoire de règles [[rules-email]].*
+- [[Skill_arca-task-process]] : *Orchestration GTD des tâches sur Tableau de Bord Unique, transfert auto-nettoyant du buffer `0-Inbox/Emails-Actions-Todo.md` vers Todoist via MCP, triage de l'Inbox mobile et mémoire de règles [[rules-tasks]].*
 
 ### 🧪 2. Cluster Distillation & Médias : [[Process-Ingestion-et-Distillation-de-Medias]]
 - [[Skill_arca-distill]] : *Master skill d'orchestration pour l'ingestion de sources brutes (synthèse, ancrage, archivage, impact).*

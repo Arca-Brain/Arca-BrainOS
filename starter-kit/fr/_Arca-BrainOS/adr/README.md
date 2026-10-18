@@ -22,3 +22,5 @@
 ### 🚀 Extensions Post-v1.0.0
 
 10. [[ADR-010-Skill-arca-email-process]] : *Passerelle de messagerie hybride (MCP/local), extraction d'actions GTD et gestion supervisée de l'Inbox sans stockage de corps bruts.*
+11. [[ADR-011-Adoption-de-la-Licence-MIT-Unique]] : *Abandon du modèle de double licence hybride (AGPLv3 + CC BY-NC-SA 4.0) au profit d'une licence unique universelle MIT sur l'ensemble du dépôt.*
+12. [[ADR-012-Skill-arca-task-process]] : *Orchestration GTD des tâches (Tableau de Bord Unique), transfert auto-nettoyant du buffer `Emails-Actions-Todo.md` vers Todoist via MCP (`@doist/todoist-mcp`) et mémoire sidecar `rules-tasks.md`.*
