@@ -9,21 +9,22 @@ jobs:
   traffic:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout traffic branch
+      - name: Checkout private traffic repository
         uses: actions/checkout@v4
         with:
-          ref: "traffic"
+          repository: "Arca-Brain/Arca-BrainOS-traffic"
           token: ${{ secrets.TRAFFIC_ACTION_TOKEN }}
 
       - name: Archive Repository Traffic
         uses: sangonzal/repository-traffic-action@v.0.1.6
         env:
           TRAFFIC_ACTION_TOKEN: ${{ secrets.TRAFFIC_ACTION_TOKEN }}
+          GITHUB_REPOSITORY: "Arca-Brain/Arca-BrainOS"
 
-      - name: Commit and push traffic data
+      - name: Commit and push traffic data to private repo
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add traffic/
           git commit -m "chore(traffic): update repository traffic stats [skip ci]" || echo "No changes to commit"
-          git push origin traffic
+          git push origin main
